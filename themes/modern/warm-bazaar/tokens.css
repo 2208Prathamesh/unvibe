@@ -1,0 +1,97 @@
+/* Theme: Warm Bazaar (warm-bazaar) | Pack: modern | Default: light */
+/* Webfont: <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"> */
+
+:root {
+  color-scheme: light;
+  --bg-deep: #F2F2F2;
+  --bg-canvas: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-raised: #F7F7F7;
+  --text-primary: #222222;
+  --text-secondary: #525252;
+  --text-muted: #6A6A6A;
+  --border-hairline: #EBEBEB;
+  --border-strong: #C8C8C8;
+  --accent: #D4143D;
+  --accent-hover: #B50F33;
+  --accent-ink: #FFFFFF;
+  --accent-soft: #FFF0F3;
+  --focus-ring: #222222;
+  --positive: #0F7A48;
+  --warning: #9C5B00;
+  --negative: #C13515;
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-weight-display: 600;
+  --font-weight-body: 400;
+  --tracking-display: -0.02em;
+  --radius-control: 9999px;
+  --radius-card: 14px;
+  --radius-panel: 20px;
+  --radius-pill: 9999px;
+  --border-width: 1px;
+  --container-max: 1320px;
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-float: 0 10px 28px rgba(0, 0, 0, 0.12);
+  --ease-craft: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 140ms;
+  --dur-medium: 220ms;
+  --dur-slow: 340ms;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg-deep: #0D0D0D;
+  --bg-canvas: #141414;
+  --bg-card: #1F1F1F;
+  --bg-raised: #2B2B2B;
+  --text-primary: #F5F5F5;
+  --text-secondary: #BCBCBC;
+  --text-muted: #969696;
+  --border-hairline: rgba(255, 255, 255, 0.10);
+  --border-strong: #424242;
+  --accent: #FF6B86;
+  --accent-hover: #FF8BA0;
+  --accent-ink: #1C050A;
+  --accent-soft: #381820;
+  --focus-ring: #F5F5F5;
+  --positive: #46C488;
+  --warning: #F5B841;
+  --negative: #FF756B;
+}
+
+html, body {
+  overflow-x: clip;
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background-color: var(--accent-soft);
+  color: var(--text-primary);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+select {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

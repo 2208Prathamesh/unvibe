@@ -1,0 +1,97 @@
+/* Theme: Ledger Trust (ledger-trust) | Pack: professional | Default: light */
+/* Webfont: <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"> */
+
+:root {
+  color-scheme: light;
+  --bg-deep: #EDF2F7;
+  --bg-canvas: #F6F9FC;
+  --bg-card: #FFFFFF;
+  --bg-raised: #EEF3F9;
+  --text-primary: #0A2540;
+  --text-secondary: #3C4E62;
+  --text-muted: #59697D;
+  --border-hairline: #E3E8EE;
+  --border-strong: #C7D2DE;
+  --accent: #5145E5;
+  --accent-hover: #3E32CC;
+  --accent-ink: #FFFFFF;
+  --accent-soft: #EEF0FF;
+  --focus-ring: #5145E5;
+  --positive: #0D7A4E;
+  --warning: #A65B00;
+  --negative: #C92A2A;
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --font-weight-display: 600;
+  --font-weight-body: 400;
+  --tracking-display: -0.025em;
+  --radius-control: 8px;
+  --radius-card: 12px;
+  --radius-panel: 16px;
+  --radius-pill: 9999px;
+  --border-width: 1px;
+  --container-max: 1240px;
+  --shadow-card: 0 2px 6px rgba(10, 37, 64, 0.05), 0 1px 2px rgba(10, 37, 64, 0.04);
+  --shadow-float: 0 16px 36px rgba(10, 37, 64, 0.12);
+  --ease-craft: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 140ms;
+  --dur-medium: 200ms;
+  --dur-slow: 320ms;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg-deep: #07101B;
+  --bg-canvas: #0B1726;
+  --bg-card: #122338;
+  --bg-raised: #1A2F4A;
+  --text-primary: #F1F5F9;
+  --text-secondary: #B8C7D9;
+  --text-muted: #8CA0B8;
+  --border-hairline: rgba(241, 245, 249, 0.11);
+  --border-strong: #2C425E;
+  --accent: #8C84FF;
+  --accent-hover: #A7A0FF;
+  --accent-ink: #0A1024;
+  --accent-soft: #1C244D;
+  --focus-ring: #8C84FF;
+  --positive: #34D399;
+  --warning: #FBBF24;
+  --negative: #FB7185;
+}
+
+html, body {
+  overflow-x: clip;
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background-color: var(--accent-soft);
+  color: var(--text-primary);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+select {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

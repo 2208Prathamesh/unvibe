@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <!-- Outer precision drafting frame with ~12.5% baked-in margin -->
+  <rect x="16" y="16" width="96" height="96" rx="18" fill="#1B1B1D" stroke="#A1A1AA" stroke-opacity="0.35" stroke-width="2"/>
+  <!-- Architectural proportion grid lines -->
+  <line x1="64" y1="24" x2="64" y2="104" stroke="#E4E4E7" stroke-opacity="0.18" stroke-width="1.5"/>
+  <line x1="24" y1="64" x2="104" y2="64" stroke="#E4E4E7" stroke-opacity="0.18" stroke-width="1.5"/>
+  <!-- Quiet monochrome content planes -->
+  <rect x="28" y="28" width="32" height="32" rx="6" fill="#F4F4F5"/>
+  <rect x="68" y="68" width="32" height="32" rx="6" fill="#3F3F46" stroke="#D4D4D8" stroke-opacity="0.35" stroke-width="1.5"/>
+  <rect x="28" y="68" width="32" height="32" rx="6" fill="#27272A" stroke="#D4D4D8" stroke-opacity="0.25" stroke-width="1.5"/>
+  <!-- Single intentional bright accent square -->
+  <rect x="68" y="28" width="32" height="32" rx="6" fill="#C15F3C"/>
+  <!-- Hairline registration mark -->
+  <circle cx="84" cy="44" r="5" fill="#FAF9F5"/>
+</svg>

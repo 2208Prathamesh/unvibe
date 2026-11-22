@@ -1,0 +1,22 @@
+name: Linter rule proposal
+description: Suggest a new deterministic AI-slop or accessibility check (or fix a false positive).
+title: "[Linter]: "
+labels: ["linter"]
+body:
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Suggested Severity
+      options:
+        - P0-BLOCKER
+        - P1-SLOP
+        - P2-POLISH
+    validations:
+      required: true
+  - type: textarea
+    id: pattern
+    attributes:
+      label: Pattern & Rationale
+      description: Provide positive examples (should trigger) and negative examples (should NOT trigger).
+    validations:
+      required: true

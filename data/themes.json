@@ -1,0 +1,2485 @@
+{
+  "version": "1.0.0",
+  "packs": [
+    {
+      "id": "everyday-apps",
+      "name": "Everyday Apps",
+      "description": "Familiar, high-ergonomic palettes inspired by leading daily workspaces: quiet neutral chat shells, warm parchment readers, crisp photo feeds, structured community directories, and soft tonal productivity suites."
+    },
+    {
+      "id": "professional",
+      "name": "Professional",
+      "description": "Trust-first enterprise, financial, engineering, and structured-grid systems designed for multi-hour clarity."
+    },
+    {
+      "id": "modern",
+      "name": "Modern",
+      "description": "Contemporary consumer, gallery, developer-platform, and Scandinavian spatial aesthetics."
+    },
+    {
+      "id": "premium",
+      "name": "Premium",
+      "description": "Restrained luxury, anodized hardware, architectural galleries, and heritage private-client craft."
+    },
+    {
+      "id": "vintage",
+      "name": "Vintage",
+      "description": "Tactile broadsheet print, midcentury workshop posters, archival parchment, and warm phosphor instrumentation."
+    },
+    {
+      "id": "cool",
+      "name": "Cool",
+      "description": "Distinctive technical developer shells and architectural cyanotype drafting canvases."
+    }
+  ],
+  "themes": [
+    {
+      "id": "graphite-studio",
+      "name": "Graphite Studio",
+      "pack": "everyday-apps",
+      "defaultMode": "dark",
+      "tagline": "Quiet neutral graphite surfaces that put charts, tables, and product content first.",
+      "description": "A disciplined, neutral graphite ramp paired with one crisp cobalt signal. Surfaces step cleanly without muddy tints or colored glows, letting dense operational interfaces breathe for eight-hour sessions. Never flashy, never saturated across chrome.",
+      "mood": ["neutral", "disciplined", "ergonomic", "quiet"],
+      "surfaceModes": ["operate", "read"],
+      "bestFor": ["SaaS dashboards", "analytics suites", "admin portals", "project trackers"],
+      "keywords": ["dashboard", "saas", "analytics", "admin", "graphite", "neutral", "dark", "workspace", "telemetry", "operations", "app"],
+      "fonts": {
+        "display": "Inter, ui-sans-serif, system-ui, sans-serif",
+        "body": "Inter, ui-sans-serif, system-ui, sans-serif",
+        "mono": "\"JetBrains Mono\", ui-monospace, monospace",
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap",
+        "displayWeight": 500,
+        "bodyWeight": 400,
+        "trackingDisplay": "-0.02em",
+        "notes": "Keep headings at 500 weight and tabular-nums on all metrics and timestamps."
+      },
+      "geometry": {
+        "radiusControl": "8px",
+        "radiusCard": "12px",
+        "radiusPanel": "16px",
+        "radiusPill": "9999px",
+        "borderWidth": "1px",
+        "density": "compact",
+        "maxWidth": "1440px"
+      },
+      "elevation": {
+        "lightCardShadow": "0 1px 2px rgba(0, 0, 0, 0.05)",
+        "lightFloatShadow": "0 8px 24px rgba(0, 0, 0, 0.08)",
+        "darkTreatment": "Surface value steps + 1px hairline borders; optional inset 0 1px 0 rgba(255,255,255,0.08) on raised controls."
+      },
+      "motion": {
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "fastMs": 140,
+        "mediumMs": 200,
+        "slowMs": 320,
+        "style": "Snappy surface and color transitions only; zero bounce."
+      },
+      "light": {
+        "bgDeep": "#F2F2F4",
+        "bgCanvas": "#FAFAFA",
+        "bgCard": "#FFFFFF",
+        "bgRaised": "#F4F4F5",
+        "textPrimary": "#171717",
+        "textSecondary": "#525252",
+        "textMuted": "#6B6B72",
+        "borderHairline": "rgba(23, 23, 23, 0.09)",
+        "borderStrong": "#D4D4D8",
+        "accent": "#1D4ED8",
+        "accentHover": "#1E40AF",
+        "accentInk": "#FFFFFF",
+        "accentSoft": "#EFF6FF",
+        "focusRing": "#2563EB",
+        "positive": "#15803D",
+        "warning": "#B45309",
+        "negative": "#DC2626"
+      },
+      "dark": {
+        "bgDeep": "#0F0F10",
+        "bgCanvas": "#141415",
+        "bgCard": "#19191B",
+        "bgRaised": "#232326",
+        "textPrimary": "#EDEDED",
+        "textSecondary": "#A1A1A6",
+        "textMuted": "#8B8B92",
+        "borderHairline": "rgba(237, 237, 237, 0.09)",
+        "borderStrong": "#343438",
+        "accent": "#60A5FA",
+        "accentHover": "#93C5FD",
+        "accentInk": "#0A1424",
+        "accentSoft": "#17253B",
+        "focusRing": "#60A5FA",
+        "positive": "#4CC38A",
+        "warning": "#F59E0B",
+        "negative": "#F87171"
+      },
+      "components": {
+        "primaryButton": "Solid accent or high-contrast neutral fill, 36px nav / 44px hero, 8px radius, font-weight 500.",
+        "secondaryButton": "Raised background with 1px hairline border and primary ink.",
+        "card": "Flat card background, 1px hairline border, 20-24px inner padding, 12px radius; no nested cards.",
+        "input": "Raised background, 1px border-strong on hover, accent focus ring.",
+        "navItem": "34px row height, 16px Lucide icon column, active state uses raised step + hairline.",
+        "badge": "Quiet monospace text on bgRaised; never neon or glowing pill."
+      },
+      "voice": "Direct, factual, sentence case, comparison context on all deltas.",
+      "dos": [
+        "Keep sidebar and top chrome strictly neutral.",
+        "Reserve cobalt accent for the single primary CTA, active tab, and chart focus series.",
+        "Use tabular-nums on every KPI and table column.",
+        "Align icons in one fixed column."
+      ],
+      "donts": [
+        "Never add purple/blue gradient fills or glowing card borders.",
+        "Never place emojis next to sidebar headings.",
+        "Never exceed 600 font-weight in application chrome.",
+        "Never stack three equal sparkline cards if one primary chart suffices."
+      ]
+    },
+    {
+      "id": "ash-dialogue",
+      "name": "Ash Dialogue",
+      "pack": "everyday-apps",
+      "defaultMode": "dark",
+      "tagline": "Warm matte charcoal conversational workspace built for long-form prompts and side-by-side reasoning.",
+      "description": "Designed around distraction-free dialogue streams, code blocks, and collapsible history drawers. Soft matte charcoal layers eliminate pure-black halation while keeping contrast crisp and readable, anchored by one restrained emerald utility accent.",
+      "mood": ["conversational", "matte", "focused", "calm"],
+      "surfaceModes": ["operate", "read"],
+      "bestFor": ["AI assistants", "chat interfaces", "support consoles", "prompt workbenches", "copilots"],
+      "keywords": ["chat", "assistant", "ai", "grey", "charcoal", "dialogue", "conversation", "messages", "prompt", "threads", "copilot", "dark-grey"],
+      "fonts": {
+        "display": "Inter, ui-sans-serif, system-ui, sans-serif",
+        "body": "Inter, ui-sans-serif, system-ui, sans-serif",
+        "mono": "\"JetBrains Mono\", ui-monospace, monospace",
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap",
+        "displayWeight": 500,
+        "bodyWeight": 400,
+        "trackingDisplay": "-0.015em",
+        "notes": "Cap reading stream around 70ch; keep user message bubbles in subtle bgRaised and assistant turns borderless on bgCanvas."
+      },
+      "geometry": {
+        "radiusControl": "10px",
+        "radiusCard": "16px",
+        "radiusPanel": "20px",
+        "radiusPill": "9999px",
+        "borderWidth": "1px",
+        "density": "comfortable",
+        "maxWidth": "960px"
+      },
+      "elevation": {
+        "lightCardShadow": "0 1px 3px rgba(0, 0, 0, 0.06)",
+        "lightFloatShadow": "0 10px 28px rgba(0, 0, 0, 0.09)",
+        "darkTreatment": "Matte ash tonal separation (#171717 sidebar -> #212121 canvas -> #2F2F2F composer) with subtle 8% hairlines."
+      },
+      "motion": {
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "fastMs": 140,
+        "mediumMs": 200,
+        "slowMs": 300,
+        "style": "Instant composer feedback and gentle drawer slide."
+      },
+      "light": {
+        "bgDeep": "#F4F4F4",
+        "bgCanvas": "#FFFFFF",
+        "bgCard": "#F9F9F9",
+        "bgRaised": "#EFEFEF",
+        "textPrimary": "#0D0D0D",
+        "textSecondary": "#4A4A4A",
+        "textMuted": "#6B6B6B",
+        "borderHairline": "rgba(13, 13, 13, 0.09)",
+        "borderStrong": "#D6D6D6",
+        "accent": "#0E7A5F",
+        "accentHover": "#0A614B",
+        "accentInk": "#FFFFFF",
+        "accentSoft": "#E7F6F1",
+        "focusRing": "#0E7A5F",
+        "positive": "#0E7A5F",
+        "warning": "#B45309",
+        "negative": "#C81E1E"
+      },
+      "dark": {
+        "bgDeep": "#171717",
+        "bgCanvas": "#212121",
+        "bgCard": "#292929",
+        "bgRaised": "#333333",
+        "textPrimary": "#ECECEC",
+        "textSecondary": "#B4B4B4",
+        "textMuted": "#969696",
+        "borderHairline": "rgba(255, 255, 255, 0.09)",
+        "borderStrong": "#424242",
+        "accent": "#19B38B",
+        "accentHover": "#24C99E",
+        "accentInk": "#06211A",
+        "accentSoft": "#132E27",
+        "focusRing": "#19B38B",
+        "positive": "#2DD49F",
+        "warning": "#F59E0B",
+        "negative": "#F87171"
+      },
+      "components": {
+        "primaryButton": "High-contrast pill send button (inverted ink on canvas) or solid emerald CTA.",
+        "secondaryButton": "Subtle ghost or raised pill with 1px hairline.",
+        "card": "Soft 16px rounded composer dock and flat 12px code containers with header strip.",
+        "input": "Multi-line auto-growing composer in bgRaised with 20px radius and bottom toolbar.",
+        "navItem": "Thread list row 36px tall, truncated cleanly with min-w-0.",
+        "badge": "Compact model switcher pill in bgRaised; zero neon glows."
+      },
+      "voice": "Helpful, concise, clear tool labels; zero hype phrasing.",
+      "dos": [
+        "Keep assistant prose unboxed on the main canvas for easy reading.",
+        "Constrain message stream width to 46-48rem.",
+        "Provide crisp keyboard shortcut hints and copy controls on code blocks.",
+        "Separate sidebar thread list cleanly with bgDeep."
+      ],
+      "donts": [
+        "Never box every chat message in heavy drop-shadowed cards.",
+        "Never use sparkle emojis in model selector labels.",
+        "Never wash the background in purple/cyan ambient blurs.",
+        "Never leave raw text wider than 80 characters per line."
+      ]
+    },
+    {
+      "id": "parchment-editorial",
+      "name": "Parchment Editorial",
+      "pack": "everyday-apps",
+      "defaultMode": "light",
+      "tagline": "Warm cream paper canvas with humanist serif headlines and terracotta focus accents.",
+      "description": "An inviting editorial workspace anchored on warm archival cream rather than cold stark white. Pairs crisp humanist serif display type with clean sans body controls and an earthy terracotta signal, giving writing tools and intelligent workspaces warmth without visual noise.",
+      "mood": ["warm", "humanist", "literary", "thoughtful"],
+      "surfaceModes": ["read", "operate", "persuade"],
+      "bestFor": ["writing studios", "AI knowledge assistants", "note apps", "journal tools", "essays"],
+      "keywords": ["warm", "beige", "parchment", "cream", "terracotta", "editorial", "writing", "assistant", "humanist", "reading", "notes", "serif"],
+      "fonts": {
+        "display": "\"Newsreader\", Georgia, serif",
+        "body": "\"Plus Jakarta Sans\", ui-sans-serif, system-ui, sans-serif",
+        "mono": "\"JetBrains Mono\", ui-monospace, monospace",
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap",
+        "displayWeight": 400,
+        "bodyWeight": 400,
+        "trackingDisplay": "-0.02em",
+        "notes": "Display serif reserved strictly for h1/h2 and pull quotes; keep UI buttons, tables, and labels in Plus Jakarta Sans."
+      },
+      "geometry": {
+        "radiusControl": "8px",
+        "radiusCard": "14px",
+        "radiusPanel": "18px",
+        "radiusPill": "9999px",
+        "borderWidth": "1px",
+        "density": "comfortable",
+        "maxWidth": "1160px"
+      },
+      "elevation": {
+        "lightCardShadow": "0 1px 2px rgba(20, 20, 19, 0.04)",
+        "lightFloatShadow": "0 10px 28px rgba(20, 20, 19, 0.08)",
+        "darkTreatment": "Warm espresso charcoal surfaces (#181715 / #211F1C) with muted parchment ink."
+      },
+      "motion": {
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "fastMs": 150,
+        "mediumMs": 220,
+        "slowMs": 360,
+        "style": "Gentle ink-and-paper fades."
+      },
+      "light": {
+        "bgDeep": "#EFE9DE",
+        "bgCanvas": "#FAF9F5",
+        "bgCard": "#FFFFFF",
+        "bgRaised": "#F3EFE6",
+        "textPrimary": "#141413",
+        "textSecondary": "#4F4D47",
+        "textMuted": "#69665E",
+        "borderHairline": "rgba(20, 20, 19, 0.10)",
+        "borderStrong": "#D8D0C3",
+        "accent": "#AE4F2E",
+        "accentHover": "#923F22",
+        "accentInk": "#FFFFFF",
+        "accentSoft": "#F9EBE5",
+        "focusRing": "#AE4F2E",
+        "positive": "#246A46",
+        "warning": "#9C5B12",
+        "negative": "#B42318"
+      },
+      "dark": {
+        "bgDeep": "#141311",
+        "bgCanvas": "#1B1A17",
+        "bgCard": "#23211D",
+        "bgRaised": "#2D2A25",
+        "textPrimary": "#F5F2EB",
+        "textSecondary": "#C0BBB0",
+        "textMuted": "#999387",
+        "borderHairline": "rgba(245, 242, 235, 0.10)",
+        "borderStrong": "#3E3A33",
+        "accent": "#E08463",
+        "accentHover": "#EA9A7D",
+        "accentInk": "#18120F",
+        "accentSoft": "#32221C",
+        "focusRing": "#E08463",
+        "positive": "#5DB872",
+        "warning": "#E8A55A",
+        "negative": "#F87171"
+      },
+      "components": {
+        "primaryButton": "Solid terracotta or deep charcoal button, 8px radius, crisp 500 sans label.",
+        "secondaryButton": "Warm card fill with 1px warm border.",
+        "card": "Crisp white or soft stone card over cream canvas with subtle warm hairline.",
+        "input": "Soft recessed parchment well, 1px warm border, focus outline in terracotta.",
+        "navItem": "Calm sans text links with subtle warm highlight background on active.",
+        "badge": "Soft cream tag in bgRaised; avoid saturated pills."
+      },
+      "voice": "Thoughtful, plainspoken, unhurried editorial prose.",
+      "dos": [
+        "Set major headlines in Newsreader at 400 or 500 weight.",
+        "Let generous warm parchment space frame content.",
+        "Use terracotta sparingly for primary actions and active states.",
+        "Pair warm neutral borders instead of cool slate borders."
+      ],
+      "donts": [
+        "Never mix cool blue-gray borders onto warm cream surfaces.",
+        "Never use serif typography inside small 12px UI controls.",
+        "Never add neon highlights or glowing drop shadows.",
+        "Never shout with all-caps bold headings."
+      ]
+    },
+    {
+      "id": "aperture-feed",
+      "name": "Aperture Feed",
+      "pack": "everyday-apps",
+      "defaultMode": "light",
+      "tagline": "Edge-to-edge photography-first social stream with whisper-quiet monochrome chrome.",
+      "description": "Engineered so user photography, carousels, and visual media carry 100% of the color on screen. The interface steps back into pure white or obsidian black with hairline separators, clean 44px touch targets, and a single crisp action blue.",
+      "mood": ["photographic", "minimal", "crisp", "unobtrusive"],
+      "surfaceModes": ["social", "operate"],
+      "bestFor": ["photo feeds", "creator networks", "media galleries", "community streams", "mobile-first social apps"],
+      "keywords": ["social", "feed", "photos", "gallery", "stories", "reels", "creator", "media", "stream", "minimal", "mobile", "camera"],
+      "fonts": {
+        "display": "Inter, ui-sans-serif, system-ui, sans-serif",
+        "body": "Inter, ui-sans-serif, system-ui, sans-serif",
+        "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap",
+        "displayWeight": 600,
+        "bodyWeight": 400,
+        "trackingDisplay": "-0.015em",
+        "notes": "Keep profile handles at 600 weight, captions at 400, and timestamp metadata muted at 12px."
+      },
+      "geometry": {
+        "radiusControl": "8px",
+        "radiusCard": "12px",
+        "radiusPanel": "16px",
+        "radiusPill": "9999px",
+        "borderWidth": "1px",
+        "density": "comfortable",
+        "maxWidth": "1040px"
+      },
+      "elevation": {
+        "lightCardShadow": "none",
+        "lightFloatShadow": "0 8px 24px rgba(0, 0, 0, 0.12)",
+        "darkTreatment": "Pure #000000 canvas with #121212 modals and 1px #262626 dividers for true OLED contrast behind imagery."
+      },
+      "motion": {
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "fastMs": 120,
+        "mediumMs": 180,
+        "slowMs": 280,
+        "style": "Responsive micro-scale press on action icons and smooth modal sheet reveal."
+      },
+      "light": {
+        "bgDeep": "#F5F5F5",
+        "bgCanvas": "#FFFFFF",
+        "bgCard": "#FFFFFF",
+        "bgRaised": "#EFEFEF",
+        "textPrimary": "#1A1A1A",
+        "textSecondary": "#525252",
+        "textMuted": "#6E6E6E",
+        "borderHairline": "#E5E5E5",
+        "borderStrong": "#C7C7C7",
+        "accent": "#006EC7",
+        "accentHover": "#0059A3",
+        "accentInk": "#FFFFFF",
+        "accentSoft": "#EBF5FF",
+        "focusRing": "#006EC7",
+        "positive": "#16803C",
+        "warning": "#B45309",
+        "negative": "#D92D20"
+      },
+      "dark": {
+        "bgDeep": "#000000",
+        "bgCanvas": "#000000",
+        "bgCard": "#121212",
+        "bgRaised": "#222222",
+        "textPrimary": "#F5F5F5",
+        "textSecondary": "#A8A8A8",
+        "textMuted": "#8E8E8E",
+        "borderHairline": "#262626",
+        "borderStrong": "#383838",
+        "accent": "#4DAEFF",
+        "accentHover": "#73BFFF",
+        "accentInk": "#041629",
+        "accentSoft": "#0C2338",
+        "focusRing": "#4DAEFF",
+        "positive": "#4CC38A",
+        "warning": "#F59E0B",
+        "negative": "#FF5C6C"
+      },
+      "components": {
+        "primaryButton": "Solid signal blue button, 8px radius, 32-36px height, crisp white or dark ink.",
+        "secondaryButton": "Neutral bgRaised pill/button with zero heavy border.",
+        "card": "Borderless feed stream separated by 1px horizontal rules, or clean 12px media tiles.",
+        "input": "Soft bgRaised search pill without heavy border until focused.",
+        "navItem": "24px fixed icon rail with bold active state; collapses cleanly on mobile.",
+        "badge": "Minimal ring border for live/active story avatars only; avoid badge clutter on posts."
+      },
+      "voice": "Invisible utility labels (Follow, Save, Reply, 2h) so user content speaks.",
+      "dos": [
+        "Keep feed chrome completely monochrome so photos never clash with UI colors.",
+        "Use crisp 1px dividers between feed items on desktop and seamless vertical flow on mobile.",
+        "Enforce explicit aspect ratios (1:1, 4:5, 16:9) on media slots to prevent layout shift.",
+        "Keep touch targets at least 44x44px for like, save, and share controls."
+      ],
+      "donts": [
+        "Never apply colored gradients across navigation bars or buttons.",
+        "Never put drop shadows behind every post in a vertical feed.",
+        "Never truncate user names poorly—always apply min-w-0.",
+        "Never use rainbow badges or animated sparkles."
+      ]
+    },
+    {
+      "id": "civic-network",
+      "name": "Civic Network",
+      "pack": "everyday-apps",
+      "defaultMode": "light",
+      "tagline": "Structured warm-stone directory and professional community layout with high-clarity cards.",
+      "description": "Built for multi-column feeds, profile cards, job boards, and structured professional directories. Sits cleanly on a warm stone ground so crisp white 8px cards read immediately as organized modules without heavy shadows, accented by trustworthy civic blue.",
+      "mood": ["structured", "trustworthy", "organized", "readable"],
+      "surfaceModes": ["social", "operate", "read"],
+      "bestFor": ["professional networks", "job boards", "alumni portals", "B2B directories", "knowledge communities"],
+      "keywords": ["network", "jobs", "directory", "community", "profile", "resume", "career", "connections", "professional", "feed", "corporate", "b2b"],
+      "fonts": {
+        "display": "\"Source Sans 3\", ui-sans-serif, system-ui, sans-serif",
+        "body": "\"Source Sans 3\", ui-sans-serif, system-ui, sans-serif",
+        "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap",
+        "displayWeight": 600,
+        "bodyWeight": 400,
+        "trackingDisplay": "-0.01em",
+        "notes": "Use 600 for card headings and names; keep secondary job titles and timestamps in muted gray."
+      },
+      "geometry": {
+        "radiusControl": "9999px",
+        "radiusCard": "8px",
+        "radiusPanel": "12px",
+        "radiusPill": "9999px",
+        "borderWidth": "1px",
+        "density": "comfortable",
+        "maxWidth": "1180px"
+      },
+      "elevation": {
+        "lightCardShadow": "0 0 0 1px rgba(0, 0, 0, 0.08)",
+        "lightFloatShadow": "0 6px 18px rgba(0, 0, 0, 0.12)",
+        "darkTreatment": "Deep slate-charcoal (#0D1114 canvas, #181D22 cards) with clean 1px #2B333B hairline borders."
+      },
+      "motion": {
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "fastMs": 130,
+        "mediumMs": 190,
+        "slowMs": 280,
+        "style": "Direct, zero-fluff state transitions."
+      },
+      "light": {
+        "bgDeep": "#EAE7E1",
+        "bgCanvas": "#F4F2EE",
+        "bgCard": "#FFFFFF",
+        "bgRaised": "#EEF3F8",
+        "textPrimary": "#191919",
+        "textSecondary": "#484848",
+        "textMuted": "#666666",
+        "borderHairline": "rgba(0, 0, 0, 0.09)",
+        "borderStrong": "#BDBBB5",
+        "accent": "#0A66C2",
+        "accentHover": "#004182",
+        "accentInk": "#FFFFFF",
+        "accentSoft": "#EBF4FD",
+        "focusRing": "#0A66C2",
+        "positive": "#057642",
+        "warning": "#915907",
+        "negative": "#CC1016"
+      },
+      "dark": {
+        "bgDeep": "#0A0D10",
+        "bgCanvas": "#111519",
+        "bgCard": "#1B2026",
+        "bgRaised": "#262D35",
+        "textPrimary": "#F0F2F5",
+        "textSecondary": "#B8C0C8",
+        "textMuted": "#8E99A4",
+        "borderHairline": "rgba(240, 242, 245, 0.11)",
+        "borderStrong": "#38414C",
+        "accent": "#70B5F9",
+        "accentHover": "#95C9FA",
+        "accentInk": "#081726",
+        "accentSoft": "#13293F",
+        "focusRing": "#70B5F9",
+        "positive": "#46C488",
+        "warning": "#E8A638",
+        "negative": "#F87171"
+      },
+      "components": {
+        "primaryButton": "Full pill button in trust blue with white or dark-slate ink.",
+        "secondaryButton": "Outlined pill with 1px solid accent or dark neutral border.",
+        "card": "8px rounded crisp card sitting on warm stone canvas with 1px border.",
+        "input": "Subtle tinted search field (#EEF3F8 light / #262D35 dark) with crisp focus outline.",
+        "navItem": "Top bar icon-over-label tab with 2px bottom indicator bar when active.",
+        "badge": "Soft pill status chip with muted border for skills or roles."
+      },
+      "voice": "Clear, objective, credential-respecting community prose.",
+      "dos": [
+        "Contrast crisp white cards against the warm stone #F4F2EE page canvas.",
+        "Use clear asymmetric 3-column or 2-column directory grids (240px rail + main feed + 300px context).",
+        "Keep pill CTAs sharp and well-spaced.",
+        "Display verified counts and dates in tabular figures."
+      ],
+      "donts": [
+        "Never nest cards inside cards inside feed posts.",
+        "Never use heavy drop shadows where a 1px border over warm stone works cleanly.",
+        "Never overcrowd navigation bars with more than 6 top-level items.",
+        "Never use neon gradients on profile headers."
+      ]
+    },
+    {
+      "id": "tonal-workspace",
+      "name": "Tonal Workspace",
+      "pack": "everyday-apps",
+      "defaultMode": "light",
+      "tagline": "Cool daylight tonal surface hierarchy with pill navigation and zero visual clutter.",
+      "description": "Inspired by modern productivity suites that replace harsh borders with gentle cool-blue tonal layering. Light-filled backgrounds separate navigation rails, active search bars, and working sheets effortlessly, keeping complex multi-pane tools calm and approachable.",
+      "mood": ["airy", "tonal", "approachable", "productive"],
+      "surfaceModes": ["operate", "read"],
+      "bestFor": ["mail clients", "cloud drives", "calendars", "document suites", "education portals"],
+      "keywords": ["workspace", "productivity", "drive", "mail", "calendar", "suite", "tonal", "utility", "daylight", "soft-blue", "organizer", "tasks"],
+      "fonts": {
+        "display": "\"DM Sans\", ui-sans-serif, system-ui, sans-serif",
+        "body": "\"DM Sans\", ui-sans-serif, system-ui, sans-serif",
+        "mono": "\"Roboto Mono\", ui-monospace, monospace",
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap",
+        "displayWeight": 500,
+        "bodyWeight": 400,
+        "trackingDisplay": "-0.015em",
+        "notes": "Keep weights 400 and 500 for friendly legibility across long tables, sidebars, and event blocks."
+      },
+      "geometry": {
+        "radiusControl": "9999px",
+        "radiusCard": "16px",
+        "radiusPanel": "24px",
+        "radiusPill": "9999px",
+        "borderWidth": "1px",
+        "density": "comfortable",
+        "maxWidth": "1520px"
+      },
+      "elevation": {
+        "lightCardShadow": "0 1px 2px rgba(15, 23, 42, 0.04)",
+        "lightFloatShadow": "0 8px 20px rgba(15, 23, 42, 0.10)",
+        "darkTreatment": "Neutral dark tonal containers (#131314 -> #1E1F20 -> #282A2C) with soft sky-blue active pills."
+      },
+      "motion": {
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "fastMs": 140,
+        "mediumMs": 220,
+        "slowMs": 320,
+        "style": "Fluid pill state fills and calm drawer reveals."
+      },
+      "light": {
+        "bgDeep": "#F0F4F9",
+        "bgCanvas": "#F8FAFD",
+        "bgCard": "#FFFFFF",
+        "bgRaised": "#E6ECF5",
+        "textPrimary": "#1F1F1F",
+        "textSecondary": "#444746",
+        "textMuted": "#62666B",
+        "borderHairline": "rgba(31, 31, 31, 0.08)",
+        "borderStrong": "#C4C7C5",
+        "accent": "#0B57D0",
+        "accentHover": "#0842A0",
+        "accentInk": "#FFFFFF",
+        "accentSoft": "#D3E3FD",
+        "focusRing": "#0B57D0",
+        "positive": "#146C2E",
+        "warning": "#A25800",
+        "negative": "#B3261E"
+      },
+      "dark": {
+        "bgDeep": "#131314",
+        "bgCanvas": "#1B1C1E",
+        "bgCard": "#222326",
+        "bgRaised": "#2D2F33",
+        "textPrimary": "#E3E3E3",
+        "textSecondary": "#C4C7C5",
+        "textMuted": "#989B9D",
+        "borderHairline": "rgba(227, 227, 227, 0.09)",
+        "borderStrong": "#444746",
+        "accent": "#A8C7FA",
+        "accentHover": "#C2D8FC",
+        "accentInk": "#062E6F",
+        "accentSoft": "#1F3557",
+        "focusRing": "#A8C7FA",
+        "positive": "#6DD58C",
+        "warning": "#F5B841",
+        "negative": "#F28B82"
+      },
+      "components": {
+        "primaryButton": "Full-pill primary CTA or soft tonal floating action button (16px rounded square).",
+        "secondaryButton": "Transparent or soft tonal pill with clear text label.",
+        "card": "16px rounded surface separated primarily by cool-gray tonal fill rather than heavy outlines.",
+        "input": "Full-pill global search bar in bgRaised (#E9EEF6 light) with 48px height.",
+        "navItem": "Full-pill sidebar item highlighted with accentSoft (#D3E3FD) and bold accent text.",
+        "badge": "Soft rectangular status chip with 6px radius."
+      },
+      "voice": "Helpful, crisp utility labels with clear undo and recovery actions.",
+      "dos": [
+        "Separate sidebar shell (#F0F4F9) from main working document card (#FFFFFF) cleanly.",
+        "Use pill active navigation highlights in accentSoft.",
+        "Keep action toolbars tidy with icon+label clarity.",
+        "Ensure all interactive rows have at least 36px height."
+      ],
+      "donts": [
+        "Never add dark heavy borders around tonal cards.",
+        "Never use saturated multi-color backgrounds across workspace panes.",
+        "Never hide primary actions behind hover-only triggers on mobile.",
+        "Never shrink search bar fonts below 15px."
+      ]
+    },
+    {
+      "id": "ledger-trust",
+      "name": "Ledger Trust",
+      "pack": "professional",
+      "defaultMode": "light",
+      "tagline": "Authoritative slate-navy ink on alabaster-blue surfaces with crisp indigo checkout precision.",
+      "description": "Designed for financial tools, payments, invoicing, and enterprise infrastructure where immediate credibility matters. Anchors typography in deep slate-navy rather than pure black, separating crisp cards over cool alabaster surfaces with disciplined blurple accents.",
+      "mood": ["authoritative", "financial", "precise", "trustworthy"],
+      "surfaceModes": ["operate", "persuade"],
+      "bestFor": ["fintech", "billing platforms", "checkout flows", "accounting tools", "enterprise SaaS"],
+      "keywords": ["fintech", "payments", "billing", "invoice", "finance", "banking", "checkout", "enterprise", "navy", "indigo", "revenue", "trust"],
+      "fonts": {
+        "display": "\"Plus Jakarta Sans\", ui-sans-serif, system-ui, sans-serif",
+        "body": "\"Plus Jakarta Sans\", ui-sans-serif, system-ui, sans-serif",
+        "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap",
+        "displayWeight": 600,
+        "bodyWeight": 400,
+        "trackingDisplay": "-0.025em",
+        "notes": "Always enforce tabular-nums on currency amounts, percentages, and invoice IDs."
+      },
+      "geometry": {
+        "radiusControl": "8px",
+        "radiusCard": "12px",
+        "radiusPanel": "16px",
+        "radiusPill": "9999px",
+        "borderWidth": "1px",
+        "density": "comfortable",
+        "maxWidth": "1240px"
+      },
+      "elevation": {
+        "lightCardShadow": "0 2px 6px rgba(10, 37, 64, 0.05), 0 1px 2px rgba(10, 37, 64, 0.04)",
+        "lightFloatShadow": "0 16px 36px rgba(10, 37, 64, 0.12)",
+        "darkTreatment": "Deep maritime navy (#0A1624 canvas, #112236 cards) with subtle slate hairlines."
+      },
+      "motion": {
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "fastMs": 140,
+        "mediumMs": 200,
+        "slowMs": 320,
+        "style": "Crisp mechanical snap on toggles and tabular number clarity."
+      },
+      "light": {
+        "bgDeep": "#EDF2F7",
+        "bgCanvas": "#F6F9FC",
+        "bgCard": "#FFFFFF",
+        "bgRaised": "#EEF3F9",
+        "textPrimary": "#0A2540",
+        "textSecondary": "#3C4E62",
+        "textMuted": "#59697D",
+        "borderHairline": "#E3E8EE",
+        "borderStrong": "#C7D2DE",
+        "accent": "#5145E5",
+        "accentHover": "#3E32CC",
+        "accentInk": "#FFFFFF",
+        "accentSoft": "#EEF0FF",
+        "focusRing": "#5145E5",
+        "positive": "#0D7A4E",
+        "warning": "#A65B00",
+        "negative": "#C92A2A"
+      },
+      "dark": {
+        "bgDeep": "#07101B",
+        "bgCanvas": "#0B1726",
+        "bgCard": "#122338",
+        "bgRaised": "#1A2F4A",
+        "textPrimary": "#F1F5F9",
+        "textSecondary": "#B8C7D9",
+        "textMuted": "#8CA0B8",
+        "borderHairline": "rgba(241, 245, 249, 0.11)",
+        "borderStrong": "#2C425E",
+        "accent": "#8C84FF",
+        "accentHover": "#A7A0FF",
+        "accentInk": "#0A1024",
+        "accentSoft": "#1C244D",
+        "focusRing": "#8C84FF",
+        "positive": "#34D399",
+        "warning": "#FBBF24",
+        "negative": "#FB7185"
+      },
+      "components": {
+        "primaryButton": "Solid indigo CTA, 8px radius, crisp 500 text, subtle top inset highlight.",
+        "secondaryButton": "White/card surface with navy text and 1px hairline border.",
+        "card": "Crisp card with soft cool-navy micro-shadow and generous 24px padding.",
+        "input": "Sharp 8px field with explicit label, clear error recovery text, and tabular digits.",
+        "navItem": "Clean navy text links with gentle accent hover.",
+        "badge": "Subtle tinted pill for invoice states (Paid, Pending, Overdue)."
+      },
+      "voice": "Precise, transparent, audit-ready financial language.",
+      "dos": [
+        "Pair deep navy ink (#0A2540) with cool alabaster (#F6F9FC) rather than harsh black on white.",
+        "Format every financial figure consistently with decimals aligned.",
+        "Show real comparison baselines on revenue metrics.",
+        "Use crisp API/code preview panels where developer products apply."
+      ],
+      "donts": [
+        "Never use glowing neon blurs behind payment cards.",
+        "Never mix rounded pill containers with sharp rectangular inputs.",
+        "Never invent fake $123,456 placeholder figures.",
+        "Never omit error states on checkout or billing inputs."
+      ]
+    },
+    {
+      "id": "canvas-docs",
+      "name": "Canvas Docs",
+      "pack": "professional",
+      "defaultMode": "light",
+      "tagline": "Paper-first block workspace with warm espresso ink and ultra-quiet chrome.",
+      "description": "Designed for documents, wikis, databases, and collaborative knowledge bases. Removes nearly all decorative framing so authored headings, tables, callouts, and prose hold 90% of visual attention over warm white paper and quiet stone sidebars.",
+      "mood": ["paper-first", "quiet", "organized", "distraction-free"],
+      "surfaceModes": ["read", "operate"],
+      "bestFor": ["wikis", "documentation", "knowledge bases", "CRM tables", "roadmap planners"],
+      "keywords": ["docs", "wiki", "notes", "knowledge", "database", "blocks", "writing", "clean-paper", "markdown", "workspace", "espresso", "table"],
+      "fonts": {
+        "display": "Inter, ui-sans-serif, system-ui, sans-serif",
+        "body": "Inter, ui-sans-serif, system-ui, sans-serif",
+        "mono": "\"JetBrains Mono\", ui-monospace, monospace",
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap",
+        "displayWeight": 600,
+        "bodyWeight": 400,
+        "trackingDisplay": "-0.02em",
+        "notes": "Keep prose columns under 72ch; reserve monospace for inline code tokens and database property badges."
+      },
+      "geometry": {
+        "radiusControl": "6px",
+        "radiusCard": "8px",
+        "radiusPanel": "12px",
+        "radiusPill": "9999px",
+        "borderWidth": "1px",
+        "density": "compact",
+        "maxWidth": "1120px"
+      },
+      "elevation": {
+        "lightCardShadow": "0 1px 2px rgba(55, 53, 47, 0.04)",
+        "lightFloatShadow": "0 8px 24px rgba(55, 53, 47, 0.10)",
+        "darkTreatment": "Warm charcoal dark mode (#191919 canvas, #202020 sidebar, #2C2C2C hover) with zero glare."
+      },
+      "motion": {
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "fastMs": 120,
+        "mediumMs": 180,
+        "slowMs": 260,
+        "style": "Near-instant hover highlights and crisp menu popovers."
+      },
+      "light": {
+        "bgDeep": "#F7F6F3",
+        "bgCanvas": "#FFFFFF",
+        "bgCard": "#FFFFFF",
+        "bgRaised": "#F1F0EC",
+        "textPrimary": "#37352F",
+        "textSecondary": "#5C5A54",
+        "textMuted": "#706E67",
+        "borderHairline": "rgba(55, 53, 47, 0.09)",
+        "borderStrong": "#DFDDD8",
+        "accent": "#1B6EC2",
+        "accentHover": "#15579C",
+        "accentInk": "#FFFFFF",
+        "accentSoft": "#EAF3FC",
+        "focusRing": "#1B6EC2",
+        "positive": "#18794E",
+        "warning": "#9C5B12",
+        "negative": "#C92A2A"
+      },
+      "dark": {
+        "bgDeep": "#202020",
+        "bgCanvas": "#191919",
+        "bgCard": "#222222",
+        "bgRaised": "#2D2D2D",
+        "textPrimary": "#EBEBEB",
+        "textSecondary": "#B3B3B3",
+        "textMuted": "#919191",
+        "borderHairline": "rgba(255, 255, 255, 0.09)",
+        "borderStrong": "#3D3D3D",
+        "accent": "#6CB4EE",
+        "accentHover": "#8AC6F5",
+        "accentInk": "#0A1B29",
+        "accentSoft": "#182D40",
+        "focusRing": "#6CB4EE",
+        "positive": "#4CC38A",
+        "warning": "#F5B841",
+        "negative": "#F87171"
+      },
+      "components": {
+        "primaryButton": "Compact 6px rounded accent fill or solid charcoal fill.",
+        "secondaryButton": "Subtle ghost button that reveals bgRaised fill on hover.",
+        "card": "Clean hairline-bounded database/board card with 6-8px radius.",
+        "input": "Inline editable text or subtle bgRaised search input.",
+        "navItem": "28-32px dense tree items with collapsible disclosure carets.",
+        "badge": "Soft pastel tag pills with high-contrast ink for table statuses."
+      },
+      "voice": "Neutral, concise, document-centric.",
+      "dos": [
+        "Keep page chrome ultra-light so the user's writing stands out.",
+        "Use warm espresso ink (#37352F) instead of harsh #000000.",
+        "Maintain dense, clean 1px hairlines inside tables and tree sidebars.",
+        "Support keyboard-first slash/command interactions."
+      ],
+      "donts": [
+        "Never wrap paragraphs of prose inside heavy shadowed cards.",
+        "Never use random emojis for database rows unless user-authored content requires it.",
+        "Never crowd sidebars with decorative dividers.",
+        "Never use wide-tracked uppercase table headers."
+      ]
+    },
+    {
+      "id": "command-precision",
+      "name": "Command Precision",
+      "pack": "professional",
+      "defaultMode": "dark",
+      "tagline": "Void-black software-craft workbench with 1px hairline structure and crisp indigo telemetry.",
+      "description": "Built for issue trackers, developer workbenches, and high-speed operational tooling. Combines near-black layered panels, subtle top hairline highlights, dense keyboard-shortcut affordances, and a single crisp indigo focus accent without decorative noise.",
+      "mood": ["technical", "exact", "dense", "keyboard-first"],
+      "surfaceModes": ["operate", "persuade"],
+      "bestFor": ["issue trackers", "developer tools", "monitoring consoles", "roadmaps", "IDEs"],
+      "keywords": ["developer", "engineering", "issues", "workbench", "dark", "command", "shortcut", "indigo", "dense", "precision", "software", "devtools"],
+      "fonts": {
+        "display": "Inter, ui-sans-serif, system-ui, sans-serif",
+        "body": "Inter, ui-sans-serif, system-ui, sans-serif",
+        "mono": "\"JetBrains Mono\", ui-monospace, monospace",
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap",
+        "displayWeight": 500,
+        "bodyWeight": 400,
+        "trackingDisplay": "-0.025em",
+        "notes": "Display titles stay tight at -0.025em; shortcut keycaps and issue IDs (ENG-412) always set in JetBrains Mono."
+      },
+      "geometry": {
+        "radiusControl": "6px",
+        "radiusCard": "10px",
+        "radiusPanel": "14px",
+        "radiusPill": "9999px",
+        "borderWidth": "1px",
+        "density": "compact",
+        "maxWidth": "1440px"
+      },
+      "elevation": {
+        "lightCardShadow": "0 1px 2px rgba(9, 10, 14, 0.05)",
+        "lightFloatShadow": "0 12px 32px rgba(9, 10, 14, 0.10)",
+        "darkTreatment": "Void ground (#08090A) with layered charcoal panels (#111214 / #18191D) and crisp 8-10% hairlines."
+      },
+      "motion": {
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "fastMs": 110,
+        "mediumMs": 170,
+        "slowMs": 260,
+        "style": "Immediate keyboard-speed response."
+      },
+      "light": {
+        "bgDeep": "#F1F2F6",
+        "bgCanvas": "#FCFCFD",
+        "bgCard": "#FFFFFF",
+        "bgRaised": "#EEF0F6",
+        "textPrimary": "#111217",
+        "textSecondary": "#494C5A",
+        "textMuted": "#626675",
+        "borderHairline": "#E2E4EC",
+        "borderStrong": "#C4C8D6",
+        "accent": "#4752C4",
+        "accentHover": "#3B45AD",
+        "accentInk": "#FFFFFF",
+        "accentSoft": "#EDEFFC",
+        "focusRing": "#4752C4",
+        "positive": "#167E4D",
+        "warning": "#A15C07",
+        "negative": "#C92A2A"
+      },
+      "dark": {
+        "bgDeep": "#060708",
+        "bgCanvas": "#090A0C",
+        "bgCard": "#111215",
+        "bgRaised": "#1B1D22",
+        "textPrimary": "#F5F6F8",
+        "textSecondary": "#B3B8C4",
+        "textMuted": "#8B91A0",
+        "borderHairline": "rgba(255, 255, 255, 0.085)",
+        "borderStrong": "#2F323B",
+        "accent": "#7D88F0",
+        "accentHover": "#97A0F5",
+        "accentInk": "#080914",
+        "accentSoft": "#191D38",
+        "focusRing": "#7D88F0",
+        "positive": "#46C488",
+        "warning": "#F5B841",
+        "negative": "#F87171"
+      },
+      "components": {
+        "primaryButton": "6px radius solid accent button with sharp 500 label.",
+        "secondaryButton": "Raised panel fill with 1px top highlight and crisp hairline.",
+        "card": "Hairline-framed panel in bgCard with zero drop-shadow clutter.",
+        "input": "Compact command bar / filter input with kbd shortcut hint.",
+        "navItem": "32px compact row with 16px SVG icon and muted count on right.",
+        "badge": "Small bordered mono chip or status ring icon."
+      },
+      "voice": "Terse, operational, unambiguous engineering labels.",
+      "dos": [
+        "Expose keyboard shortcuts cleanly inside small <kbd> keycaps.",
+        "Use subtle 1px hairlines and stepped blacks instead of blur glow shadows.",
+        "Keep list rows uniform in height (32-36px) with aligned columns.",
+        "Use muted slate for secondary metadata and IDs."
+      ],
+      "donts": [
+        "Never apply purple-to-pink glowing borders around cards.",
+        "Never slow down interactions with 500ms float animations.",
+        "Never use vague marketing jargon in operational screens.",
+        "Never omit keyboard focus rings on list rows."
+      ]
+    },
+    {
+      "id": "swiss-grid",
+      "name": "Swiss Grid",
+      "pack": "professional",
+      "defaultMode": "light",
+      "tagline": "International Typographic Style built on strict architectural rules, stark ink, and vermilion signal.",
+      "description": "Inspired by mid-century Swiss modernist systems: razor-sharp 0px-2px geometry, exposed structural grid rules, generous negative space paired with bold tabular alignment, and one uncompromising vermilion red signal.",
+      "mood": ["architectural", "objective", "structural", "crisp"],
+      "surfaceModes": ["persuade", "read", "operate"],
+      "bestFor": ["architecture firms", "data journals", "enterprise platforms", "design systems", "conference sites"],
+      "keywords": ["swiss", "grid", "bauhaus", "modernist", "sharp", "enterprise", "architecture", "vermilion", "red", "tabular", "helvetica", "clean"],
+      "fonts": {
+        "display": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+        "body": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+        "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap",
+        "displayWeight": 600,
+        "bodyWeight": 400,
+        "trackingDisplay": "-0.03em",
+        "notes": "Hold strict alignment across grid columns; use IBM Plex Mono for coordinates, dates, and index numbers."
+      },
+      "geometry": {
+        "radiusControl": "2px",
+        "radiusCard": "0px",
+        "radiusPanel": "0px",
+        "radiusPill": "2px",
+        "borderWidth": "1px",
+        "density": "comfortable",
+        "maxWidth": "1360px"
+      },
+      "elevation": {
+        "lightCardShadow": "none",
+        "lightFloatShadow": "0 4px 12px rgba(0, 0, 0, 0.08)",
+        "darkTreatment": "Crisp #111111 canvas with exposed #2E2E2E grid lines and stark #F5F5F5 typography."
+      },
+      "motion": {
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "fastMs": 100,
+        "mediumMs": 160,
+        "slowMs": 240,
+        "style": "Direct, architectural snaps with zero wobble."
+      },
+      "light": {
+        "bgDeep": "#EBEBEB",
+        "bgCanvas": "#FFFFFF",
+        "bgCard": "#F7F7F7",
+        "bgRaised": "#ECECEC",
+        "textPrimary": "#111111",
+        "textSecondary": "#424242",
+        "textMuted": "#636363",
+        "borderHairline": "#D4D4D4",
+        "borderStrong": "#111111",
+        "accent": "#C82323",
+        "accentHover": "#A31B1B",
+        "accentInk": "#FFFFFF",
+        "accentSoft": "#FDECEC",
+        "focusRing": "#C82323",
+        "positive": "#157A3D",
+        "warning": "#9C5B00",
+        "negative": "#C82323"
+      },
+      "dark": {
+        "bgDeep": "#0A0A0A",
+        "bgCanvas": "#111111",
+        "bgCard": "#1A1A1A",
+        "bgRaised": "#262626",
+        "textPrimary": "#F5F5F5",
+        "textSecondary": "#C2C2C2",
+        "textMuted": "#949494",
+        "borderHairline": "#2E2E2E",
+        "borderStrong": "#F5F5F5",
+        "accent": "#FF6B6B",
+        "accentHover": "#FF8787",
+        "accentInk": "#140505",
+        "accentSoft": "#361717",
+        "focusRing": "#FF6B6B",
+        "positive": "#4CC38A",
+        "warning": "#F5B841",
+        "negative": "#FF6B6B"
+      },
+      "components": {
+        "primaryButton": "0px-2px square solid vermilion or black fill, inverted on hover.",
+        "secondaryButton": "1px solid ink border with 0-2px corners.",
+        "card": "Square ruled cell separated by crisp 1px horizontal and vertical lines.",
+        "input": "Square or bottom-ruled field with 0-2px radius and bold focus rule.",
+        "navItem": "Grid-aligned nav items with solid accent square indicator when active.",
+        "badge": "Square mono index tag with 1px rule."
+      },
+      "voice": "Objective, concise, declarative clarity.",
+      "dos": [
+        "Expose horizontal and vertical 1px structural rules intentionally.",
+        "Align every headline edge strictly to the underlying column grid.",
+        "Use stark black/white contrast plus one single vermilion red accent.",
+        "Keep corners 0px to 2px consistently across every component."
+      ],
+      "donts": [
+        "Never use soft shadows, glass blur, or pill buttons.",
+        "Never center-align multi-line body blocks against left-aligned grid rules.",
+        "Never mix rounded cards inside a square grid.",
+        "Never dilute contrast with muddy gray-on-gray text."
+      ]
+    },
+    {
+      "id": "monochrome-edge",
+      "name": "Monochrome Edge",
+      "pack": "modern",
+      "defaultMode": "dark",
+      "tagline": "Stark achromatic developer platform with razor-sharp contrast and zero chromatic clutter.",
+      "description": "Strips away color noise completely into pure black, white, and finely calibrated neutral steps. Highlights product capabilities with crisp inverted CTAs, exposed 1px hairlines, and clean technical typography—ideal when code and shipping speed are the story.",
+      "mood": ["achromatic", "stark", "technical", "decisive"],
+      "surfaceModes": ["operate", "persuade"],
+      "bestFor": ["cloud platforms", "CLI tools", "API docs", "deployment dashboards", "developer SaaS"],
+      "keywords": ["monochrome", "black", "white", "stark", "cli", "cloud", "api", "developer", "minimal", "achromatic", "infra", "modern"],
+      "fonts": {
+        "display": "Inter, ui-sans-serif, system-ui, sans-serif",
+        "body": "Inter, ui-sans-serif, system-ui, sans-serif",
+        "mono": "\"JetBrains Mono\", ui-monospace, monospace",
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap",
+        "displayWeight": 600,
+        "bodyWeight": 400,
+        "trackingDisplay": "-0.03em",
+        "notes": "Use tight -0.03em tracking on hero display heads and crisp JetBrains Mono for terminal commands and status codes."
+      },
+      "geometry": {
+        "radiusControl": "6px",
+        "radiusCard": "8px",
+        "radiusPanel": "12px",
+        "radiusPill": "9999px",
+        "borderWidth": "1px",
+        "density": "comfortable",
+        "maxWidth": "1200px"
+      },
+      "elevation": {
+        "lightCardShadow": "0 1px 2px rgba(0, 0, 0, 0.04)",
+        "lightFloatShadow": "0 12px 32px rgba(0, 0, 0, 0.08)",
+        "darkTreatment": "Pure #000000 canvas + #0F0F0F cards + #242424 crisp hairline borders."
+      },
+      "motion": {
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "fastMs": 120,
+        "mediumMs": 180,
+        "slowMs": 280,
+        "style": "Clean inverted state shifts."
+      },
+      "light": {
+        "bgDeep": "#F4F4F4",
+        "bgCanvas": "#FFFFFF",
+        "bgCard": "#FAFAFA",
+        "bgRaised": "#EFEFEF",
+        "textPrimary": "#0A0A0A",
+        "textSecondary": "#4D4D4D",
+        "textMuted": "#666666",
+        "borderHairline": "#E5E5E5",
+        "borderStrong": "#C4C4C4",
+        "accent": "#0A0A0A",
+        "accentHover": "#2E2E2E",
+        "accentInk": "#FFFFFF",
+        "accentSoft": "#EFEFEF",
+        "focusRing": "#0066CC",
+        "positive": "#0E7A48",
+        "warning": "#9C5B00",
+        "negative": "#C92A2A"
+      },
+      "dark": {
+        "bgDeep": "#000000",
+        "bgCanvas": "#000000",
+        "bgCard": "#0D0D0D",
+        "bgRaised": "#1A1A1A",
+        "textPrimary": "#EDEDED",
+        "textSecondary": "#A6A6A6",
+        "textMuted": "#888888",
+        "borderHairline": "#262626",
+        "borderStrong": "#404040",
+        "accent": "#EDEDED",
+        "accentHover": "#FFFFFF",
+        "accentInk": "#0A0A0A",
+        "accentSoft": "#1F1F1F",
+        "focusRing": "#4DA3FF",
+        "positive": "#3EC98A",
+        "warning": "#F5B841",
+        "negative": "#F87171"
+      },
+      "components": {
+        "primaryButton": "Pure inverted contrast (#EDEDED with #0A0A0A text on dark; #0A0A0A with #FFFFFF on light).",
+        "secondaryButton": "Transparent or bgCard with 1px #262626/#E5E5E5 border.",
+        "card": "Crisp 8px rectangle bounded by 1px hairline border.",
+        "input": "6px clean field with high-contrast focus ring.",
+        "navItem": "Sharp text links shifting from textSecondary to textPrimary on hover.",
+        "badge": "Subtle semantic dot + monospace text for live status only."
+      },
+      "voice": "Confident, minimal, developer-grade precision.",
+      "dos": [
+        "Rely on pure value contrast instead of decorative brand colors.",
+        "Use clean 1px grids to structure features and comparison matrices.",
+        "Reserve chromatic hues exclusively for semantic status (passing, warning, error).",
+        "Keep navigation minimal and scannable."
+      ],
+      "donts": [
+        "Never add glowing rainbow borders around black cards.",
+        "Never drop neon purple gradients into monochrome pages.",
+        "Never use soft blurry shadows on dark mode panels.",
+        "Never clutter headings with eyebrow badges."
+      ]
+    },
+    {
+      "id": "warm-bazaar",
+      "name": "Warm Bazaar",
+      "pack": "modern",
+      "defaultMode": "light",
+      "tagline": "Humanist marketplace canvas where vivid photography meets soft coral CTAs and friendly geometry.",
+      "description": "Designed for travel, booking, commerce, and local discovery apps where visual cards and search pills make browsing effortless. Keeps chrome pure white and warm soft-gray so product photography leads, energized by one vibrant coral-rose action color.",
+      "mood": ["humanist", "welcoming", "tactile", "vibrant"],
+      "surfaceModes": ["persuade", "social", "operate"],
+      "bestFor": ["marketplaces", "booking platforms", "e-commerce", "local discovery", "hospitality"],
+      "keywords": ["marketplace", "booking", "travel", "ecommerce", "store", "listings", "coral", "friendly", "pill", "cards", "listings", "modern"],
+      "fonts": {
+        "display": "\"Plus Jakarta Sans\", ui-sans-serif, system-ui, sans-serif",
+        "body": "\"Plus Jakarta Sans\", ui-sans-serif, system-ui, sans-serif",
+        "mono": "\"JetBrains Mono\", ui-monospace, monospace",
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "displayWeight": 600,
+        "bodyWeight": 400,
+        "trackingDisplay": "-0.02em",
+        "notes": "Keep card titles concise (1 line with ellipsis or 2 lines max) and align prices clearly below titles."
+      },
+      "geometry": {
+        "radiusControl": "9999px",
+        "radiusCard": "14px",
+        "radiusPanel": "20px",
+        "radiusPill": "9999px",
+        "borderWidth": "1px",
+        "density": "spacious",
+        "maxWidth": "1320px"
+      },
+      "elevation": {
+        "lightCardShadow": "0 1px 2px rgba(0, 0, 0, 0.05)",
+        "lightFloatShadow": "0 10px 28px rgba(0, 0, 0, 0.12)",
+        "darkTreatment": "Warm obsidian (#121212 canvas, #1E1E1E cards) with accessible coral-rose accents."
+      },
+      "motion": {
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "fastMs": 140,
+        "mediumMs": 220,
+        "slowMs": 340,
+        "style": "Responsive micro-press on pill controls and crisp image hover zoom within overflow-hidden frames."
+      },
+      "light": {
+        "bgDeep": "#F2F2F2",
+        "bgCanvas": "#FFFFFF",
+        "bgCard": "#FFFFFF",
+        "bgRaised": "#F7F7F7",
+        "textPrimary": "#222222",
+        "textSecondary": "#525252",
+        "textMuted": "#6A6A6A",
+        "borderHairline": "#EBEBEB",
+        "borderStrong": "#C8C8C8",
+        "accent": "#D4143D",
+        "accentHover": "#B50F33",
+        "accentInk": "#FFFFFF",
+        "accentSoft": "#FFF0F3",
+        "focusRing": "#222222",
+        "positive": "#0F7A48",
+        "warning": "#9C5B00",
+        "negative": "#C13515"
+      },
+      "dark": {
+        "bgDeep": "#0D0D0D",
+        "bgCanvas": "#141414",
+        "bgCard": "#1F1F1F",
+        "bgRaised": "#2B2B2B",
+        "textPrimary": "#F5F5F5",
+        "textSecondary": "#BCBCBC",
+        "textMuted": "#969696",
+        "borderHairline": "rgba(255, 255, 255, 0.10)",
+        "borderStrong": "#424242",
+        "accent": "#FF6B86",
+        "accentHover": "#FF8BA0",
+        "accentInk": "#1C050A",
+        "accentSoft": "#381820",
+        "focusRing": "#F5F5F5",
+        "positive": "#46C488",
+        "warning": "#F5B841",
+        "negative": "#FF756B"
+      },
+      "components": {
+        "primaryButton": "Solid coral-rose 8px or full-pill button for primary booking/search CTA.",
+        "secondaryButton": "Crisp white/charcoal button with 1px dark ink border.",
+        "card": "Photography-led 14px card with minimal metadata lines underneath and no enclosing box clutter.",
+        "input": "Segmented pill search bar with subtle shadow and crisp dividers.",
+        "navItem": "Icon-above-label category strip with 2px dark underline for active filter.",
+        "badge": "Compact corner badge overlaid lightly on listing image only when genuinely relevant."
+      },
+      "voice": "Warm, concrete, transparent pricing and clear availability.",
+      "dos": [
+        "Let photography occupy clean fixed-aspect containers without cluttered text overlays.",
+        "Keep search bars tactile with 44px+ hit targets.",
+        "Place key metadata (rating, location, price) in consistent 3-line structure.",
+        "Use coral-rose sparingly for the main CTA and active search button."
+      ],
+      "donts": [
+        "Never box every listing inside heavy gray rectangles if borderless spacing looks cleaner.",
+        "Never use fake urgency banners or pulsing discount badges.",
+        "Never mix jagged 0px buttons with 20px rounded cards.",
+        "Never hide critical fee details until final step."
+      ]
+    },
+    {
+      "id": "pinboard-gallery",
+      "name": "Pinboard Gallery",
+      "pack": "modern",
+      "defaultMode": "light",
+      "tagline": "Warm cream visual discovery masonry canvas anchored by one crisp crimson action accent.",
+      "description": "Engineered for visual bookmarking, moodboards, inspiration indexes, and creative asset libraries. Pairs warm alabaster chrome with generous 16px-radius media tiles and tight 12-16px gutters so curated imagery reads like a contemporary gallery catalog.",
+      "mood": ["curated", "visual-first", "warm-white", "playful-clean"],
+      "surfaceModes": ["social", "read"],
+      "bestFor": ["moodboards", "asset libraries", "design galleries", "recipe collections", "curated directories"],
+      "keywords": ["masonry", "gallery", "moodboard", "collection", "visual", "discovery", "crimson", "red", "creative", "bookmarks", "curated", "pins"],
+      "fonts": {
+        "display": "\"DM Sans\", ui-sans-serif, system-ui, sans-serif",
+        "body": "\"DM Sans\", ui-sans-serif, system-ui, sans-serif",
+        "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap",
+        "displayWeight": 600,
+        "bodyWeight": 400,
+        "trackingDisplay": "-0.02em",
+        "notes": "Keep board titles crisp and short; use muted mono only for item counts and image dimensions."
+      },
+      "geometry": {
+        "radiusControl": "9999px",
+        "radiusCard": "16px",
+        "radiusPanel": "20px",
+        "radiusPill": "9999px",
+        "borderWidth": "1px",
+        "density": "comfortable",
+        "maxWidth": "1440px"
+      },
+      "elevation": {
+        "lightCardShadow": "0 1px 2px rgba(33, 25, 34, 0.04)",
+        "lightFloatShadow": "0 10px 28px rgba(33, 25, 34, 0.12)",
+        "darkTreatment": "Deep warm charcoal (#141413 canvas, #1E1E1C surfaces) so colorful curated tiles stay balanced."
+      },
+      "motion": {
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "fastMs": 130,
+        "mediumMs": 200,
+        "slowMs": 320,
+        "style": "Subtle hover scrim reveal on tiles; no erratic card scaling."
+      },
+      "light": {
+        "bgDeep": "#F4F3EE",
+        "bgCanvas": "#FFFFFF",
+        "bgCard": "#FBFBF9",
+        "bgRaised": "#ECEBE4",
+        "textPrimary": "#1A1816",
+        "textSecondary": "#4B4842",
+        "textMuted": "#66635B",
+        "borderHairline": "#E5E4DE",
+        "borderStrong": "#C8C7BE",
+        "accent": "#C4001D",
+        "accentHover": "#9E0017",
+        "accentInk": "#FFFFFF",
+        "accentSoft": "#FDECEF",
+        "focusRing": "#2B4CE6",
+        "positive": "#166E3E",
+        "warning": "#995700",
+        "negative": "#C4001D"
+      },
+      "dark": {
+        "bgDeep": "#0E0E0D",
+        "bgCanvas": "#151514",
+        "bgCard": "#1F1F1D",
+        "bgRaised": "#2B2B28",
+        "textPrimary": "#F5F4F0",
+        "textSecondary": "#C4C2BA",
+        "textMuted": "#98968E",
+        "borderHairline": "rgba(245, 244, 240, 0.10)",
+        "borderStrong": "#42423D",
+        "accent": "#FF5C6C",
+        "accentHover": "#FF7A87",
+        "accentInk": "#1C0407",
+        "accentSoft": "#36161A",
+        "focusRing": "#7A94FF",
+        "positive": "#4CC38A",
+        "warning": "#F5B841",
+        "negative": "#FF5C6C"
+      },
+      "components": {
+        "primaryButton": "Full-pill crimson Save/Create button.",
+        "secondaryButton": "Warm stone pill (#ECEBE4 light) with dark ink.",
+        "card": "16px rounded media card with clean gutter spacing and subtle hover Save overlay.",
+        "input": "Full-pill global search bar in bgRaised with clear keyboard shortcut.",
+        "navItem": "Pill navigation tabs with inverted dark active state.",
+        "badge": "Minimal format tag in muted warm ink."
+      },
+      "voice": "Crisp, tactile curator language (Save, Board, Collect).",
+      "dos": [
+        "Give visual tiles generous 16px corners and uniform 12px or 16px masonry gutters.",
+        "Keep header and chrome in warm whites/creams so imagery remains focal.",
+        "Show clear Save / Organize action on focus and hover.",
+        "Include real aspect-ratio sizing to eliminate masonry reflow jumps."
+      ],
+      "donts": [
+        "Never wrap masonry images in thick colored borders.",
+        "Never add flashy bounce animations on grid load.",
+        "Never crowd tile captions beyond 1-2 lines.",
+        "Never use blue-purple gradients anywhere on the board."
+      ]
+    },
+    {
+      "id": "nordic-air",
+      "name": "Nordic Air",
+      "pack": "modern",
+      "defaultMode": "light",
+      "tagline": "Scandinavian spatial calm built on mist-white stone, sage moss ink, and generous breathing room.",
+      "description": "Pairs cool stone-tinted whites with deep fjord moss accents and open typographic proportions. Designed for wellness, sustainability, climate, and calm consumer products that need serene clarity without drifting into cold sterile clinical white.",
+      "mood": ["serene", "scandinavian", "spatial", "natural"],
+      "surfaceModes": ["persuade", "read", "operate"],
+      "bestFor": ["climate tech", "health & wellness", "habit trackers", "consumer apps", "studio sites"],
+      "keywords": ["nordic", "scandinavian", "moss", "sage", "green", "calm", "wellness", "climate", "minimal", "airy", "natural", "sustainability"],
+      "fonts": {
+        "display": "\"Instrument Sans\", ui-sans-serif, system-ui, sans-serif",
+        "body": "\"Instrument Sans\", ui-sans-serif, system-ui, sans-serif",
+        "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap",
+        "displayWeight": 500,
+        "bodyWeight": 400,
+        "trackingDisplay": "-0.02em",
+        "notes": "Keep Instrument Sans at 400 and 500 weights with spacious line-height (1.6) for calm readability."
+      },
+      "geometry": {
+        "radiusControl": "10px",
+        "radiusCard": "16px",
+        "radiusPanel": "20px",
+        "radiusPill": "9999px",
+        "borderWidth": "1px",
+        "density": "spacious",
+        "maxWidth": "1240px"
+      },
+      "elevation": {
+        "lightCardShadow": "0 1px 3px rgba(17, 30, 24, 0.04)",
+        "lightFloatShadow": "0 12px 30px rgba(17, 30, 24, 0.08)",
+        "darkTreatment": "Deep spruce-slate dark mode (#101412 canvas, #181E1B cards) with soft moss accents."
+      },
+      "motion": {
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "fastMs": 160,
+        "mediumMs": 240,
+        "slowMs": 400,
+        "style": "Unhurried, calm transitions with gentle fade-and-rise."
+      },
+      "light": {
+        "bgDeep": "#EBEEEC",
+        "bgCanvas": "#F5F7F5",
+        "bgCard": "#FFFFFF",
+        "bgRaised": "#E8ECE9",
+        "textPrimary": "#151D19",
+        "textSecondary": "#435049",
+        "textMuted": "#5E6B64",
+        "borderHairline": "rgba(21, 29, 25, 0.09)",
+        "borderStrong": "#C5CEC9",
+        "accent": "#235A42",
+        "accentHover": "#1A4633",
+        "accentInk": "#FFFFFF",
+        "accentSoft": "#E6F0EB",
+        "focusRing": "#235A42",
+        "positive": "#1F6F49",
+        "warning": "#9A5B13",
+        "negative": "#B8332A"
+      },
+      "dark": {
+        "bgDeep": "#0D110F",
+        "bgCanvas": "#121714",
+        "bgCard": "#1A211D",
+        "bgRaised": "#242D28",
+        "textPrimary": "#EDF2EE",
+        "textSecondary": "#B5C2BA",
+        "textMuted": "#8B9B92",
+        "borderHairline": "rgba(237, 242, 238, 0.10)",
+        "borderStrong": "#35423B",
+        "accent": "#63C79B",
+        "accentHover": "#80D6B0",
+        "accentInk": "#0A1B13",
+        "accentSoft": "#173025",
+        "focusRing": "#63C79B",
+        "positive": "#63C79B",
+        "warning": "#E8B04F",
+        "negative": "#F87171"
+      },
+      "components": {
+        "primaryButton": "Solid fjord moss button, 10px radius, generous horizontal padding.",
+        "secondaryButton": "Soft stone fill in bgRaised with 1px subtle border.",
+        "card": "Clean white or spruce-slate panel with 24-28px internal breathing room.",
+        "input": "Soft stone border with rounded 10px geometry.",
+        "navItem": "Calm horizontal links with ample spacing and subtle hover ink shift.",
+        "badge": "Soft sage tint chip with primary moss ink."
+      },
+      "voice": "Calm, grounded, honest, free of hyperbole.",
+      "dos": [
+        "Use generous vertical padding between sections (96-128px on landing pages).",
+        "Tint grays subtly toward pine/stone so surfaces feel cohesive.",
+        "Use natural daylight photography with subtle muted warmth.",
+        "Keep typography airy and unhurried."
+      ],
+      "donts": [
+        "Never overcrowd screens with dense stat boxes.",
+        "Never introduce neon greens or electric cyan accents.",
+        "Never use harsh pure-black borders on soft mist backgrounds.",
+        "Never hurry transitions with jerky keyframes."
+      ]
+    },
+    {
+      "id": "obsidian-atelier",
+      "name": "Obsidian Atelier",
+      "pack": "premium",
+      "defaultMode": "dark",
+      "tagline": "Quiet warm-obsidian luxury with editorial serif titles and brushed champagne brass highlights.",
+      "description": "Delivers unmistakable high-end restraint through warm near-black obsidian depths, ivory ink, classical display serifs, and brushed champagne accents. Rejects flashy neon or gold gradients in favor of gallery-grade restraint and razor-fine hairlines.",
+      "mood": ["quiet-luxury", "sculpted", "intimate", "refined"],
+      "surfaceModes": ["persuade", "read", "editorial"],
+      "bestFor": ["luxury brands", "bespoke studios", "flagship launches", "concierge services", "hospitality"],
+      "keywords": ["premium", "luxury", "obsidian", "gold", "champagne", "dark", "atelier", "boutique", "bespoke", "flagship", "serif", "exclusive"],
+      "fonts": {
+        "display": "\"Instrument Serif\", Georgia, serif",
+        "body": "\"Plus Jakarta Sans\", ui-sans-serif, system-ui, sans-serif",
+        "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap",
+        "displayWeight": 400,
+        "bodyWeight": 400,
+        "trackingDisplay": "-0.02em",
+        "notes": "Set Instrument Serif generously large (48-72px) at 400 regular weight; keep UI copy in crisp Plus Jakarta Sans."
+      },
+      "geometry": {
+        "radiusControl": "4px",
+        "radiusCard": "8px",
+        "radiusPanel": "12px",
+        "radiusPill": "9999px",
+        "borderWidth": "1px",
+        "density": "spacious",
+        "maxWidth": "1280px"
+      },
+      "elevation": {
+        "lightCardShadow": "0 2px 10px rgba(20, 18, 15, 0.05)",
+        "lightFloatShadow": "0 16px 40px rgba(20, 18, 15, 0.12)",
+        "darkTreatment": "Warm obsidian (#0C0C0B) -> bronze-charcoal (#161513) -> brushed hairline borders."
+      },
+      "motion": {
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "fastMs": 180,
+        "mediumMs": 280,
+        "slowMs": 460,
+        "style": "Slow, poised architectural reveals."
+      },
+      "light": {
+        "bgDeep": "#ECE8DF",
+        "bgCanvas": "#F6F4EF",
+        "bgCard": "#FDFCF9",
+        "bgRaised": "#EFECE4",
+        "textPrimary": "#171512",
+        "textSecondary": "#4B463F",
+        "textMuted": "#696258",
+        "borderHairline": "rgba(23, 21, 18, 0.11)",
+        "borderStrong": "#CCC4B6",
+        "accent": "#755720",
+        "accentHover": "#5D4518",
+        "accentInk": "#FFFFFF",
+        "accentSoft": "#F4EDE0",
+        "focusRing": "#755720",
+        "positive": "#266847",
+        "warning": "#8A5616",
+        "negative": "#A6322B"
+      },
+      "dark": {
+        "bgDeep": "#080807",
+        "bgCanvas": "#0E0E0C",
+        "bgCard": "#161513",
+        "bgRaised": "#21201C",
+        "textPrimary": "#F3EFE6",
+        "textSecondary": "#BDB6A8",
+        "textMuted": "#968E80",
+        "borderHairline": "rgba(243, 239, 230, 0.10)",
+        "borderStrong": "#3A362E",
+        "accent": "#CCA85E",
+        "accentHover": "#DBBC7A",
+        "accentInk": "#141008",
+        "accentSoft": "#292214",
+        "focusRing": "#CCA85E",
+        "positive": "#66C28F",
+        "warning": "#E3AA4D",
+        "negative": "#E56B63"
+      },
+      "components": {
+        "primaryButton": "Solid brushed champagne on dark (or deep antique bronze on light), sharp 4px corners.",
+        "secondaryButton": "1px hairline border button with ivory text and subtle surface fill on hover.",
+        "card": "Sharp-radiused 8px surface with 1px warm border and generous 32px padding.",
+        "input": "Bottom-ruled or 4px bordered field with calm serif or clean sans labels.",
+        "navItem": "Quiet spaced links with subtle underline transition.",
+        "badge": "Ultra-minimal numbered edition mark in IBM Plex Mono."
+      },
+      "voice": "Poised, concise, concrete about craft and provenance; never salesy.",
+      "dos": [
+        "Give headlines ample empty dark/ivory canvas to breathe.",
+        "Use brushed champagne sparingly—never metallic CSS gradients.",
+        "Let photography feature rich natural directional shadows.",
+        "Use fine 1px rules between specifications."
+      ],
+      "donts": [
+        "Never apply shiny gradient text or fake gold-foil CSS shaders.",
+        "Never use puffy 24px rounded cards or bouncy hover jumps.",
+        "Never write hype adjectives like 'luxury revolutionized'.",
+        "Never clutter nav bars with notification bells or pill badges."
+      ]
+    },
+    {
+      "id": "alabaster-maison",
+      "name": "Alabaster Maison",
+      "pack": "premium",
+      "defaultMode": "light",
+      "tagline": "Daylight architectural gallery aesthetic with sculptural contrast serifs and warm limestone paper.",
+      "description": "Exudes gallery-grade permanence in bright daylight: warm alabaster paper, deep charcoal-espresso ink, high-contrast editorial serifs, and understated matte-ink actions. Relies on typography scale, proportions, and photography rather than bright accent hues.",
+      "mood": ["architectural", "gallery", "sculptural", "poised"],
+      "surfaceModes": ["editorial", "persuade", "read"],
+      "bestFor": ["fashion houses", "interior architecture", "design portfolios", "wine & culinary ateliers", "cultural institutions"],
+      "keywords": ["luxury", "daylight", "maison", "gallery", "editorial", "architecture", "serif", "limestone", "alabaster", "premium", "portfolio", "fashion"],
+      "fonts": {
+        "display": "\"Cormorant Garamond\", Georgia, serif",
+        "body": "\"DM Sans\", ui-sans-serif, system-ui, sans-serif",
+        "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap",
+        "displayWeight": 500,
+        "bodyWeight": 400,
+        "trackingDisplay": "-0.02em",
+        "notes": "Ensure Cormorant Garamond is never set smaller than 24px; use DM Sans for all body paragraphs and controls."
+      },
+      "geometry": {
+        "radiusControl": "2px",
+        "radiusCard": "4px",
+        "radiusPanel": "6px",
+        "radiusPill": "9999px",
+        "borderWidth": "1px",
+        "density": "spacious",
+        "maxWidth": "1320px"
+      },
+      "elevation": {
+        "lightCardShadow": "none",
+        "lightFloatShadow": "0 12px 36px rgba(38, 35, 33, 0.09)",
+        "darkTreatment": "Deep gallery slate-umber (#141312) with warm limestone typography."
+      },
+      "motion": {
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "fastMs": 180,
+        "mediumMs": 280,
+        "slowMs": 450,
+        "style": "Measured gallery transitions."
+      },
+      "light": {
+        "bgDeep": "#EEEAE3",
+        "bgCanvas": "#FAF9F7",
+        "bgCard": "#F4F1EC",
+        "bgRaised": "#EAE5DD",
+        "textPrimary": "#211E1C",
+        "textSecondary": "#4F4944",
+        "textMuted": "#6B645D",
+        "borderHairline": "rgba(33, 30, 28, 0.12)",
+        "borderStrong": "#C8C1B8",
+        "accent": "#262321",
+        "accentHover": "#3E3936",
+        "accentInk": "#FAF9F7",
+        "accentSoft": "#EAE5DD",
+        "focusRing": "#262321",
+        "positive": "#246342",
+        "warning": "#8A5614",
+        "negative": "#9E2A2B"
+      },
+      "dark": {
+        "bgDeep": "#0E0D0C",
+        "bgCanvas": "#151412",
+        "bgCard": "#1E1C1A",
+        "bgRaised": "#292623",
+        "textPrimary": "#F5F2EC",
+        "textSecondary": "#C4BEB4",
+        "textMuted": "#989186",
+        "borderHairline": "rgba(245, 242, 236, 0.11)",
+        "borderStrong": "#423D37",
+        "accent": "#E6DFD5",
+        "accentHover": "#F5F2EC",
+        "accentInk": "#151412",
+        "accentSoft": "#292623",
+        "focusRing": "#E6DFD5",
+        "positive": "#66C28F",
+        "warning": "#E3AA4D",
+        "negative": "#E57373"
+      },
+      "components": {
+        "primaryButton": "Solid espresso ink button with alabaster text, 2px sharp corners.",
+        "secondaryButton": "Hairline bordered outline button with subtle hover fill.",
+        "card": "Frameless or 1px hairline limestone panel; avoid rounded bubbles.",
+        "input": "Underline or thin-bordered input field with high whitespace.",
+        "navItem": "Calm editorial links aligned cleanly along a 1px bottom rule.",
+        "badge": "Plain small-size mono text label."
+      },
+      "voice": "Understated, tactile, architectural.",
+      "dos": [
+        "Let photography sit in crisp asymmetric proportions (e.g. 7 columns image, 5 columns text).",
+        "Keep buttons architectural with 0-2px corner radii.",
+        "Use warm matte ink instead of saturated blue or purple CTAs.",
+        "Use generous vertical margins between editorial passages."
+      ],
+      "donts": [
+        "Never set tiny 14px UI labels in Cormorant Garamond.",
+        "Never drop loud saturated accent pills onto limestone paper.",
+        "Never add drop shadows behind gallery photographs.",
+        "Never use generic SaaS feature-icon grids."
+      ]
+    },
+    {
+      "id": "cupertino-glass",
+      "name": "Cupertino Anodized",
+      "pack": "premium",
+      "defaultMode": "light",
+      "tagline": "Precision-milled aluminum silver grounds, crisp typography, and disciplined sapphire focus.",
+      "description": "Inspired by precision industrial hardware: ultra-clean cool silver canvases paired with pure white hardware sheets, tight display typography, and calibrated sapphire action accents. Uses subtle translucent backdrop blur strictly on sticky top navigation rails rather than floating cards.",
+      "mood": ["precision", "anodized", "crisp", "tactile"],
+      "surfaceModes": ["operate", "persuade"],
+      "bestFor": ["consumer hardware", "native-feeling web apps", "audio/video tools", "desktop companions", "product showcases"],
+      "keywords": ["hardware", "anodized", "silver", "sapphire", "precision", "studio", "premium", "native", "clean", "product", "desktop", "app"],
+      "fonts": {
+        "display": "Inter, ui-sans-serif, system-ui, sans-serif",
+        "body": "Inter, ui-sans-serif, system-ui, sans-serif",
+        "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap",
+        "displayWeight": 600,
+        "bodyWeight": 400,
+        "trackingDisplay": "-0.025em",
+        "notes": "Use crisp -0.025em display tracking and keep line lengths comfortable around 60-68ch."
+      },
+      "geometry": {
+        "radiusControl": "10px",
+        "radiusCard": "18px",
+        "radiusPanel": "22px",
+        "radiusPill": "9999px",
+        "borderWidth": "1px",
+        "density": "comfortable",
+        "maxWidth": "1200px"
+      },
+      "elevation": {
+        "lightCardShadow": "0 2px 8px rgba(0, 0, 0, 0.04)",
+        "lightFloatShadow": "0 12px 32px rgba(0, 0, 0, 0.10)",
+        "darkTreatment": "Deep anodized black (#000000 / #161617 / #222224) with crisp 1px specular borders."
+      },
+      "motion": {
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "fastMs": 140,
+        "mediumMs": 220,
+        "slowMs": 360,
+        "style": "Silky, calibrated hardware-grade deceleration."
+      },
+      "light": {
+        "bgDeep": "#ECECEF",
+        "bgCanvas": "#F5F5F7",
+        "bgCard": "#FFFFFF",
+        "bgRaised": "#E8E8ED",
+        "textPrimary": "#1D1D1F",
+        "textSecondary": "#49494D",
+        "textMuted": "#66666B",
+        "borderHairline": "rgba(29, 29, 31, 0.09)",
+        "borderStrong": "#C7C7CC",
+        "accent": "#0062C4",
+        "accentHover": "#004D99",
+        "accentInk": "#FFFFFF",
+        "accentSoft": "#E8F2FC",
+        "focusRing": "#0062C4",
+        "positive": "#167A3C",
+        "warning": "#9C5B00",
+        "negative": "#C92A2A"
+      },
+      "dark": {
+        "bgDeep": "#000000",
+        "bgCanvas": "#0E0E0F",
+        "bgCard": "#1A1A1C",
+        "bgRaised": "#262629",
+        "textPrimary": "#F5F5F7",
+        "textSecondary": "#B8B8BE",
+        "textMuted": "#8E8E95",
+        "borderHairline": "rgba(255, 255, 255, 0.11)",
+        "borderStrong": "#3D3D42",
+        "accent": "#52A8FF",
+        "accentHover": "#78BCFF",
+        "accentInk": "#041629",
+        "accentSoft": "#132940",
+        "focusRing": "#52A8FF",
+        "positive": "#30D158",
+        "warning": "#FFD60A",
+        "negative": "#FF6961"
+      },
+      "components": {
+        "primaryButton": "Full-pill sapphire blue CTA with crisp 500 label.",
+        "secondaryButton": "Outlined pill or subtle silver fill with dark ink.",
+        "card": "Clean 18px rounded white/dark-anodized module with generous internal padding.",
+        "input": "10px rounded input with subtle inner contrast and sharp sapphire focus ring.",
+        "navItem": "Sticky translucent top nav bar (48-52px tall) with clean centered links.",
+        "badge": "Understated hairline tag without glow."
+      },
+      "voice": "Crystal clear, confident, product-led specifications.",
+      "dos": [
+        "Set sticky top bars with subtle backdrop-filter blur and 1px hairline bottom border.",
+        "Contrast crisp #FFFFFF modules cleanly against #F5F5F7 silver canvas.",
+        "Use high-resolution product visuals on clean neutral grounds.",
+        "Keep buttons generous with smooth concentric corners."
+      ],
+      "donts": [
+        "Never apply frosted glass over unreadable busy backgrounds.",
+        "Never mix noisy multi-hue gradients onto hardware showcases.",
+        "Never cram dense tables into large-radius consumer showcase cards.",
+        "Never use exclamation marks on feature titles."
+      ]
+    },
+    {
+      "id": "veridian-private",
+      "name": "Veridian Private",
+      "pack": "premium",
+      "defaultMode": "light",
+      "tagline": "Heritage racing-emerald and soft ivory palette crafted for executive advisory and private banking.",
+      "description": "Combines soft ivory paper with deep British racing-emerald accents and dignified Fraunces display typography. Evokes private wealth advisory, legal firms, and timeless member institutions without leaning on clichés or dated ornamentation.",
+      "mood": ["heritage", "dignified", "trustworthy", "composed"],
+      "surfaceModes": ["read", "persuade", "operate"],
+      "bestFor": ["wealth management", "legal practices", "private clubs", "executive reporting", "real estate advisory"],
+      "keywords": ["private", "wealth", "executive", "emerald", "green", "heritage", "banking", "legal", "advisory", "classic", "premium", "ivory"],
+      "fonts": {
+        "display": "\"Fraunces\", Georgia, serif",
+        "body": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+        "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap",
+        "displayWeight": 500,
+        "bodyWeight": 400,
+        "trackingDisplay": "-0.02em",
+        "notes": "Use Fraunces at optical display sizes (32-60px) and IBM Plex Sans + Mono for financial figures and body text."
+      },
+      "geometry": {
+        "radiusControl": "6px",
+        "radiusCard": "10px",
+        "radiusPanel": "14px",
+        "radiusPill": "9999px",
+        "borderWidth": "1px",
+        "density": "spacious",
+        "maxWidth": "1220px"
+      },
+      "elevation": {
+        "lightCardShadow": "0 1px 3px rgba(12, 22, 18, 0.05)",
+        "lightFloatShadow": "0 12px 32px rgba(12, 22, 18, 0.10)",
+        "darkTreatment": "Deep forest obsidian (#0C1612 canvas, #13211B cards) with muted sage-gold hairlines."
+      },
+      "motion": {
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "fastMs": 160,
+        "mediumMs": 240,
+        "slowMs": 380,
+        "style": "Composed, dignified transitions."
+      },
+      "light": {
+        "bgDeep": "#ECEAE2",
+        "bgCanvas": "#F7F6F1",
+        "bgCard": "#FFFFFF",
+        "bgRaised": "#EFECE3",
+        "textPrimary": "#131C18",
+        "textSecondary": "#404E47",
+        "textMuted": "#5C6B63",
+        "borderHairline": "rgba(19, 28, 24, 0.10)",
+        "borderStrong": "#C4C2B7",
+        "accent": "#184A3B",
+        "accentHover": "#11362B",
+        "accentInk": "#FFFFFF",
+        "accentSoft": "#E6EFEA",
+        "focusRing": "#184A3B",
+        "positive": "#185E42",
+        "warning": "#8F5A12",
+        "negative": "#A62B2B"
+      },
+      "dark": {
+        "bgDeep": "#08100D",
+        "bgCanvas": "#0D1713",
+        "bgCard": "#14221C",
+        "bgRaised": "#1D2F27",
+        "textPrimary": "#F2F1EB",
+        "textSecondary": "#BCC6BF",
+        "textMuted": "#8FA197",
+        "borderHairline": "rgba(242, 241, 235, 0.11)",
+        "borderStrong": "#2E453B",
+        "accent": "#5AC29B",
+        "accentHover": "#79D1B0",
+        "accentInk": "#081610",
+        "accentSoft": "#153226",
+        "focusRing": "#5AC29B",
+        "positive": "#5AC29B",
+        "warning": "#E6AF4B",
+        "negative": "#F87171"
+      },
+      "components": {
+        "primaryButton": "Solid racing-emerald fill with crisp ivory text and 6px corners.",
+        "secondaryButton": "1px hairline framed white/forest card button.",
+        "card": "Crisp white card on ivory ground with thin horizontal rule inside headers.",
+        "input": "Sharp 6px bordered fields with tabular numeric formatting.",
+        "navItem": "Calm horizontal menu with subtle emerald underline for active route.",
+        "badge": "Subtle warm stone tag with mono typography."
+      },
+      "voice": "Composed, authoritative, clear, zero slang or hype.",
+      "dos": [
+        "Set portfolio numbers and yield metrics in tabular monospace or aligned sans.",
+        "Pair racing emerald cleanly with ivory paper and warm black ink.",
+        "Keep lines and rules crisp and architectural.",
+        "Design clear multi-step disclosure panels for complex data."
+      ],
+      "donts": [
+        "Never use crypto-style neon greens or glowing badges.",
+        "Never add stock handshake clichés or unverified stat counters.",
+        "Never over-round buttons into toy pills.",
+        "Never use thin gray text on dark green without verifying 4.5:1 contrast."
+      ]
+    },
+    {
+      "id": "broadsheet-press",
+      "name": "Broadsheet Press",
+      "pack": "vintage",
+      "defaultMode": "light",
+      "tagline": "Printed newspaper stock, blunt slab headlines, hairline column rules, and dried-brick editorial ink.",
+      "description": "Translates authentic print broadsheet typography to the browser: pale newsprint stock, warm black ink, Zilla Slab headlines over calm Spectral book prose, exposed column dividers, and a single dried-brick editorial signal. Reads reported and edited rather than assembled.",
+      "mood": ["editorial", "reported", "archival", "tactile"],
+      "surfaceModes": ["editorial", "read"],
+      "bestFor": ["newsletters", "publications", "essays", "journals", "research digests"],
+      "keywords": ["vintage", "newspaper", "broadsheet", "editorial", "magazine", "journalism", "press", "print", "slab", "serif", "column", "publication"],
+      "fonts": {
+        "display": "\"Zilla Slab\", Georgia, serif",
+        "body": "\"Spectral\", Georgia, serif",
+        "mono": "\"Libre Franklin\", ui-sans-serif, sans-serif",
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Spectral:ital,wght@0,400;0,500;1,400&family=Libre+Franklin:wght@400;500&display=swap",
+        "displayWeight": 700,
+        "bodyWeight": 400,
+        "trackingDisplay": "-0.02em",
+        "notes": "Use Libre Franklin strictly as compact tabular agate for dates, tables, and listings; keep headings in Zilla Slab and reading body in Spectral."
+      },
+      "geometry": {
+        "radiusControl": "0px",
+        "radiusCard": "0px",
+        "radiusPanel": "0px",
+        "radiusPill": "0px",
+        "borderWidth": "1px",
+        "density": "comfortable",
+        "maxWidth": "1240px"
+      },
+      "elevation": {
+        "lightCardShadow": "none",
+        "lightFloatShadow": "0 8px 24px rgba(24, 23, 20, 0.12)",
+        "darkTreatment": "Warm charcoal news-desk mode (#161512 canvas, #201E1A panels) with faded newsprint ink."
+      },
+      "motion": {
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "fastMs": 110,
+        "mediumMs": 170,
+        "slowMs": 260,
+        "style": "Instant print-press ink snaps; zero decorative motion."
+      },
+      "light": {
+        "bgDeep": "#E6E0D3",
+        "bgCanvas": "#F3EFE6",
+        "bgCard": "#EAE4D7",
+        "bgRaised": "#DFD7C6",
+        "textPrimary": "#1A1815",
+        "textSecondary": "#3D3933",
+        "textMuted": "#5E584F",
+        "borderHairline": "#C7BFAE",
+        "borderStrong": "#2B2823",
+        "accent": "#992626",
+        "accentHover": "#781C1C",
+        "accentInk": "#FFFFFF",
+        "accentSoft": "#F2DFDC",
+        "focusRing": "#992626",
+        "positive": "#1F6642",
+        "warning": "#8A5212",
+        "negative": "#992626"
+      },
+      "dark": {
+        "bgDeep": "#11100E",
+        "bgCanvas": "#181714",
+        "bgCard": "#22201C",
+        "bgRaised": "#2D2A24",
+        "textPrimary": "#EFEAE0",
+        "textSecondary": "#C4BDB0",
+        "textMuted": "#999184",
+        "borderHairline": "#38342D",
+        "borderStrong": "#C4BDB0",
+        "accent": "#E87461",
+        "accentHover": "#F09080",
+        "accentInk": "#1C0C09",
+        "accentSoft": "#361D19",
+        "focusRing": "#E87461",
+        "positive": "#58BA84",
+        "warning": "#E8A64D",
+        "negative": "#E87461"
+      },
+      "components": {
+        "primaryButton": "Square 0px button in ink or dried brick, crisp 1px borders.",
+        "secondaryButton": "Square outline button with 1px ink border.",
+        "card": "0px ruled block separated by 1px column hairlines and 3px double top rules.",
+        "input": "Square 1px ruled field on pale newsprint stock.",
+        "navItem": "Masthead-ruled horizontal tabs separated by vertical hairlines.",
+        "badge": "Bracketed plain text edition tag in dried brick or muted ink."
+      },
+      "voice": "Reported, factual, dateline-clear, unhurried editorial prose.",
+      "dos": [
+        "Use 0px corners everywhere—cards, buttons, inputs, images.",
+        "Structure layouts with hairline column dividers and solid 2-3px section top rules.",
+        "Treat photographs with subtle monochrome or warm print tone.",
+        "Include clean datelines and bylines in muted Spectral."
+      ],
+      "donts": [
+        "Never add rounded cards or drop shadows on newsprint.",
+        "Never place neon accent buttons onto broadsheet layouts.",
+        "Never use wide-tracked uppercase sans eyebrows.",
+        "Never mix casual emojis into printed prose."
+      ]
+    },
+    {
+      "id": "midcentury-studio",
+      "name": "Midcentury Studio",
+      "pack": "vintage",
+      "defaultMode": "light",
+      "tagline": "1960s industrial workshop prospectus with warm putty ground, bold geometric caps, and signal vermilion.",
+      "description": "Channels mid-century European industrial design schools and tactile workshop manuals: warm putty stock, crisp 2px ink framing, geometric sans titles paired with practical readable body text, and bold flat primary accents used with architectural discipline.",
+      "mood": ["retro-modern", "tactile", "geometric", "craftsman"],
+      "surfaceModes": ["persuade", "read", "operate"],
+      "bestFor": ["creative schools", "hardware studios", "design agencies", "events & exhibitions", "independent software"],
+      "keywords": ["vintage", "retro", "midcentury", "1960s", "poster", "workshop", "studio", "bauhaus", "putty", "orange", "geometric", "print"],
+      "fonts": {
+        "display": "\"Jost\", Futura, sans-serif",
+        "body": "\"Karla\", ui-sans-serif, system-ui, sans-serif",
+        "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Karla:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap",
+        "displayWeight": 600,
+        "bodyWeight": 400,
+        "trackingDisplay": "-0.015em",
+        "notes": "Set structural numbers, workshop dates, and module indexes large in Jost."
+      },
+      "geometry": {
+        "radiusControl": "2px",
+        "radiusCard": "2px",
+        "radiusPanel": "4px",
+        "radiusPill": "2px",
+        "borderWidth": "2px",
+        "density": "comfortable",
+        "maxWidth": "1260px"
+      },
+      "elevation": {
+        "lightCardShadow": "none",
+        "lightFloatShadow": "0 6px 18px rgba(28, 27, 25, 0.12)",
+        "darkTreatment": "Warm chalk-on-blackboard (#1C1B19 canvas, #262522 panels) with warm orange signal."
+      },
+      "motion": {
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "fastMs": 120,
+        "mediumMs": 180,
+        "slowMs": 260,
+        "style": "Direct mechanical press."
+      },
+      "light": {
+        "bgDeep": "#E5E0D5",
+        "bgCanvas": "#EFECE4",
+        "bgCard": "#F8F6F0",
+        "bgRaised": "#E2DDD0",
+        "textPrimary": "#1C1B19",
+        "textSecondary": "#45423C",
+        "textMuted": "#5E5A52",
+        "borderHairline": "#C7C0B2",
+        "borderStrong": "#1C1B19",
+        "accent": "#B84014",
+        "accentHover": "#94320E",
+        "accentInk": "#FFFFFF",
+        "accentSoft": "#F7E6DF",
+        "focusRing": "#1E4D8C",
+        "positive": "#1F6840",
+        "warning": "#995B00",
+        "negative": "#B8251E"
+      },
+      "dark": {
+        "bgDeep": "#141311",
+        "bgCanvas": "#1C1B19",
+        "bgCard": "#262522",
+        "bgRaised": "#33312D",
+        "textPrimary": "#F2EFE8",
+        "textSecondary": "#C4BEB2",
+        "textMuted": "#999386",
+        "borderHairline": "#3D3A34",
+        "borderStrong": "#F2EFE8",
+        "accent": "#F07C4A",
+        "accentHover": "#F5966E",
+        "accentInk": "#1C0D06",
+        "accentSoft": "#382117",
+        "focusRing": "#78A9FF",
+        "positive": "#58BA84",
+        "warning": "#F0B449",
+        "negative": "#F47068"
+      },
+      "components": {
+        "primaryButton": "Solid signal burnt-orange or ink fill, 2px crisp border, 2px corners.",
+        "secondaryButton": "Putty card fill with crisp 2px ink border.",
+        "card": "Boxed 2px ink-ruled timetable/specification cells on warm paper.",
+        "input": "Crisp 2px bordered field with zero drop shadow.",
+        "navItem": "Numbered or tabular grid navigation.",
+        "badge": "Flat rectangular index tag."
+      },
+      "voice": "Practical, studio-direct, concrete specifications and dates.",
+      "dos": [
+        "Box specifications, timetables, and specs cleanly with 1px and 2px ink rules.",
+        "Contrast warm putty paper (#EFECE4) against brighter card stock (#F8F6F0).",
+        "Use geometric numerals confidently at display scale.",
+        "Keep photography high-contrast and honest."
+      ],
+      "donts": [
+        "Never add blurred background blobs or translucent glass panels.",
+        "Never use soft 16px pill corners on vintage prospectus layouts.",
+        "Never scatter rainbow gradients—keep accents flat and graphic.",
+        "Never invent fake awards or filler hype copy."
+      ]
+    },
+    {
+      "id": "archival-vellum",
+      "name": "Archival Vellum",
+      "pack": "vintage",
+      "defaultMode": "light",
+      "tagline": "Old-world bookshop and letterpress parchment paired with umber ink and ultramarine pigment.",
+      "description": "Designed for roasteries, artisan goods, bookshops, heritage archives, and craft makers. Anchors warm parchment stock and deep umber ink with expressive serif headings, hairline double-rules, and one genuine ultramarine pigment accent.",
+      "mood": ["artisanal", "heritage", "bookish", "authentic"],
+      "surfaceModes": ["editorial", "read", "persuade"],
+      "bestFor": ["coffee roasteries", "bookshops", "artisan commerce", "museums", "cultural journals"],
+      "keywords": ["vintage", "parchment", "vellum", "antique", "bookshop", "roastery", "craft", "artisan", "ultramarine", "heritage", "paper", "classic"],
+      "fonts": {
+        "display": "\"Fraunces\", Georgia, serif",
+        "body": "\"Hanken Grotesk\", ui-sans-serif, system-ui, sans-serif",
+        "mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap",
+        "displayWeight": 400,
+        "bodyWeight": 400,
+        "trackingDisplay": "-0.015em",
+        "notes": "Pair soft Fraunces display heads with clean Hanken Grotesk body copy for effortless modern readability on old-world stock."
+      },
+      "geometry": {
+        "radiusControl": "3px",
+        "radiusCard": "4px",
+        "radiusPanel": "6px",
+        "radiusPill": "9999px",
+        "borderWidth": "1px",
+        "density": "spacious",
+        "maxWidth": "1160px"
+      },
+      "elevation": {
+        "lightCardShadow": "0 2px 6px rgba(46, 36, 24, 0.06)",
+        "lightFloatShadow": "0 12px 28px rgba(46, 36, 24, 0.12)",
+        "darkTreatment": "Warm library-leather umber (#191512 canvas, #231D18 stock) with pale vellum ink."
+      },
+      "motion": {
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "fastMs": 150,
+        "mediumMs": 230,
+        "slowMs": 360,
+        "style": "Unhurried editorial pacing."
+      },
+      "light": {
+        "bgDeep": "#EBE1CE",
+        "bgCanvas": "#F5EFE2",
+        "bgCard": "#FAF6EC",
+        "bgRaised": "#E9DEC8",
+        "textPrimary": "#2B2219",
+        "textSecondary": "#524436",
+        "textMuted": "#6B5B4A",
+        "borderHairline": "#D4C6AD",
+        "borderStrong": "#8F7D63",
+        "accent": "#253F8A",
+        "accentHover": "#1B2E66",
+        "accentInk": "#FFFFFF",
+        "accentSoft": "#E7ECF7",
+        "focusRing": "#253F8A",
+        "positive": "#246342",
+        "warning": "#8A5412",
+        "negative": "#9C2B23"
+      },
+      "dark": {
+        "bgDeep": "#120F0D",
+        "bgCanvas": "#191512",
+        "bgCard": "#231D18",
+        "bgRaised": "#302821",
+        "textPrimary": "#F2EAD9",
+        "textSecondary": "#C9BFA9",
+        "textMuted": "#9D917B",
+        "borderHairline": "#3D332A",
+        "borderStrong": "#7A6A57",
+        "accent": "#88A6F2",
+        "accentHover": "#A5BDF6",
+        "accentInk": "#0E1529",
+        "accentSoft": "#1B2542",
+        "focusRing": "#88A6F2",
+        "positive": "#5DB882",
+        "warning": "#E8A64D",
+        "negative": "#EB6F65"
+      },
+      "components": {
+        "primaryButton": "Solid ultramarine pigment or 1px ink outline button, crisp 3px radius.",
+        "secondaryButton": "Warm card stock button with subtle hairline.",
+        "card": "Light cotton-vellum card with inner hairline rule and warm micro-shadow.",
+        "input": "Bottom-ruled or 1px tan-bordered field.",
+        "navItem": "Clean horizontal ledger links with ultramarine underline on active.",
+        "badge": "Numbered edition label in muted mono."
+      },
+      "voice": "Object-precise, tactile, unhurried heritage tone.",
+      "dos": [
+        "Set long headlines in light Fraunces with generous breathing space.",
+        "Keep ultramarine pigment rare—underlines, primary buttons, and active markers.",
+        "Use warm umber text (#2B2219) instead of cold #000000.",
+        "Frame product photos with clean warm daylight tones."
+      ],
+      "donts": [
+        "Never apply distressed grunge textures or fake coffee-stain graphics.",
+        "Never mix futuristic neon cyan or purple accents into parchment.",
+        "Never set body paragraphs in heavy display serifs.",
+        "Never use generic 'Shop Now!' hype copy."
+      ]
+    },
+    {
+      "id": "amber-instrument",
+      "name": "Amber Instrument",
+      "pack": "vintage",
+      "defaultMode": "dark",
+      "tagline": "Anodized analog hardware chassis with tactile phosphor-amber telemetry and precision mono readouts.",
+      "description": "Inspired by vintage audio synthesizers, precision field instruments, and anodized dark control decks. Uses warm gunmetal chassis layers, calibrated amber numeric readouts, and tight mechanical borders instead of clichéd neon CRT green or cyber-slop.",
+      "mood": ["analog", "tactile", "calibrated", "retro-technical"],
+      "surfaceModes": ["operate", "persuade"],
+      "bestFor": ["audio plugins", "hardware companions", "synthesizers", "telemetry meters", "retro developer tools"],
+      "keywords": ["vintage", "analog", "hardware", "audio", "synth", "amber", "instrument", "console", "dark", "telemetry", "retro", "studio"],
+      "fonts": {
+        "display": "\"Space Grotesk\", ui-sans-serif, sans-serif",
+        "body": "\"IBM Plex Sans\", ui-sans-serif, sans-serif",
+        "mono": "\"JetBrains Mono\", ui-monospace, monospace",
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=IBM+Plex+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap",
+        "displayWeight": 500,
+        "bodyWeight": 400,
+        "trackingDisplay": "-0.02em",
+        "notes": "Set dial readouts, dB values, and frequencies in tabular JetBrains Mono."
+      },
+      "geometry": {
+        "radiusControl": "4px",
+        "radiusCard": "8px",
+        "radiusPanel": "10px",
+        "radiusPill": "9999px",
+        "borderWidth": "1px",
+        "density": "compact",
+        "maxWidth": "1320px"
+      },
+      "elevation": {
+        "lightCardShadow": "0 1px 2px rgba(20, 19, 17, 0.06)",
+        "lightFloatShadow": "0 10px 24px rgba(20, 19, 17, 0.12)",
+        "darkTreatment": "Anodized gunmetal surfaces (#141311 / #1C1B18 / #262420) with subtle 1px top bezel highlights."
+      },
+      "motion": {
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "fastMs": 100,
+        "mediumMs": 160,
+        "slowMs": 240,
+        "style": "Detented hardware switch snaps."
+      },
+      "light": {
+        "bgDeep": "#E8E3D9",
+        "bgCanvas": "#F2EFE9",
+        "bgCard": "#FAF8F3",
+        "bgRaised": "#E5DFD3",
+        "textPrimary": "#1B1916",
+        "textSecondary": "#48433B",
+        "textMuted": "#625B50",
+        "borderHairline": "#CEC7B8",
+        "borderStrong": "#9C9280",
+        "accent": "#944E0E",
+        "accentHover": "#783E0A",
+        "accentInk": "#FFFFFF",
+        "accentSoft": "#F7E9D9",
+        "focusRing": "#944E0E",
+        "positive": "#1D6B43",
+        "warning": "#944E0E",
+        "negative": "#B42B22"
+      },
+      "dark": {
+        "bgDeep": "#0F0E0C",
+        "bgCanvas": "#141311",
+        "bgCard": "#1C1B18",
+        "bgRaised": "#262420",
+        "textPrimary": "#EFECE4",
+        "textSecondary": "#BDB6A7",
+        "textMuted": "#968E7F",
+        "borderHairline": "rgba(239, 236, 228, 0.10)",
+        "borderStrong": "#454038",
+        "accent": "#E59235",
+        "accentHover": "#F0A756",
+        "accentInk": "#170F05",
+        "accentSoft": "#2E2112",
+        "focusRing": "#E59235",
+        "positive": "#58BA84",
+        "warning": "#E59235",
+        "negative": "#F06E63"
+      },
+      "components": {
+        "primaryButton": "Solid phosphor-amber control with dark ink on dark chassis, crisp 4px radius.",
+        "secondaryButton": "Gunmetal raised keycap with 1px hairline border.",
+        "card": "Recessed or raised instrument rack module with crisp 1px edge and subtle top bevel.",
+        "input": "Monospace numeric input inside recessed dark well.",
+        "navItem": "Tactile tab selector with active amber status dot (live state only).",
+        "badge": "Calibrated monospace readout label."
+      },
+      "voice": "Technical, tactile, hardware-authentic.",
+      "dos": [
+        "Pair warm gunmetal surfaces with warm amber readouts.",
+        "Use monospace tabular numbers for every telemetry reading.",
+        "Keep borders razor-clean at 4-8px radius.",
+        "Provide crisp keyboard navigation across control banks."
+      ],
+      "donts": [
+        "Never simulate blurry CRT scanline filters over readable body text.",
+        "Never add neon purple glow effects behind dials.",
+        "Never animate dials or meters continuously without live data.",
+        "Never use low-contrast gray-on-black text for technical parameters."
+      ]
+    },
+    {
+      "id": "phosphor-shell",
+      "name": "Phosphor Shell",
+      "pack": "cool",
+      "defaultMode": "dark",
+      "tagline": "Matte pine-obsidian shell aesthetic with disciplined terminal mint and crisp monospace cadence.",
+      "description": "Built for developers who live in the terminal without drifting into cliché green-on-black Matrix costumes. Uses subtle pine-tinted dark surfaces, calm readable sans/mono pairing, and restrained terminal-mint highlights for commands, diffs, and live checks.",
+      "mood": ["shell-native", "technical", "crisp", "understated"],
+      "surfaceModes": ["operate", "read", "persuade"],
+      "bestFor": ["CLI products", "developer tools", "CI/CD monitors", "SDK landing pages", "log viewers"],
+      "keywords": ["cool", "terminal", "shell", "cli", "mint", "developer", "code", "logs", "sdk", "monospace", "dark", "hacker"],
+      "fonts": {
+        "display": "\"JetBrains Mono\", ui-monospace, monospace",
+        "body": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+        "mono": "\"JetBrains Mono\", ui-monospace, monospace",
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap",
+        "displayWeight": 500,
+        "bodyWeight": 400,
+        "trackingDisplay": "-0.02em",
+        "notes": "Keep prose paragraphs in IBM Plex Sans for effortless reading; use JetBrains Mono for hero titles, commands, and metrics."
+      },
+      "geometry": {
+        "radiusControl": "4px",
+        "radiusCard": "6px",
+        "radiusPanel": "8px",
+        "radiusPill": "4px",
+        "borderWidth": "1px",
+        "density": "compact",
+        "maxWidth": "1240px"
+      },
+      "elevation": {
+        "lightCardShadow": "0 1px 2px rgba(13, 18, 14, 0.05)",
+        "lightFloatShadow": "0 8px 24px rgba(13, 18, 14, 0.09)",
+        "darkTreatment": "Subtle pine-charcoal layering (#0B0E0C -> #121714 -> #1B231E) with hairline structural rules."
+      },
+      "motion": {
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "fastMs": 100,
+        "mediumMs": 150,
+        "slowMs": 220,
+        "style": "Instant terminal-grade feedback."
+      },
+      "light": {
+        "bgDeep": "#EAEFEA",
+        "bgCanvas": "#F4F7F4",
+        "bgCard": "#FFFFFF",
+        "bgRaised": "#E7EEE7",
+        "textPrimary": "#111A14",
+        "textSecondary": "#3D4C42",
+        "textMuted": "#58685E",
+        "borderHairline": "#D0DBD1",
+        "borderStrong": "#9BB09E",
+        "accent": "#0E6B4F",
+        "accentHover": "#0A523C",
+        "accentInk": "#FFFFFF",
+        "accentSoft": "#E2F4ED",
+        "focusRing": "#0E6B4F",
+        "positive": "#0E6B4F",
+        "warning": "#995B00",
+        "negative": "#C42B2B"
+      },
+      "dark": {
+        "bgDeep": "#090C0A",
+        "bgCanvas": "#0E1210",
+        "bgCard": "#141A17",
+        "bgRaised": "#1D2621",
+        "textPrimary": "#ECF2EE",
+        "textSecondary": "#AFC0B5",
+        "textMuted": "#85998D",
+        "borderHairline": "rgba(236, 242, 238, 0.10)",
+        "borderStrong": "#314038",
+        "accent": "#3BD69A",
+        "accentHover": "#61E0AF",
+        "accentInk": "#081710",
+        "accentSoft": "#122E22",
+        "focusRing": "#3BD69A",
+        "positive": "#3BD69A",
+        "warning": "#F0B449",
+        "negative": "#F87171"
+      },
+      "components": {
+        "primaryButton": "Solid terminal mint button with dark pine ink (dark) or deep forest fill (light), 4px radius.",
+        "secondaryButton": "Raised pine surface with 1px border.",
+        "card": "Crisp 6px container with top status rule and clean code/diff spacing.",
+        "input": "Shell-styled CLI input with subtle `$` prefix and instant copy feedback.",
+        "navItem": "Sharp mono links with subtle active background fill.",
+        "badge": "Compact keycap or version tag in muted mono."
+      },
+      "voice": "Terse, command-verified, engineer-to-engineer.",
+      "dos": [
+        "Set install snippets and CLI blocks inside bgDeep with one-click copy.",
+        "Use real diff syntax coloring tuned smoothly into the palette.",
+        "Keep buttons sharp at 4px radius.",
+        "Display build status and latency in tabular figures."
+      ],
+      "donts": [
+        "Never draw fake macOS red-yellow-green traffic-light window dots around every card.",
+        "Never use glowing #00FF00 text shadows.",
+        "Never place emojis in command documentation.",
+        "Never animate typing loops endlessly."
+      ]
+    },
+    {
+      "id": "cobalt-drafting",
+      "name": "Cobalt Drafting",
+      "pack": "cool",
+      "defaultMode": "light",
+      "tagline": "Architectural drafting-table precision with blueprint cobalt highlights and crisp technical grids.",
+      "description": "Inspired by engineering CAD blueprints and architectural drafting vellum. Pairs crisp cool drafting paper (or deep midnight-indigo blueprint mode) with structural grid lines, Space Grotesk headings, and vivid drafting cobalt for active schematics and primary CTAs.",
+      "mood": ["architectural", "blueprint", "cool", "technical"],
+      "surfaceModes": ["persuade", "operate", "read"],
+      "bestFor": ["CAD/3D tools", "mapping & spatial apps", "infrastructure diagrams", "engineering agencies", "hardware specs"],
+      "keywords": ["cool", "cobalt", "blue", "blueprint", "drafting", "architecture", "cad", "engineering", "diagrams", "spatial", "technical", "clean"],
+      "fonts": {
+        "display": "\"Space Grotesk\", ui-sans-serif, sans-serif",
+        "body": "Inter, ui-sans-serif, system-ui, sans-serif",
+        "mono": "\"JetBrains Mono\", ui-monospace, monospace",
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap",
+        "displayWeight": 600,
+        "bodyWeight": 400,
+        "trackingDisplay": "-0.025em",
+        "notes": "Keep coordinates, tolerances, and blueprint indices in JetBrains Mono; use Space Grotesk strictly for headings and hero titles."
+      },
+      "geometry": {
+        "radiusControl": "4px",
+        "radiusCard": "6px",
+        "radiusPanel": "8px",
+        "radiusPill": "9999px",
+        "borderWidth": "1px",
+        "density": "comfortable",
+        "maxWidth": "1320px"
+      },
+      "elevation": {
+        "lightCardShadow": "0 1px 2px rgba(15, 29, 64, 0.05)",
+        "lightFloatShadow": "0 12px 28px rgba(15, 29, 64, 0.12)",
+        "darkTreatment": "Deep cyanotype midnight (#0B1220 canvas, #111C30 cards) with crisp drafting blue hairlines."
+      },
+      "motion": {
+        "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "fastMs": 130,
+        "mediumMs": 200,
+        "slowMs": 300,
+        "style": "Vector-crisp snaps along axis."
+      },
+      "light": {
+        "bgDeep": "#E9EFF8",
+        "bgCanvas": "#F4F7FB",
+        "bgCard": "#FFFFFF",
+        "bgRaised": "#E6EDF8",
+        "textPrimary": "#0F172A",
+        "textSecondary": "#3D4B63",
+        "textMuted": "#596882",
+        "borderHairline": "#D3DEEE",
+        "borderStrong": "#9BB2D4",
+        "accent": "#1D4ED8",
+        "accentHover": "#1E40AF",
+        "accentInk": "#FFFFFF",
+        "accentSoft": "#E8F0FE",
+        "focusRing": "#1D4ED8",
+        "positive": "#137547",
+        "warning": "#9C5B00",
+        "negative": "#C92A2A"
+      },
+      "dark": {
+        "bgDeep": "#070C17",
+        "bgCanvas": "#0B1220",
+        "bgCard": "#121D33",
+        "bgRaised": "#1A2947",
+        "textPrimary": "#EDF2FA",
+        "textSecondary": "#B5C3DB",
+        "textMuted": "#8B9EBF",
+        "borderHairline": "rgba(181, 195, 219, 0.14)",
+        "borderStrong": "#354B73",
+        "accent": "#6EA8FE",
+        "accentHover": "#92BFFE",
+        "accentInk": "#071226",
+        "accentSoft": "#182A4A",
+        "focusRing": "#6EA8FE",
+        "positive": "#46C488",
+        "warning": "#F5B841",
+        "negative": "#F87171"
+      },
+      "components": {
+        "primaryButton": "Solid drafting cobalt CTA, 4px crisp architectural corners.",
+        "secondaryButton": "White/midnight surface with 1px structural hairline border.",
+        "card": "6px clean schematic card with faint crosshairs or coordinate labels when meaningful.",
+        "input": "Crisp 4px bordered input with monospace focus states.",
+        "navItem": "Technical index tabs with cobalt active rule.",
+        "badge": "Small bordered mono badge for version or scale specs."
+      },
+      "voice": "Exact, measured, spatial-technical clarity.",
+      "dos": [
+        "Use crisp 1px cool-slate borders and clean grid coordinates.",
+        "Keep cobalt focused on primary buttons, active diagram states, and links.",
+        "Present technical specs in aligned key-value tables.",
+        "Maintain sharp 4-6px corner geometry consistently."
+      ],
+      "donts": [
+        "Never scatter glowing futuristic HUD rings across the background.",
+        "Never use purple-to-cyan gradients.",
+        "Never write vague copy where exact dimensions or metrics fit.",
+        "Never round structural cards into soft consumer bubbles."
+      ]
+    }
+  ]
+}

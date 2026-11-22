@@ -1,0 +1,97 @@
+/* Theme: Parchment Editorial (parchment-editorial) | Pack: everyday-apps | Default: light */
+/* Webfont: <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"> */
+
+:root {
+  color-scheme: light;
+  --bg-deep: #EFE9DE;
+  --bg-canvas: #FAF9F5;
+  --bg-card: #FFFFFF;
+  --bg-raised: #F3EFE6;
+  --text-primary: #141413;
+  --text-secondary: #4F4D47;
+  --text-muted: #69665E;
+  --border-hairline: rgba(20, 20, 19, 0.10);
+  --border-strong: #D8D0C3;
+  --accent: #AE4F2E;
+  --accent-hover: #923F22;
+  --accent-ink: #FFFFFF;
+  --accent-soft: #F9EBE5;
+  --focus-ring: #AE4F2E;
+  --positive: #246A46;
+  --warning: #9C5B12;
+  --negative: #B42318;
+  --font-display: "Newsreader", Georgia, serif;
+  --font-body: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-weight-display: 400;
+  --font-weight-body: 400;
+  --tracking-display: -0.02em;
+  --radius-control: 8px;
+  --radius-card: 14px;
+  --radius-panel: 18px;
+  --radius-pill: 9999px;
+  --border-width: 1px;
+  --container-max: 1160px;
+  --shadow-card: 0 1px 2px rgba(20, 20, 19, 0.04);
+  --shadow-float: 0 10px 28px rgba(20, 20, 19, 0.08);
+  --ease-craft: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 150ms;
+  --dur-medium: 220ms;
+  --dur-slow: 360ms;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg-deep: #141311;
+  --bg-canvas: #1B1A17;
+  --bg-card: #23211D;
+  --bg-raised: #2D2A25;
+  --text-primary: #F5F2EB;
+  --text-secondary: #C0BBB0;
+  --text-muted: #999387;
+  --border-hairline: rgba(245, 242, 235, 0.10);
+  --border-strong: #3E3A33;
+  --accent: #E08463;
+  --accent-hover: #EA9A7D;
+  --accent-ink: #18120F;
+  --accent-soft: #32221C;
+  --focus-ring: #E08463;
+  --positive: #5DB872;
+  --warning: #E8A55A;
+  --negative: #F87171;
+}
+
+html, body {
+  overflow-x: clip;
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background-color: var(--accent-soft);
+  color: var(--text-primary);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+select {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

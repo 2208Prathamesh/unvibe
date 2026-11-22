@@ -1,0 +1,26 @@
+name: Bug report
+description: Report a bug in Unvibe linter rules, contrast math, theme generation, or MCP server.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the issue concisely.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Agent / OS / Node version
+      placeholder: "e.g., Antigravity / Windows 11 / Node 22"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps or input snippet to reproduce
+      description: Paste any command output, MCP call, or HTML/CSS fixture that triggers the issue.
+    validations:
+      required: true

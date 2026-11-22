@@ -1,0 +1,1522 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Northwind Ledger — Unvibe Multi-Theme Operations Showcase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg-deep: #0F0F10;
+      --bg-canvas: #141415;
+      --bg-card: #19191B;
+      --bg-raised: #232326;
+      --text-primary: #EDEDED;
+      --text-secondary: #A1A1A6;
+      --text-muted: #8B8B92;
+      --border-hairline: rgba(237, 237, 237, 0.09);
+      --border-strong: #343438;
+      --accent: #60A5FA;
+      --accent-hover: #93C5FD;
+      --accent-ink: #0A1424;
+      --accent-soft: #17253B;
+      --focus-ring: #60A5FA;
+      --positive: #4CC38A;
+      --warning: #F59E0B;
+      --negative: #F87171;
+      --font-body: Inter, ui-sans-serif, system-ui, sans-serif;
+      --font-mono: "JetBrains Mono", ui-monospace, monospace;
+      --ease-craft: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      overflow-x: clip;
+      background-color: var(--bg-canvas);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      font-size: 14px;
+      line-height: 1.5;
+      transition: background-color 180ms var(--ease-craft), color 180ms var(--ease-craft);
+    }
+
+    ::selection {
+      background-color: var(--accent-soft);
+      color: var(--text-primary);
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--focus-ring);
+      outline-offset: 2px;
+    }
+
+    .tabular-nums {
+      font-variant-numeric: tabular-nums;
+    }
+
+    .mono {
+      font-family: var(--font-mono);
+    }
+
+    .shell {
+      display: grid;
+      grid-template-columns: 256px minmax(0, 1fr);
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      background-color: var(--bg-deep);
+      border-right: 1px solid var(--border-hairline);
+      padding: 20px 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .sidebar-top {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 0 8px;
+    }
+
+    .brand-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+
+    .brand-mark {
+      width: 20px;
+      height: 20px;
+      border-radius: 6px;
+      background-color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent-ink);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+
+    .env-pill {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 6px;
+      background-color: var(--bg-raised);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-hairline);
+    }
+
+    .nav-group {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .nav-label {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-muted);
+      padding: 0 8px 4px;
+    }
+
+    .nav-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      height: 36px;
+      padding: 0 10px;
+      border-radius: 8px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-weight: 500;
+      transition: background-color 140ms var(--ease-craft), color 140ms var(--ease-craft);
+    }
+
+    .nav-link-main {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .nav-link:hover {
+      background-color: var(--bg-raised);
+      color: var(--text-primary);
+    }
+
+    .nav-link.active {
+      background-color: var(--bg-raised);
+      color: var(--text-primary);
+      border: 1px solid var(--border-hairline);
+    }
+
+    .nav-link svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+      color: var(--text-muted);
+    }
+
+    .nav-link.active svg {
+      color: var(--accent);
+    }
+
+    kbd {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      line-height: 1;
+      padding: 3px 6px;
+      border-radius: 4px;
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-hairline);
+      color: var(--text-muted);
+    }
+
+    .theme-dock {
+      border-top: 1px solid var(--border-hairline);
+      padding-top: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .field-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .field-label {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .select-control {
+      height: 36px;
+      width: 100%;
+      padding: 0 10px;
+      border-radius: 8px;
+      border: 1px solid var(--border-strong);
+      background-color: var(--bg-card);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .segmented {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 4px;
+      padding: 4px;
+      border-radius: 8px;
+      background-color: var(--bg-canvas);
+      border: 1px solid var(--border-hairline);
+    }
+
+    .seg-btn {
+      height: 28px;
+      border: 0;
+      border-radius: 5px;
+      background-color: transparent;
+      color: var(--text-secondary);
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 140ms var(--ease-craft), color 140ms var(--ease-craft);
+    }
+
+    .seg-btn:hover {
+      color: var(--text-primary);
+    }
+
+    .seg-btn[aria-pressed="true"] {
+      background-color: var(--bg-raised);
+      color: var(--text-primary);
+    }
+
+    .theme-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .theme-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 9999px;
+      background-color: var(--accent);
+      display: inline-block;
+      margin-right: 6px;
+    }
+
+    .workspace {
+      padding: 28px 32px 40px;
+      max-width: 1440px;
+      width: 100%;
+      min-width: 0;
+    }
+
+    .topbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      margin: 4px 0 0;
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .search-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 10px;
+      width: 16px;
+      height: 16px;
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .input-search {
+      height: 36px;
+      min-width: 224px;
+      padding: 0 36px 0 32px;
+      border-radius: 8px;
+      border: 1px solid var(--border-strong);
+      background-color: var(--bg-card);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      font-size: 16px;
+      transition: border-color 140ms var(--ease-craft);
+    }
+
+    .input-search::placeholder {
+      color: var(--text-muted);
+    }
+
+    .search-kbd {
+      position: absolute;
+      right: 8px;
+      pointer-events: none;
+    }
+
+    .select-period {
+      height: 36px;
+      padding: 0 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border-strong);
+      background-color: var(--bg-card);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      height: 36px;
+      padding: 0 16px;
+      border-radius: 8px;
+      border: 1px solid transparent;
+      background-color: var(--accent);
+      color: var(--accent-ink);
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 140ms var(--ease-craft), transform 120ms var(--ease-craft);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--accent-hover);
+    }
+
+    .btn-primary:active {
+      transform: scale(0.98);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      height: 32px;
+      padding: 0 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border-strong);
+      background-color: var(--bg-raised);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: border-color 140ms var(--ease-craft), background-color 140ms var(--ease-craft);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--text-muted);
+    }
+
+    .live-banner {
+      min-height: 20px;
+      margin-bottom: 12px;
+      font-size: 13px;
+      color: var(--positive);
+    }
+
+    .kpi-row {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-hairline);
+      border-radius: 12px;
+      padding: 20px 24px;
+      min-width: 0;
+    }
+
+    .kpi-label {
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+
+    .kpi-value {
+      margin: 8px 0 4px;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .kpi-delta {
+      font-size: 12px;
+      color: var(--positive);
+    }
+
+    .kpi-delta.neutral {
+      color: var(--text-muted);
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .panel-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .panel-title {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .panel-readout {
+      margin: 4px 0 0;
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+
+    .tab-row {
+      display: inline-flex;
+      gap: 4px;
+      padding: 4px;
+      border-radius: 8px;
+      background-color: var(--bg-canvas);
+      border: 1px solid var(--border-hairline);
+    }
+
+    .tab-btn {
+      height: 28px;
+      padding: 0 10px;
+      border: 0;
+      border-radius: 5px;
+      background-color: transparent;
+      color: var(--text-secondary);
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 140ms var(--ease-craft), color 140ms var(--ease-craft);
+    }
+
+    .tab-btn:hover {
+      color: var(--text-primary);
+    }
+
+    .tab-btn[aria-pressed="true"] {
+      background-color: var(--bg-raised);
+      color: var(--text-primary);
+    }
+
+    .chart-frame {
+      width: 100%;
+    }
+
+    .chart-svg {
+      display: block;
+      width: 100%;
+      height: 248px;
+    }
+
+    .chart-bar-btn {
+      cursor: pointer;
+    }
+
+    .mix-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .mix-row-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+    .mix-name {
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    .mix-val {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+
+    .mix-track {
+      height: 8px;
+      width: 100%;
+      border-radius: 4px;
+      background-color: var(--bg-raised);
+      overflow: hidden;
+    }
+
+    .mix-fill {
+      height: 100%;
+      width: 100%;
+      border-radius: 4px;
+      background-color: var(--text-muted);
+      transform-origin: left center;
+      transition: transform 220ms var(--ease-craft);
+    }
+
+    .mix-fill.lead {
+      background-color: var(--accent);
+    }
+
+    .mix-sub {
+      margin-top: 4px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .table-controls {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    th {
+      padding: 10px 12px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border-strong);
+      white-space: nowrap;
+    }
+
+    td {
+      padding: 12px;
+      border-bottom: 1px solid var(--border-hairline);
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: 0;
+    }
+
+    tbody tr:hover {
+      background-color: var(--bg-raised);
+    }
+
+    .num-col {
+      text-align: right;
+    }
+
+    .status-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 9999px;
+      display: inline-block;
+    }
+
+    .status-dot.settled {
+      background-color: var(--positive);
+    }
+
+    .status-dot.pending {
+      background-color: var(--warning);
+    }
+
+    .status-dot.scheduled {
+      background-color: var(--accent);
+    }
+
+    .state-panel {
+      padding: 28px 16px;
+      border-top: 1px solid var(--border-hairline);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .skeleton-row {
+      display: grid;
+      grid-template-columns: 100px 1fr 110px 96px 100px;
+      gap: 16px;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border-hairline);
+    }
+
+    .skeleton-bar {
+      height: 14px;
+      border-radius: 4px;
+      background-color: var(--bg-raised);
+    }
+
+    .error-banner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 16px;
+      border-radius: 8px;
+      background-color: var(--bg-raised);
+      border: 1px solid var(--negative);
+      color: var(--text-primary);
+    }
+
+    .error-title {
+      font-weight: 500;
+      color: var(--negative);
+    }
+
+    @media (max-width: 1120px) {
+      .kpi-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 900px) {
+      .shell {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        border-right: 0;
+        border-bottom: 1px solid var(--border-hairline);
+      }
+
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-link,
+      .btn-primary,
+      .btn-secondary,
+      .select-control,
+      .select-period,
+      .seg-btn,
+      .tab-btn {
+        min-height: 44px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .workspace {
+        padding: 20px 16px 32px;
+      }
+
+      .kpi-row {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .input-search {
+        font-size: 14px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <div class="brand">
+          <div class="brand-left">
+            <span class="brand-mark" aria-hidden="true">NL</span>
+            <span>Northwind Ledger</span>
+          </div>
+          <span class="env-pill">USD</span>
+        </div>
+
+        <nav class="nav-group" aria-label="Workspace sections">
+          <div class="nav-label">Operations</div>
+          <a href="#overview" class="nav-link active">
+            <span class="nav-link-main">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <rect x="3" y="3" width="7" height="7" rx="1" />
+                <rect x="14" y="3" width="7" height="7" rx="1" />
+                <rect x="3" y="14" width="7" height="7" rx="1" />
+                <rect x="14" y="14" width="7" height="7" rx="1" />
+              </svg>
+              <span>Overview</span>
+            </span>
+            <kbd>G O</kbd>
+          </a>
+          <a href="#invoices" class="nav-link">
+            <span class="nav-link-main">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <path d="M14 2v6h6" />
+              </svg>
+              <span>Invoices</span>
+            </span>
+            <kbd>G I</kbd>
+          </a>
+          <a href="#settlements" class="nav-link">
+            <span class="nav-link-main">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M3 3v18h18" />
+                <path d="m19 9-5 5-4-4-3 3" />
+              </svg>
+              <span>Settlements</span>
+            </span>
+            <kbd>G S</kbd>
+          </a>
+          <a href="#mix" class="nav-link">
+            <span class="nav-link-main">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M12 3v9h9" />
+              </svg>
+              <span>Client Mix</span>
+            </span>
+          </a>
+        </nav>
+      </div>
+
+      <section class="theme-dock" aria-label="Unvibe theme selector">
+        <div class="field-stack">
+          <label class="field-label" for="theme-select">Unvibe theme</label>
+          <select id="theme-select" class="select-control">
+            <option value="graphite-studio">Graphite Studio</option>
+            <option value="parchment-editorial">Parchment Editorial</option>
+            <option value="cobalt-drafting">Cobalt Drafting</option>
+            <option value="obsidian-atelier">Obsidian Atelier</option>
+            <option value="amber-instrument">Amber Instrument</option>
+          </select>
+        </div>
+
+        <div class="segmented" role="group" aria-label="Color mode">
+          <button type="button" class="seg-btn" id="mode-light" aria-pressed="false">Light</button>
+          <button type="button" class="seg-btn" id="mode-dark" aria-pressed="true">Dark</button>
+        </div>
+
+        <div class="theme-meta">
+          <span><span class="theme-dot" aria-hidden="true"></span><span id="theme-label">Graphite Studio</span></span>
+          <span class="mono" id="theme-ratio">AA/AAA</span>
+        </div>
+      </section>
+    </aside>
+
+    <main class="workspace" id="overview">
+      <header class="topbar">
+        <div>
+          <h1 id="page-title">October 2026 ledger</h1>
+          <p class="subtitle">Net settled revenue, payout timing, and client invoice clearing</p>
+        </div>
+        <div class="actions">
+          <div class="search-wrap">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              aria-hidden="true">
+              <circle cx="11" cy="11" r="7" />
+              <path d="m20 20-3.5-3.5" />
+            </svg>
+            <input id="invoice-search" type="search" class="input-search" aria-label="Search invoices"
+              placeholder="Search invoices" />
+            <kbd class="search-kbd" aria-hidden="true">/</kbd>
+          </div>
+
+          <select id="period-select" class="select-period" aria-label="Reporting period">
+            <option value="oct-2026">October 2026</option>
+            <option value="sep-2026">September 2026</option>
+            <option value="q3-2026">Q3 2026</option>
+          </select>
+
+          <button type="button" id="export-btn" class="btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              aria-hidden="true">
+              <path d="M12 3v12" />
+              <path d="m7 10 5 5 5-5" />
+              <path d="M5 21h14" />
+            </svg>
+            <span>Export CSV</span>
+          </button>
+        </div>
+      </header>
+
+      <div id="live-status" class="live-banner" role="status" aria-live="polite"></div>
+
+      <section class="kpi-row" aria-label="Monthly summary metrics">
+        <div class="card">
+          <div class="kpi-label">Settled revenue</div>
+          <div class="kpi-value tabular-nums" id="kpi-revenue">$48,210</div>
+          <div class="kpi-delta" id="kpi-revenue-delta">+12.4% vs September 2026</div>
+        </div>
+        <div class="card">
+          <div class="kpi-label">Paid accounts</div>
+          <div class="kpi-value tabular-nums" id="kpi-accounts">18</div>
+          <div class="kpi-delta" id="kpi-accounts-delta">+3 accounts vs September 2026</div>
+        </div>
+        <div class="card">
+          <div class="kpi-label">Pending settlement</div>
+          <div class="kpi-value tabular-nums" id="kpi-pending">$6,450</div>
+          <div class="kpi-delta neutral" id="kpi-pending-delta">4 invoices due within 7 days</div>
+        </div>
+        <div class="card">
+          <div class="kpi-label">Median payout time</div>
+          <div class="kpi-value tabular-nums" id="kpi-payout">1.8 days</div>
+          <div class="kpi-delta" id="kpi-payout-delta">-0.4 days vs Q3 baseline</div>
+        </div>
+      </section>
+
+      <section class="content-grid" id="settlements">
+        <div class="card">
+          <div class="panel-head">
+            <div>
+              <h2 class="panel-title">Monthly settled volume</h2>
+              <p class="panel-readout tabular-nums" id="chart-readout">
+                Oct 2026 · $48,210 settled · 18 invoices · +12.4% MoM
+              </p>
+            </div>
+            <div class="tab-row" role="group" aria-label="Chart metric view">
+              <button type="button" class="tab-btn" data-series="volume" aria-pressed="true">Volume</button>
+              <button type="button" class="tab-btn" data-series="margin" aria-pressed="false">Net Margin</button>
+              <button type="button" class="tab-btn" data-series="cumulative" aria-pressed="false">Cumulative</button>
+            </div>
+          </div>
+
+          <div class="chart-frame">
+            <svg id="revenue-svg" class="chart-svg" viewBox="0 0 640 248" role="img"
+              aria-label="Interactive monthly financial settlement chart from May to October 2026"></svg>
+          </div>
+        </div>
+
+        <div class="card" id="mix">
+          <div class="panel-head">
+            <div>
+              <h2 class="panel-title">Settlement mix by tier</h2>
+              <p class="panel-readout">Share of cleared period revenue</p>
+            </div>
+          </div>
+
+          <ul class="mix-list">
+            <li>
+              <div class="mix-row-head">
+                <span class="mix-name">Enterprise retainers</span>
+                <span class="mix-val tabular-nums">$22,180 · 46%</span>
+              </div>
+              <div class="mix-track">
+                <div class="mix-fill lead" style="transform: scaleX(0.92);"></div>
+              </div>
+              <div class="mix-sub">6 multi-quarter agreements · 100% ACH</div>
+            </li>
+            <li>
+              <div class="mix-row-head">
+                <span class="mix-name">Annual platform contracts</span>
+                <span class="mix-val tabular-nums">$14,460 · 30%</span>
+              </div>
+              <div class="mix-track">
+                <div class="mix-fill" style="transform: scaleX(0.60);"></div>
+              </div>
+              <div class="mix-sub">5 renewals cleared in window</div>
+            </li>
+            <li>
+              <div class="mix-row-head">
+                <span class="mix-name">Milestone deliveries</span>
+                <span class="mix-val tabular-nums">$7,710 · 16%</span>
+              </div>
+              <div class="mix-track">
+                <div class="mix-fill" style="transform: scaleX(0.32);"></div>
+              </div>
+              <div class="mix-sub">4 phase sign-offs completed</div>
+            </li>
+            <li>
+              <div class="mix-row-head">
+                <span class="mix-name">Advisory audits</span>
+                <span class="mix-val tabular-nums">$3,860 · 8%</span>
+              </div>
+              <div class="mix-track">
+                <div class="mix-fill" style="transform: scaleX(0.16);"></div>
+              </div>
+              <div class="mix-sub">3 specialist reviews</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card" id="invoices">
+        <div class="panel-head">
+          <div>
+            <h2 class="panel-title">Recent invoices</h2>
+            <p class="panel-readout tabular-nums" id="table-count">Showing 6 of 6 ledger entries</p>
+          </div>
+
+          <div class="table-controls">
+            <select id="status-filter" class="select-period" aria-label="Filter by invoice status">
+              <option value="all">All statuses</option>
+              <option value="Settled">Settled</option>
+              <option value="Pending">Pending</option>
+              <option value="Scheduled">Scheduled</option>
+            </select>
+
+            <div class="tab-row" role="group" aria-label="Inspect component UI states">
+              <button type="button" class="tab-btn" data-state="live" aria-pressed="true">Live</button>
+              <button type="button" class="tab-btn" data-state="loading" aria-pressed="false">Loading</button>
+              <button type="button" class="tab-btn" data-state="empty" aria-pressed="false">Empty</button>
+              <button type="button" class="tab-btn" data-state="error" aria-pressed="false">Error</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="table-container"></div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const THEMES = {
+      'graphite-studio': {
+        name: 'Graphite Studio',
+        defaultMode: 'dark',
+        light: {
+          bgDeep: '#F2F2F4', bgCanvas: '#FAFAFA', bgCard: '#FFFFFF', bgRaised: '#F4F4F5',
+          textPrimary: '#171717', textSecondary: '#525252', textMuted: '#6B6B72',
+          borderHairline: 'rgba(23, 23, 23, 0.09)', borderStrong: '#D4D4D8',
+          accent: '#1D4ED8', accentHover: '#1E40AF', accentInk: '#FFFFFF', accentSoft: '#EFF6FF',
+          focusRing: '#2563EB', positive: '#15803D', warning: '#B45309', negative: '#DC2626',
+        },
+        dark: {
+          bgDeep: '#0F0F10', bgCanvas: '#141415', bgCard: '#19191B', bgRaised: '#232326',
+          textPrimary: '#EDEDED', textSecondary: '#A1A1A6', textMuted: '#8B8B92',
+          borderHairline: 'rgba(237, 237, 237, 0.09)', borderStrong: '#343438',
+          accent: '#60A5FA', accentHover: '#93C5FD', accentInk: '#0A1424', accentSoft: '#17253B',
+          focusRing: '#60A5FA', positive: '#4CC38A', warning: '#F59E0B', negative: '#F87171',
+        },
+      },
+      'parchment-editorial': {
+        name: 'Parchment Editorial',
+        defaultMode: 'light',
+        light: {
+          bgDeep: '#EFE9DE', bgCanvas: '#FAF9F5', bgCard: '#FFFFFF', bgRaised: '#F3EFE6',
+          textPrimary: '#141413', textSecondary: '#4F4D47', textMuted: '#69665E',
+          borderHairline: 'rgba(20, 20, 19, 0.10)', borderStrong: '#D8D0C3',
+          accent: '#AE4F2E', accentHover: '#923F22', accentInk: '#FFFFFF', accentSoft: '#F9EBE5',
+          focusRing: '#AE4F2E', positive: '#246A46', warning: '#9C5B12', negative: '#B42318',
+        },
+        dark: {
+          bgDeep: '#141311', bgCanvas: '#1B1A17', bgCard: '#23211D', bgRaised: '#2D2A25',
+          textPrimary: '#F5F2EB', textSecondary: '#C0BBB0', textMuted: '#999387',
+          borderHairline: 'rgba(245, 242, 235, 0.10)', borderStrong: '#3E3A33',
+          accent: '#E08463', accentHover: '#EA9A7D', accentInk: '#18120F', accentSoft: '#32221C',
+          focusRing: '#E08463', positive: '#5DB872', warning: '#E8A55A', negative: '#F87171',
+        },
+      },
+      'cobalt-drafting': {
+        name: 'Cobalt Drafting',
+        defaultMode: 'light',
+        light: {
+          bgDeep: '#E9EFF8', bgCanvas: '#F4F7FB', bgCard: '#FFFFFF', bgRaised: '#E6EDF8',
+          textPrimary: '#0F172A', textSecondary: '#3D4B63', textMuted: '#596882',
+          borderHairline: '#D3DEEE', borderStrong: '#9BB2D4',
+          accent: '#1D4ED8', accentHover: '#1E40AF', accentInk: '#FFFFFF', accentSoft: '#E8F0FE',
+          focusRing: '#1D4ED8', positive: '#137547', warning: '#9C5B00', negative: '#C92A2A',
+        },
+        dark: {
+          bgDeep: '#070C17', bgCanvas: '#0B1220', bgCard: '#121D33', bgRaised: '#1A2947',
+          textPrimary: '#EDF2FA', textSecondary: '#B5C3DB', textMuted: '#8B9EBF',
+          borderHairline: 'rgba(181, 195, 219, 0.14)', borderStrong: '#354B73',
+          accent: '#6EA8FE', accentHover: '#92BFFE', accentInk: '#071226', accentSoft: '#182A4A',
+          focusRing: '#6EA8FE', positive: '#46C488', warning: '#F5B841', negative: '#F87171',
+        },
+      },
+      'obsidian-atelier': {
+        name: 'Obsidian Atelier',
+        defaultMode: 'dark',
+        light: {
+          bgDeep: '#ECE8DF', bgCanvas: '#F6F4EF', bgCard: '#FDFCF9', bgRaised: '#EFECE4',
+          textPrimary: '#171512', textSecondary: '#4B463F', textMuted: '#696258',
+          borderHairline: 'rgba(23, 21, 18, 0.11)', borderStrong: '#CCC4B6',
+          accent: '#755720', accentHover: '#5D4518', accentInk: '#FFFFFF', accentSoft: '#F4EDE0',
+          focusRing: '#755720', positive: '#266847', warning: '#8A5616', negative: '#A6322B',
+        },
+        dark: {
+          bgDeep: '#080807', bgCanvas: '#0E0E0C', bgCard: '#161513', bgRaised: '#21201C',
+          textPrimary: '#F3EFE6', textSecondary: '#BDB6A8', textMuted: '#968E80',
+          borderHairline: 'rgba(243, 239, 230, 0.10)', borderStrong: '#3A362E',
+          accent: '#CCA85E', accentHover: '#DBBC7A', accentInk: '#141008', accentSoft: '#292214',
+          focusRing: '#CCA85E', positive: '#66C28F', warning: '#E3AA4D', negative: '#E56B63',
+        },
+      },
+      'amber-instrument': {
+        name: 'Amber Instrument',
+        defaultMode: 'dark',
+        light: {
+          bgDeep: '#E8E3D9', bgCanvas: '#F2EFE9', bgCard: '#FAF8F3', bgRaised: '#E5DFD3',
+          textPrimary: '#1B1916', textSecondary: '#48433B', textMuted: '#625B50',
+          borderHairline: '#CEC7B8', borderStrong: '#9C9280',
+          accent: '#944E0E', accentHover: '#783E0A', accentInk: '#FFFFFF', accentSoft: '#F7E9D9',
+          focusRing: '#944E0E', positive: '#1D6B43', warning: '#944E0E', negative: '#B42B22',
+        },
+        dark: {
+          bgDeep: '#0F0E0C', bgCanvas: '#141311', bgCard: '#1C1B18', bgRaised: '#262420',
+          textPrimary: '#EFECE4', textSecondary: '#BDB6A7', textMuted: '#968E7F',
+          borderHairline: 'rgba(239, 236, 228, 0.10)', borderStrong: '#454038',
+          accent: '#E59235', accentHover: '#F0A756', accentInk: '#170F05', accentSoft: '#2E2112',
+          focusRing: '#E59235', positive: '#58BA84', warning: '#E59235', negative: '#F06E63',
+        },
+      },
+    };
+
+    const PERIOD_DATA = {
+      'oct-2026': {
+        title: 'October 2026 ledger',
+        revenue: '$48,210',
+        revenueDelta: '+12.4% vs September 2026',
+        accounts: '18',
+        accountsDelta: '+3 accounts vs September 2026',
+        pending: '$6,450',
+        pendingDelta: '4 invoices due within 7 days',
+        payout: '1.8 days',
+        payoutDelta: '-0.4 days vs Q3 baseline',
+      },
+      'sep-2026': {
+        title: 'September 2026 ledger',
+        revenue: '$42,890',
+        revenueDelta: '+9.6% vs August 2026',
+        accounts: '15',
+        accountsDelta: '+2 accounts vs August 2026',
+        pending: '$4,120',
+        pendingDelta: '3 invoices settled Oct 3',
+        payout: '2.0 days',
+        payoutDelta: '-0.2 days vs Q3 baseline',
+      },
+      'q3-2026': {
+        title: 'Q3 2026 summary ledger',
+        revenue: '$117,540',
+        revenueDelta: '+14.8% vs Q2 2026',
+        accounts: '24',
+        accountsDelta: '+5 active retainers in Q3',
+        pending: '$9,840',
+        pendingDelta: '6 milestones closing early Q4',
+        payout: '2.2 days',
+        payoutDelta: '-0.3 days vs Q2 average',
+      },
+    };
+
+    const SERIES_DATA = {
+      volume: {
+        target: 45000,
+        targetLabel: 'Target $45k',
+        maxY: 60000,
+        unitPrefix: '$',
+        points: [
+          { month: 'May', label: 'May 2026', value: 29400, invoices: 11, delta: '+4.1% MoM' },
+          { month: 'Jun', label: 'Jun 2026', value: 34200, invoices: 13, delta: '+16.3% MoM' },
+          { month: 'Jul', label: 'Jul 2026', value: 32100, invoices: 12, delta: '-6.1% MoM' },
+          { month: 'Aug', label: 'Aug 2026', value: 39150, invoices: 14, delta: '+21.9% MoM' },
+          { month: 'Sep', label: 'Sep 2026', value: 42890, invoices: 15, delta: '+9.6% MoM' },
+          { month: 'Oct', label: 'Oct 2026', value: 48210, invoices: 18, delta: '+12.4% MoM' },
+        ],
+      },
+      margin: {
+        target: 32000,
+        targetLabel: 'Target $32k',
+        maxY: 45000,
+        unitPrefix: '$',
+        points: [
+          { month: 'May', label: 'May 2026', value: 21800, invoices: 11, delta: '74.1% net' },
+          { month: 'Jun', label: 'Jun 2026', value: 25650, invoices: 13, delta: '75.0% net' },
+          { month: 'Jul', label: 'Jul 2026', value: 23750, invoices: 12, delta: '73.9% net' },
+          { month: 'Aug', label: 'Aug 2026', value: 29750, invoices: 14, delta: '76.0% net' },
+          { month: 'Sep', label: 'Sep 2026', value: 32900, invoices: 15, delta: '76.7% net' },
+          { month: 'Oct', label: 'Oct 2026', value: 37600, invoices: 18, delta: '78.0% net' },
+        ],
+      },
+      cumulative: {
+        target: 200000,
+        targetLabel: 'H2 Goal $200k',
+        maxY: 250000,
+        unitPrefix: '$',
+        points: [
+          { month: 'May', label: 'Through May', value: 29400, invoices: 11, delta: '13% of target' },
+          { month: 'Jun', label: 'Through Jun', value: 63600, invoices: 24, delta: '28% of target' },
+          { month: 'Jul', label: 'Through Jul', value: 95700, invoices: 36, delta: '42% of target' },
+          { month: 'Aug', label: 'Through Aug', value: 134850, invoices: 50, delta: '60% of target' },
+          { month: 'Sep', label: 'Through Sep', value: 177740, invoices: 65, delta: '79% of target' },
+          { month: 'Oct', label: 'Through Oct', value: 225950, invoices: 83, delta: '100% cleared' },
+        ],
+      },
+    };
+
+    const INVOICES = [
+      { id: 'INV-0142', client: 'Alder Timber Co.', tier: 'Enterprise', due: 'Oct 24, 2026', status: 'Settled', amount: 8400 },
+      { id: 'INV-0141', client: 'Harbor Press', tier: 'Annual', due: 'Oct 26, 2026', status: 'Settled', amount: 5250 },
+      { id: 'INV-0140', client: 'Redwood Freight', tier: 'Enterprise', due: 'Oct 28, 2026', status: 'Pending', amount: 4120 },
+      { id: 'INV-0139', client: 'Kestrel Instruments', tier: 'Milestone', due: 'Oct 29, 2026', status: 'Settled', amount: 3680 },
+      { id: 'INV-0138', client: 'Meridian Foundry', tier: 'Advisory', due: 'Nov 02, 2026', status: 'Scheduled', amount: 2330 },
+      { id: 'INV-0137', client: 'Cascade Optics', tier: 'Annual', due: 'Oct 19, 2026', status: 'Settled', amount: 4480 },
+    ];
+
+    let activeThemeId = 'graphite-studio';
+    let activeMode = 'dark';
+    let activeSeries = 'volume';
+    let activeMonthIndex = 5;
+    let activeUiState = 'live';
+
+    const rootEl = document.documentElement;
+    const themeSelect = document.getElementById('theme-select');
+    const modeLightBtn = document.getElementById('mode-light');
+    const modeDarkBtn = document.getElementById('mode-dark');
+    const themeLabel = document.getElementById('theme-label');
+    const periodSelect = document.getElementById('period-select');
+    const searchInput = document.getElementById('invoice-search');
+    const statusFilter = document.getElementById('status-filter');
+    const exportBtn = document.getElementById('export-btn');
+    const liveStatus = document.getElementById('live-status');
+    const chartSvg = document.getElementById('revenue-svg');
+    const chartReadout = document.getElementById('chart-readout');
+    const tableContainer = document.getElementById('table-container');
+    const tableCount = document.getElementById('table-count');
+
+    function applyTheme(themeId, mode) {
+      const theme = THEMES[themeId];
+      if (!theme) return;
+      const palette = theme[mode];
+      activeThemeId = themeId;
+      activeMode = mode;
+
+      rootEl.setAttribute('data-mode', mode);
+      rootEl.style.colorScheme = mode;
+      const map = {
+        '--bg-deep': palette.bgDeep,
+        '--bg-canvas': palette.bgCanvas,
+        '--bg-card': palette.bgCard,
+        '--bg-raised': palette.bgRaised,
+        '--text-primary': palette.textPrimary,
+        '--text-secondary': palette.textSecondary,
+        '--text-muted': palette.textMuted,
+        '--border-hairline': palette.borderHairline,
+        '--border-strong': palette.borderStrong,
+        '--accent': palette.accent,
+        '--accent-hover': palette.accentHover,
+        '--accent-ink': palette.accentInk,
+        '--accent-soft': palette.accentSoft,
+        '--focus-ring': palette.focusRing,
+        '--positive': palette.positive,
+        '--warning': palette.warning,
+        '--negative': palette.negative,
+      };
+      for (const [prop, val] of Object.entries(map)) {
+        rootEl.style.setProperty(prop, val);
+      }
+
+      themeSelect.value = themeId;
+      themeLabel.textContent = theme.name;
+      modeLightBtn.setAttribute('aria-pressed', String(mode === 'light'));
+      modeDarkBtn.setAttribute('aria-pressed', String(mode === 'dark'));
+      renderChart();
+    }
+
+    function formatCurrency(n) {
+      return '$' + n.toLocaleString('en-US');
+    }
+
+    function renderChart() {
+      const dataset = SERIES_DATA[activeSeries];
+      const W = 640;
+      const H = 248;
+      const padL = 56;
+      const padR = 20;
+      const padT = 18;
+      const padB = 34;
+      const plotW = W - padL - padR;
+      const plotH = H - padT - padB;
+      const baseLineY = padT + plotH;
+
+      const palette = THEMES[activeThemeId][activeMode];
+      const parts = [];
+
+      // Horizontal hairline gridlines
+      const ticks = 4;
+      for (let i = 0; i <= ticks; i++) {
+        const val = (dataset.maxY / ticks) * i;
+        const y = Math.round(baseLineY - (plotH * i) / ticks);
+        const label = val === 0 ? '$0' : '$' + Math.round(val / 1000) + 'k';
+        parts.push(
+          `<line x1="${padL}" y1="${y}" x2="${W - padR}" y2="${y}" stroke="${palette.borderHairline}" stroke-width="1" />`,
+          `<text x="${padL - 10}" y="${y + 4}" text-anchor="end" fill="${palette.textMuted}" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11">${label}</text>`
+        );
+      }
+
+      // Benchmark target dashed line
+      const targetY = Math.round(baseLineY - (dataset.target / dataset.maxY) * plotH);
+      parts.push(
+        `<line x1="${padL}" y1="${targetY}" x2="${W - padR}" y2="${targetY}" stroke="${palette.textMuted}" stroke-opacity="0.55" stroke-width="1" stroke-dasharray="4 4" />`,
+        `<text x="${W - padR}" y="${targetY - 6}" text-anchor="end" fill="${palette.textMuted}" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11">${dataset.targetLabel}</text>`
+      );
+
+      // Interactive columns
+      const n = dataset.points.length;
+      const slotW = plotW / n;
+      const barW = Math.min(48, Math.round(slotW * 0.56));
+
+      dataset.points.forEach((pt, idx) => {
+        const barH = Math.max(8, Math.round((pt.value / dataset.maxY) * plotH));
+        const x = Math.round(padL + idx * slotW + (slotW - barW) / 2);
+        const y = baseLineY - barH;
+        const isSelected = idx === activeMonthIndex;
+        const fillColor = isSelected ? palette.accent : palette.bgRaised;
+        const strokeColor = isSelected ? palette.accent : palette.borderStrong;
+
+        parts.push(
+          `<g class="chart-bar-btn" tabindex="0" role="button" data-idx="${idx}" aria-label="${pt.label}: ${formatCurrency(pt.value)}, ${pt.invoices} invoices, ${pt.delta}">`,
+          `<rect x="${x}" y="${y}" width="${barW}" height="${barH}" rx="4" fill="${fillColor}" stroke="${strokeColor}" stroke-width="1" />`,
+          `<text x="${x + barW / 2}" y="${y - 6}" text-anchor="middle" fill="${isSelected ? palette.textPrimary : palette.textMuted}" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11">${Math.round(pt.value / 1000)}k</text>`,
+          `<text x="${x + barW / 2}" y="${baseLineY + 20}" text-anchor="middle" fill="${isSelected ? palette.textPrimary : palette.textMuted}" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12" font-weight="${isSelected ? '600' : '400'}">${pt.month}</text>`,
+          `</g>`
+        );
+      });
+
+      chartSvg.innerHTML = parts.join('');
+      const sel = dataset.points[activeMonthIndex];
+      chartReadout.textContent = `${sel.label} · ${formatCurrency(sel.value)} · ${sel.invoices} invoices · ${sel.delta}`;
+
+      chartSvg.querySelectorAll('.chart-bar-btn').forEach((el) => {
+        const idx = Number(el.getAttribute('data-idx'));
+        el.addEventListener('click', () => {
+          activeMonthIndex = idx;
+          renderChart();
+        });
+        el.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            activeMonthIndex = idx;
+            renderChart();
+          }
+        });
+      });
+    }
+
+    function getFilteredInvoices() {
+      const q = searchInput.value.trim().toLowerCase();
+      const status = statusFilter.value;
+      return INVOICES.filter((inv) => {
+        const matchesQuery =
+          !q ||
+          inv.id.toLowerCase().includes(q) ||
+          inv.client.toLowerCase().includes(q) ||
+          inv.tier.toLowerCase().includes(q);
+        const matchesStatus = status === 'all' || inv.status === status;
+        return matchesQuery && matchesStatus;
+      });
+    }
+
+    function renderTable() {
+      const rows = getFilteredInvoices();
+      tableCount.textContent =
+        activeUiState === 'live'
+          ? `Showing ${rows.length} of ${INVOICES.length} ledger entries`
+          : `Inspecting ${activeUiState} state`;
+
+      if (activeUiState === 'loading') {
+        tableContainer.innerHTML = [1, 2, 3, 4]
+          .map(
+            () => `<div class="skeleton-row" aria-hidden="true">
+              <div class="skeleton-bar"></div>
+              <div class="skeleton-bar"></div>
+              <div class="skeleton-bar"></div>
+              <div class="skeleton-bar"></div>
+              <div class="skeleton-bar"></div>
+            </div>`
+          )
+          .join('');
+        return;
+      }
+
+      if (activeUiState === 'error') {
+        tableContainer.innerHTML = `<div class="error-banner" role="alert">
+          <div>
+            <div class="error-title">Settlement feed timed out</div>
+            <div class="panel-readout">The upstream clearing provider did not respond within 4 seconds. Cached balances remain intact.</div>
+          </div>
+          <button type="button" class="btn-secondary" id="retry-sync-btn">Retry sync</button>
+        </div>`;
+        document.getElementById('retry-sync-btn').addEventListener('click', () => {
+          setUiState('live');
+          announce('Reconnected to settlement feed.');
+        });
+        return;
+      }
+
+      if (activeUiState === 'empty' || rows.length === 0) {
+        tableContainer.innerHTML = `<div class="state-panel">
+          <div class="mix-name">No matching invoices in this view</div>
+          <div class="panel-readout">Adjust your search query or clear the status filter to inspect all 6 settled and pending invoices.</div>
+          <div><button type="button" class="btn-secondary" id="reset-filter-btn">Reset filters</button></div>
+        </div>`;
+        document.getElementById('reset-filter-btn').addEventListener('click', () => {
+          searchInput.value = '';
+          statusFilter.value = 'all';
+          setUiState('live');
+        });
+        return;
+      }
+
+      const bodyHtml = rows
+        .map((inv) => {
+          const cls = inv.status.toLowerCase();
+          return `<tr>
+            <td class="mono">${inv.id}</td>
+            <td class="mix-name">${inv.client}</td>
+            <td>${inv.tier}</td>
+            <td class="tabular-nums">${inv.due}</td>
+            <td><span class="status-tag"><span class="status-dot ${cls}" aria-hidden="true"></span>${inv.status}</span></td>
+            <td class="mono tabular-nums num-col">${formatCurrency(inv.amount)}</td>
+          </tr>`;
+        })
+        .join('');
+
+      tableContainer.innerHTML = `<div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Invoice ID</th>
+              <th>Client</th>
+              <th>Agreement tier</th>
+              <th>Settlement date</th>
+              <th>Status</th>
+              <th class="num-col">Amount</th>
+            </tr>
+          </thead>
+          <tbody>${bodyHtml}</tbody>
+        </table>
+      </div>`;
+    }
+
+    function setUiState(nextState) {
+      activeUiState = nextState;
+      document.querySelectorAll('[data-state]').forEach((btn) => {
+        btn.setAttribute('aria-pressed', String(btn.getAttribute('data-state') === nextState));
+      });
+      renderTable();
+    }
+
+    function announce(msg) {
+      liveStatus.textContent = msg;
+    }
+
+    themeSelect.addEventListener('change', (e) => {
+      const id = e.target.value;
+      applyTheme(id, THEMES[id].defaultMode);
+      announce(`Switched theme to ${THEMES[id].name} (${THEMES[id].defaultMode} mode).`);
+    });
+
+    modeLightBtn.addEventListener('click', () => applyTheme(activeThemeId, 'light'));
+    modeDarkBtn.addEventListener('click', () => applyTheme(activeThemeId, 'dark'));
+
+    periodSelect.addEventListener('change', (e) => {
+      const p = PERIOD_DATA[e.target.value];
+      if (!p) return;
+      document.getElementById('page-title').textContent = p.title;
+      document.getElementById('kpi-revenue').textContent = p.revenue;
+      document.getElementById('kpi-revenue-delta').textContent = p.revenueDelta;
+      document.getElementById('kpi-accounts').textContent = p.accounts;
+      document.getElementById('kpi-accounts-delta').textContent = p.accountsDelta;
+      document.getElementById('kpi-pending').textContent = p.pending;
+      document.getElementById('kpi-pending-delta').textContent = p.pendingDelta;
+      document.getElementById('kpi-payout').textContent = p.payout;
+      document.getElementById('kpi-payout-delta').textContent = p.payoutDelta;
+      announce(`Loaded ${p.title}.`);
+    });
+
+    document.querySelectorAll('[data-series]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        activeSeries = btn.getAttribute('data-series');
+        document.querySelectorAll('[data-series]').forEach((b) => {
+          b.setAttribute('aria-pressed', String(b === btn));
+        });
+        renderChart();
+      });
+    });
+
+    document.querySelectorAll('[data-state]').forEach((btn) => {
+      btn.addEventListener('click', () => setUiState(btn.getAttribute('data-state')));
+    });
+
+    searchInput.addEventListener('input', () => {
+      if (activeUiState !== 'live') setUiState('live');
+      else renderTable();
+    });
+    statusFilter.addEventListener('change', () => {
+      if (activeUiState !== 'live') setUiState('live');
+      else renderTable();
+    });
+
+    exportBtn.addEventListener('click', () => {
+      const rows = getFilteredInvoices();
+      const csvLines = ['Invoice ID,Client,Tier,Settlement Date,Status,Amount'];
+      for (const r of rows) {
+        csvLines.push(`${r.id},"${r.client}",${r.tier},"${r.due}",${r.status},${r.amount}`);
+      }
+      const blob = new Blob([csvLines.join('\n')], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `northwind-ledger-${periodSelect.value}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      announce(`Exported ${rows.length} ledger rows to CSV.`);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      const tag = document.activeElement?.tagName;
+      if (e.key === '/' && tag !== 'INPUT' && tag !== 'TEXTAREA' && tag !== 'SELECT') {
+        e.preventDefault();
+        searchInput.focus();
+      }
+    });
+
+    applyTheme('graphite-studio', 'dark');
+    renderTable();
+  </script>
+</body>
+
+</html>

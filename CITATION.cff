@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use or build on Unvibe, please cite it using these details."
+title: "unvibe"
+type: software
+version: 1.0.0
+license: MIT
+authors:
+  - given-names: Prathamesh
+    family-names: Barbole
+    alias: 2208Prathamesh
+repository-code: "https://github.com/2208Prathamesh/unvibe"
+abstract: "Cross-agent and chatbot-ready anti-AI-slop UI/UX system with 24 dual-mode theme packs, DESIGN.md specs, 7-stage Redline audit workflow, always-on rules, and local MCP server."
+keywords:
+  - ui
+  - ux
+  - unvibe
+  - redline
+  - design-system
+  - design-md
+  - anti-slop
+  - mcp
+  - agent-skills

@@ -1,0 +1,33 @@
+name: Verify Unvibe
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        node-version: [20, 22]
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Build theme packs and external DESIGN.md files
+        run: npm run build:themes
+
+      - name: Ensure generated theme packs are up to date
+        run: git diff --exit-code -- themes/ external/
+
+      - name: Run full verification suite
+        run: npm run verify

@@ -1,0 +1,41 @@
+name: New theme proposal
+description: Propose a new dual-mode, trademark-free theme pack for Unvibe.
+title: "[Theme]: "
+labels: ["theme"]
+body:
+  - type: dropdown
+    id: pack
+    attributes:
+      label: Target Pack
+      options:
+        - everyday-apps
+        - professional
+        - modern
+        - premium
+        - vintage
+        - cool
+    validations:
+      required: true
+  - type: textarea
+    id: surface_dna
+    attributes:
+      label: Material / Surface DNA (No third-party brand names)
+      description: Describe the canvas tint, typography character, geometry radius, and single accent hue.
+    validations:
+      required: true
+  - type: textarea
+    id: palettes
+    attributes:
+      label: Proposed Light & Dark Hex Tokens
+      description: Include bgCanvas, bgCard, textPrimary, textSecondary, textMuted, accent, and accentInk (must pass WCAG AA >= 4.5:1).
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Guardrails
+      options:
+        - label: Zero third-party trademarked product or company names anywhere in the theme
+          required: true
+        - label: Strictly scoped to UI/UX & visual theming
+          required: true

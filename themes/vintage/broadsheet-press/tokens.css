@@ -1,0 +1,97 @@
+/* Theme: Broadsheet Press (broadsheet-press) | Pack: vintage | Default: light */
+/* Webfont: <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Spectral:ital,wght@0,400;0,500;1,400&family=Libre+Franklin:wght@400;500&display=swap"> */
+
+:root {
+  color-scheme: light;
+  --bg-deep: #E6E0D3;
+  --bg-canvas: #F3EFE6;
+  --bg-card: #EAE4D7;
+  --bg-raised: #DFD7C6;
+  --text-primary: #1A1815;
+  --text-secondary: #3D3933;
+  --text-muted: #5E584F;
+  --border-hairline: #C7BFAE;
+  --border-strong: #2B2823;
+  --accent: #992626;
+  --accent-hover: #781C1C;
+  --accent-ink: #FFFFFF;
+  --accent-soft: #F2DFDC;
+  --focus-ring: #992626;
+  --positive: #1F6642;
+  --warning: #8A5212;
+  --negative: #992626;
+  --font-display: "Zilla Slab", Georgia, serif;
+  --font-body: "Spectral", Georgia, serif;
+  --font-mono: "Libre Franklin", ui-sans-serif, sans-serif;
+  --font-weight-display: 700;
+  --font-weight-body: 400;
+  --tracking-display: -0.02em;
+  --radius-control: 0px;
+  --radius-card: 0px;
+  --radius-panel: 0px;
+  --radius-pill: 0px;
+  --border-width: 1px;
+  --container-max: 1240px;
+  --shadow-card: none;
+  --shadow-float: 0 8px 24px rgba(24, 23, 20, 0.12);
+  --ease-craft: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 110ms;
+  --dur-medium: 170ms;
+  --dur-slow: 260ms;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg-deep: #11100E;
+  --bg-canvas: #181714;
+  --bg-card: #22201C;
+  --bg-raised: #2D2A24;
+  --text-primary: #EFEAE0;
+  --text-secondary: #C4BDB0;
+  --text-muted: #999184;
+  --border-hairline: #38342D;
+  --border-strong: #C4BDB0;
+  --accent: #E87461;
+  --accent-hover: #F09080;
+  --accent-ink: #1C0C09;
+  --accent-soft: #361D19;
+  --focus-ring: #E87461;
+  --positive: #58BA84;
+  --warning: #E8A64D;
+  --negative: #E87461;
+}
+
+html, body {
+  overflow-x: clip;
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background-color: var(--accent-soft);
+  color: var(--text-primary);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+select {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

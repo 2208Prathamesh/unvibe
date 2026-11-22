@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Setup & Multi-Agent Guide
+    url: https://github.com/2208Prathamesh/unvibe/blob/main/docs/AGENT-SETUP.md
+    about: Complete installation and setup guide for Antigravity, Claude Code, Cursor, Codex, OpenCode, Windsurf, Copilot, Gemini CLI, and web chatbots.

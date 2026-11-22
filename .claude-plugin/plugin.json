@@ -1,0 +1,10 @@
+{
+  "name": "unvibe",
+  "version": "1.0.0",
+  "description": "Unvibe — Anti-AI-slop UI/UX & theming system with 24 dual-mode themes, 7-stage redline workflow, rules, and zero-dependency MCP server.",
+  "skills": [
+    "./skills/unvibe",
+    "./skills/redline"
+  ],
+  "mcpServers": "./.mcp.json"
+}

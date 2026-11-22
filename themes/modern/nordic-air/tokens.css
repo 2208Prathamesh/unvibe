@@ -1,0 +1,97 @@
+/* Theme: Nordic Air (nordic-air) | Pack: modern | Default: light */
+/* Webfont: <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"> */
+
+:root {
+  color-scheme: light;
+  --bg-deep: #EBEEEC;
+  --bg-canvas: #F5F7F5;
+  --bg-card: #FFFFFF;
+  --bg-raised: #E8ECE9;
+  --text-primary: #151D19;
+  --text-secondary: #435049;
+  --text-muted: #5E6B64;
+  --border-hairline: rgba(21, 29, 25, 0.09);
+  --border-strong: #C5CEC9;
+  --accent: #235A42;
+  --accent-hover: #1A4633;
+  --accent-ink: #FFFFFF;
+  --accent-soft: #E6F0EB;
+  --focus-ring: #235A42;
+  --positive: #1F6F49;
+  --warning: #9A5B13;
+  --negative: #B8332A;
+  --font-display: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --font-weight-display: 500;
+  --font-weight-body: 400;
+  --tracking-display: -0.02em;
+  --radius-control: 10px;
+  --radius-card: 16px;
+  --radius-panel: 20px;
+  --radius-pill: 9999px;
+  --border-width: 1px;
+  --container-max: 1240px;
+  --shadow-card: 0 1px 3px rgba(17, 30, 24, 0.04);
+  --shadow-float: 0 12px 30px rgba(17, 30, 24, 0.08);
+  --ease-craft: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 160ms;
+  --dur-medium: 240ms;
+  --dur-slow: 400ms;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg-deep: #0D110F;
+  --bg-canvas: #121714;
+  --bg-card: #1A211D;
+  --bg-raised: #242D28;
+  --text-primary: #EDF2EE;
+  --text-secondary: #B5C2BA;
+  --text-muted: #8B9B92;
+  --border-hairline: rgba(237, 242, 238, 0.10);
+  --border-strong: #35423B;
+  --accent: #63C79B;
+  --accent-hover: #80D6B0;
+  --accent-ink: #0A1B13;
+  --accent-soft: #173025;
+  --focus-ring: #63C79B;
+  --positive: #63C79B;
+  --warning: #E8B04F;
+  --negative: #F87171;
+}
+
+html, body {
+  overflow-x: clip;
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background-color: var(--accent-soft);
+  color: var(--text-primary);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+select {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,97 @@
+/* Theme: Obsidian Atelier (obsidian-atelier) | Pack: premium | Default: dark */
+/* Webfont: <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"> */
+
+:root {
+  color-scheme: dark;
+  --bg-deep: #080807;
+  --bg-canvas: #0E0E0C;
+  --bg-card: #161513;
+  --bg-raised: #21201C;
+  --text-primary: #F3EFE6;
+  --text-secondary: #BDB6A8;
+  --text-muted: #968E80;
+  --border-hairline: rgba(243, 239, 230, 0.10);
+  --border-strong: #3A362E;
+  --accent: #CCA85E;
+  --accent-hover: #DBBC7A;
+  --accent-ink: #141008;
+  --accent-soft: #292214;
+  --focus-ring: #CCA85E;
+  --positive: #66C28F;
+  --warning: #E3AA4D;
+  --negative: #E56B63;
+  --font-display: "Instrument Serif", Georgia, serif;
+  --font-body: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --font-weight-display: 400;
+  --font-weight-body: 400;
+  --tracking-display: -0.02em;
+  --radius-control: 4px;
+  --radius-card: 8px;
+  --radius-panel: 12px;
+  --radius-pill: 9999px;
+  --border-width: 1px;
+  --container-max: 1280px;
+  --shadow-card: 0 2px 10px rgba(20, 18, 15, 0.05);
+  --shadow-float: 0 16px 40px rgba(20, 18, 15, 0.12);
+  --ease-craft: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 180ms;
+  --dur-medium: 280ms;
+  --dur-slow: 460ms;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --bg-deep: #ECE8DF;
+  --bg-canvas: #F6F4EF;
+  --bg-card: #FDFCF9;
+  --bg-raised: #EFECE4;
+  --text-primary: #171512;
+  --text-secondary: #4B463F;
+  --text-muted: #696258;
+  --border-hairline: rgba(23, 21, 18, 0.11);
+  --border-strong: #CCC4B6;
+  --accent: #755720;
+  --accent-hover: #5D4518;
+  --accent-ink: #FFFFFF;
+  --accent-soft: #F4EDE0;
+  --focus-ring: #755720;
+  --positive: #266847;
+  --warning: #8A5616;
+  --negative: #A6322B;
+}
+
+html, body {
+  overflow-x: clip;
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background-color: var(--accent-soft);
+  color: var(--text-primary);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+select {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

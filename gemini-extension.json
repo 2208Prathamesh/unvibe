@@ -1,0 +1,13 @@
+{
+  "name": "unvibe",
+  "version": "1.0.0",
+  "description": "Unvibe — Anti-AI-slop UI/UX craft floor, 24 dual-mode theme packs, 7-stage redline workflow, and local MCP server (UI/UX & themes only).",
+  "contextFileName": "rules/AGENTS.md",
+  "mcpServers": {
+    "unvibe-mcp": {
+      "command": "node",
+      "args": ["${extensionPath}/mcp/server.mjs"],
+      "cwd": "${extensionPath}"
+    }
+  }
+}

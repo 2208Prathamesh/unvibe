@@ -1,0 +1,4 @@
+interface:
+  display_name: "Redline"
+  short_description: "Audit and refactor generic AI-looking UI into intentional, accessible craft (UI/UX only)."
+  default_prompt: "Use $redline to audit and refactor this interface cleanly without changing business logic."

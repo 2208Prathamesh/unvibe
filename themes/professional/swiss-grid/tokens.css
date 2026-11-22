@@ -1,0 +1,97 @@
+/* Theme: Swiss Grid (swiss-grid) | Pack: professional | Default: light */
+/* Webfont: <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"> */
+
+:root {
+  color-scheme: light;
+  --bg-deep: #EBEBEB;
+  --bg-canvas: #FFFFFF;
+  --bg-card: #F7F7F7;
+  --bg-raised: #ECECEC;
+  --text-primary: #111111;
+  --text-secondary: #424242;
+  --text-muted: #636363;
+  --border-hairline: #D4D4D4;
+  --border-strong: #111111;
+  --accent: #C82323;
+  --accent-hover: #A31B1B;
+  --accent-ink: #FFFFFF;
+  --accent-soft: #FDECEC;
+  --focus-ring: #C82323;
+  --positive: #157A3D;
+  --warning: #9C5B00;
+  --negative: #C82323;
+  --font-display: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --font-weight-display: 600;
+  --font-weight-body: 400;
+  --tracking-display: -0.03em;
+  --radius-control: 2px;
+  --radius-card: 0px;
+  --radius-panel: 0px;
+  --radius-pill: 2px;
+  --border-width: 1px;
+  --container-max: 1360px;
+  --shadow-card: none;
+  --shadow-float: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --ease-craft: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 100ms;
+  --dur-medium: 160ms;
+  --dur-slow: 240ms;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg-deep: #0A0A0A;
+  --bg-canvas: #111111;
+  --bg-card: #1A1A1A;
+  --bg-raised: #262626;
+  --text-primary: #F5F5F5;
+  --text-secondary: #C2C2C2;
+  --text-muted: #949494;
+  --border-hairline: #2E2E2E;
+  --border-strong: #F5F5F5;
+  --accent: #FF6B6B;
+  --accent-hover: #FF8787;
+  --accent-ink: #140505;
+  --accent-soft: #361717;
+  --focus-ring: #FF6B6B;
+  --positive: #4CC38A;
+  --warning: #F5B841;
+  --negative: #FF6B6B;
+}
+
+html, body {
+  overflow-x: clip;
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background-color: var(--accent-soft);
+  color: var(--text-primary);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+select {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

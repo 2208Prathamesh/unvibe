@@ -1,0 +1,4 @@
+interface:
+  display_name: "Unvibe"
+  short_description: "Apply 24 dual-mode theme packs and enforce the 12-rule anti-slop UI/UX floor"
+  default_prompt: "Use $unvibe to pick a cohesive theme and build clean, non-slop UI."

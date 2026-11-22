@@ -1,0 +1,97 @@
+/* Theme: Monochrome Edge (monochrome-edge) | Pack: modern | Default: dark */
+/* Webfont: <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"> */
+
+:root {
+  color-scheme: dark;
+  --bg-deep: #000000;
+  --bg-canvas: #000000;
+  --bg-card: #0D0D0D;
+  --bg-raised: #1A1A1A;
+  --text-primary: #EDEDED;
+  --text-secondary: #A6A6A6;
+  --text-muted: #888888;
+  --border-hairline: #262626;
+  --border-strong: #404040;
+  --accent: #EDEDED;
+  --accent-hover: #FFFFFF;
+  --accent-ink: #0A0A0A;
+  --accent-soft: #1F1F1F;
+  --focus-ring: #4DA3FF;
+  --positive: #3EC98A;
+  --warning: #F5B841;
+  --negative: #F87171;
+  --font-display: Inter, ui-sans-serif, system-ui, sans-serif;
+  --font-body: Inter, ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-weight-display: 600;
+  --font-weight-body: 400;
+  --tracking-display: -0.03em;
+  --radius-control: 6px;
+  --radius-card: 8px;
+  --radius-panel: 12px;
+  --radius-pill: 9999px;
+  --border-width: 1px;
+  --container-max: 1200px;
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-float: 0 12px 32px rgba(0, 0, 0, 0.08);
+  --ease-craft: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 120ms;
+  --dur-medium: 180ms;
+  --dur-slow: 280ms;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --bg-deep: #F4F4F4;
+  --bg-canvas: #FFFFFF;
+  --bg-card: #FAFAFA;
+  --bg-raised: #EFEFEF;
+  --text-primary: #0A0A0A;
+  --text-secondary: #4D4D4D;
+  --text-muted: #666666;
+  --border-hairline: #E5E5E5;
+  --border-strong: #C4C4C4;
+  --accent: #0A0A0A;
+  --accent-hover: #2E2E2E;
+  --accent-ink: #FFFFFF;
+  --accent-soft: #EFEFEF;
+  --focus-ring: #0066CC;
+  --positive: #0E7A48;
+  --warning: #9C5B00;
+  --negative: #C92A2A;
+}
+
+html, body {
+  overflow-x: clip;
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background-color: var(--accent-soft);
+  color: var(--text-primary);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+select {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "unvibe-mcp": {
+      "command": "node",
+      "args": ["./mcp/server.mjs"]
+    }
+  }
+}

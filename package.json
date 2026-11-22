@@ -1,0 +1,75 @@
+{
+  "name": "unvibe",
+  "version": "1.0.0",
+  "description": "Stop shipping vibecoded AI slop. Cross-agent & chatbot-ready anti-slop UI/UX skill pack, 24 dual-mode DESIGN.md theme specs, structured 7-stage redline suite, multi-agent rules, and zero-dependency MCP server (UI/UX & themes only).",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "author": "Prathamesh Barbole",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2208Prathamesh/unvibe.git"
+  },
+  "homepage": "https://github.com/2208Prathamesh/unvibe#readme",
+  "bugs": {
+    "url": "https://github.com/2208Prathamesh/unvibe/issues"
+  },
+  "bin": {
+    "unvibe": "./scripts/cli.mjs",
+    "unvibe-mcp": "./mcp/server.mjs"
+  },
+  "files": [
+    "plugin.json",
+    "gemini-extension.json",
+    "mcp_config.json",
+    ".mcp.json",
+    ".claude-plugin/",
+    ".vscode/",
+    "assets/",
+    "data/",
+    "docs/",
+    "examples/",
+    "external/",
+    "mcp/",
+    "prompts/",
+    "rules/",
+    "scripts/",
+    "skills/",
+    "themes/",
+    "AGENTS.md",
+    "CHANGELOG.md",
+    "CITATION.cff",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "README.md",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "build:themes": "node scripts/build-themes.mjs",
+    "build:assets": "node scripts/build-assets.mjs",
+    "verify": "node scripts/verify.mjs",
+    "audit:examples": "node scripts/cli.mjs audit examples/after-unvibe.html",
+    "install:antigravity": "node scripts/install.mjs --target antigravity",
+    "install:claude": "node scripts/install.mjs --target claude",
+    "install:codex": "node scripts/install.mjs --target codex",
+    "install:opencode": "node scripts/install.mjs --target opencode"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "ui",
+    "ux",
+    "unvibe",
+    "redline",
+    "design-system",
+    "design-md",
+    "mcp",
+    "agent-skills",
+    "anti-slop",
+    "tailwind",
+    "wcag",
+    "apca"
+  ]
+}

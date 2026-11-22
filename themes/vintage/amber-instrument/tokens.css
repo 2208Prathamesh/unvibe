@@ -1,0 +1,97 @@
+/* Theme: Amber Instrument (amber-instrument) | Pack: vintage | Default: dark */
+/* Webfont: <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=IBM+Plex+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap"> */
+
+:root {
+  color-scheme: dark;
+  --bg-deep: #0F0E0C;
+  --bg-canvas: #141311;
+  --bg-card: #1C1B18;
+  --bg-raised: #262420;
+  --text-primary: #EFECE4;
+  --text-secondary: #BDB6A7;
+  --text-muted: #968E7F;
+  --border-hairline: rgba(239, 236, 228, 0.10);
+  --border-strong: #454038;
+  --accent: #E59235;
+  --accent-hover: #F0A756;
+  --accent-ink: #170F05;
+  --accent-soft: #2E2112;
+  --focus-ring: #E59235;
+  --positive: #58BA84;
+  --warning: #E59235;
+  --negative: #F06E63;
+  --font-display: "Space Grotesk", ui-sans-serif, sans-serif;
+  --font-body: "IBM Plex Sans", ui-sans-serif, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-weight-display: 500;
+  --font-weight-body: 400;
+  --tracking-display: -0.02em;
+  --radius-control: 4px;
+  --radius-card: 8px;
+  --radius-panel: 10px;
+  --radius-pill: 9999px;
+  --border-width: 1px;
+  --container-max: 1320px;
+  --shadow-card: 0 1px 2px rgba(20, 19, 17, 0.06);
+  --shadow-float: 0 10px 24px rgba(20, 19, 17, 0.12);
+  --ease-craft: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 100ms;
+  --dur-medium: 160ms;
+  --dur-slow: 240ms;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --bg-deep: #E8E3D9;
+  --bg-canvas: #F2EFE9;
+  --bg-card: #FAF8F3;
+  --bg-raised: #E5DFD3;
+  --text-primary: #1B1916;
+  --text-secondary: #48433B;
+  --text-muted: #625B50;
+  --border-hairline: #CEC7B8;
+  --border-strong: #9C9280;
+  --accent: #944E0E;
+  --accent-hover: #783E0A;
+  --accent-ink: #FFFFFF;
+  --accent-soft: #F7E9D9;
+  --focus-ring: #944E0E;
+  --positive: #1D6B43;
+  --warning: #944E0E;
+  --negative: #B42B22;
+}
+
+html, body {
+  overflow-x: clip;
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background-color: var(--accent-soft);
+  color: var(--text-primary);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+select {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

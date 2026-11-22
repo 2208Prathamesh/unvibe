@@ -1,0 +1,97 @@
+/* Theme: Midcentury Studio (midcentury-studio) | Pack: vintage | Default: light */
+/* Webfont: <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Karla:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"> */
+
+:root {
+  color-scheme: light;
+  --bg-deep: #E5E0D5;
+  --bg-canvas: #EFECE4;
+  --bg-card: #F8F6F0;
+  --bg-raised: #E2DDD0;
+  --text-primary: #1C1B19;
+  --text-secondary: #45423C;
+  --text-muted: #5E5A52;
+  --border-hairline: #C7C0B2;
+  --border-strong: #1C1B19;
+  --accent: #B84014;
+  --accent-hover: #94320E;
+  --accent-ink: #FFFFFF;
+  --accent-soft: #F7E6DF;
+  --focus-ring: #1E4D8C;
+  --positive: #1F6840;
+  --warning: #995B00;
+  --negative: #B8251E;
+  --font-display: "Jost", Futura, sans-serif;
+  --font-body: "Karla", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --font-weight-display: 600;
+  --font-weight-body: 400;
+  --tracking-display: -0.015em;
+  --radius-control: 2px;
+  --radius-card: 2px;
+  --radius-panel: 4px;
+  --radius-pill: 2px;
+  --border-width: 2px;
+  --container-max: 1260px;
+  --shadow-card: none;
+  --shadow-float: 0 6px 18px rgba(28, 27, 25, 0.12);
+  --ease-craft: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 120ms;
+  --dur-medium: 180ms;
+  --dur-slow: 260ms;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg-deep: #141311;
+  --bg-canvas: #1C1B19;
+  --bg-card: #262522;
+  --bg-raised: #33312D;
+  --text-primary: #F2EFE8;
+  --text-secondary: #C4BEB2;
+  --text-muted: #999386;
+  --border-hairline: #3D3A34;
+  --border-strong: #F2EFE8;
+  --accent: #F07C4A;
+  --accent-hover: #F5966E;
+  --accent-ink: #1C0D06;
+  --accent-soft: #382117;
+  --focus-ring: #78A9FF;
+  --positive: #58BA84;
+  --warning: #F0B449;
+  --negative: #F47068;
+}
+
+html, body {
+  overflow-x: clip;
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background-color: var(--accent-soft);
+  color: var(--text-primary);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+select {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

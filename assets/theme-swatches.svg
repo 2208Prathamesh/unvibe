@@ -1,0 +1,403 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 902" fill="none">
+  <rect width="1280" height="902" rx="16" fill="#0F0F10"/>
+  <rect x="0.5" y="0.5" width="1279" height="901" rx="15.5" stroke="#EDEDED" stroke-opacity="0.12"/>
+  <text x="36" y="38" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="18" font-weight="600">24 Dual-Mode Unvibe Theme Packs</text>
+  <text x="36" y="58" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12">Each card renders verified Light (L) and Dark (D) tokens: Canvas · Card · Primary Ink · Accent CTA</text>
+  <text x="1244" y="42" text-anchor="end" fill="#60A5FA" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12">48 PALETTES · ZERO TRADEMARKS</text>
+  <text x="36" y="86" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="600">Everyday Apps (6)</text>
+  <text x="216" y="86" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11">everyday-apps</text>
+  <rect x="36" y="96" width="290" height="82" rx="10" fill="#19191B" stroke="#EDEDED" stroke-opacity="0.1"/>
+  <text x="48" y="117" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12.5" font-weight="600">Graphite Studio</text>
+  <text x="314" y="117" text-anchor="end" fill="#60A5FA" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10">DARK</text>
+  <text x="48" y="132" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5">graphite-studio</text>
+  <!-- Light swatches -->
+  <text x="48" y="158" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">L</text>
+  <rect x="62" y="145" width="22" height="18" rx="4" fill="#FAFAFA" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="87" y="145" width="22" height="18" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="112" y="145" width="22" height="18" rx="4" fill="#171717" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="137" y="145" width="34" height="18" rx="4" fill="#1D4ED8" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <!-- Dark swatches -->
+  <text x="186" y="158" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">D</text>
+  <rect x="200" y="145" width="22" height="18" rx="4" fill="#141415" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="225" y="145" width="22" height="18" rx="4" fill="#19191B" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="250" y="145" width="22" height="18" rx="4" fill="#EDEDED" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="275" y="145" width="38" height="18" rx="4" fill="#60A5FA" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <rect x="342" y="96" width="290" height="82" rx="10" fill="#19191B" stroke="#EDEDED" stroke-opacity="0.1"/>
+  <text x="354" y="117" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12.5" font-weight="600">Ash Dialogue</text>
+  <text x="620" y="117" text-anchor="end" fill="#60A5FA" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10">DARK</text>
+  <text x="354" y="132" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5">ash-dialogue</text>
+  <!-- Light swatches -->
+  <text x="354" y="158" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">L</text>
+  <rect x="368" y="145" width="22" height="18" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="393" y="145" width="22" height="18" rx="4" fill="#F9F9F9" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="418" y="145" width="22" height="18" rx="4" fill="#0D0D0D" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="443" y="145" width="34" height="18" rx="4" fill="#0E7A5F" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <!-- Dark swatches -->
+  <text x="492" y="158" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">D</text>
+  <rect x="506" y="145" width="22" height="18" rx="4" fill="#212121" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="531" y="145" width="22" height="18" rx="4" fill="#292929" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="556" y="145" width="22" height="18" rx="4" fill="#ECECEC" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="581" y="145" width="38" height="18" rx="4" fill="#19B38B" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <rect x="648" y="96" width="290" height="82" rx="10" fill="#19191B" stroke="#EDEDED" stroke-opacity="0.1"/>
+  <text x="660" y="117" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12.5" font-weight="600">Parchment Editorial</text>
+  <text x="926" y="117" text-anchor="end" fill="#C15F3C" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10">LIGHT</text>
+  <text x="660" y="132" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5">parchment-editorial</text>
+  <!-- Light swatches -->
+  <text x="660" y="158" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">L</text>
+  <rect x="674" y="145" width="22" height="18" rx="4" fill="#FAF9F5" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="699" y="145" width="22" height="18" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="724" y="145" width="22" height="18" rx="4" fill="#141413" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="749" y="145" width="34" height="18" rx="4" fill="#AE4F2E" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <!-- Dark swatches -->
+  <text x="798" y="158" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">D</text>
+  <rect x="812" y="145" width="22" height="18" rx="4" fill="#1B1A17" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="837" y="145" width="22" height="18" rx="4" fill="#23211D" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="862" y="145" width="22" height="18" rx="4" fill="#F5F2EB" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="887" y="145" width="38" height="18" rx="4" fill="#E08463" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <rect x="954" y="96" width="290" height="82" rx="10" fill="#19191B" stroke="#EDEDED" stroke-opacity="0.1"/>
+  <text x="966" y="117" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12.5" font-weight="600">Aperture Feed</text>
+  <text x="1232" y="117" text-anchor="end" fill="#C15F3C" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10">LIGHT</text>
+  <text x="966" y="132" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5">aperture-feed</text>
+  <!-- Light swatches -->
+  <text x="966" y="158" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">L</text>
+  <rect x="980" y="145" width="22" height="18" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="1005" y="145" width="22" height="18" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="1030" y="145" width="22" height="18" rx="4" fill="#1A1A1A" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="1055" y="145" width="34" height="18" rx="4" fill="#006EC7" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <!-- Dark swatches -->
+  <text x="1104" y="158" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">D</text>
+  <rect x="1118" y="145" width="22" height="18" rx="4" fill="#000000" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="1143" y="145" width="22" height="18" rx="4" fill="#121212" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="1168" y="145" width="22" height="18" rx="4" fill="#F5F5F5" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="1193" y="145" width="38" height="18" rx="4" fill="#4DAEFF" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <rect x="36" y="190" width="290" height="82" rx="10" fill="#19191B" stroke="#EDEDED" stroke-opacity="0.1"/>
+  <text x="48" y="211" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12.5" font-weight="600">Civic Network</text>
+  <text x="314" y="211" text-anchor="end" fill="#C15F3C" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10">LIGHT</text>
+  <text x="48" y="226" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5">civic-network</text>
+  <!-- Light swatches -->
+  <text x="48" y="252" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">L</text>
+  <rect x="62" y="239" width="22" height="18" rx="4" fill="#F4F2EE" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="87" y="239" width="22" height="18" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="112" y="239" width="22" height="18" rx="4" fill="#191919" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="137" y="239" width="34" height="18" rx="4" fill="#0A66C2" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <!-- Dark swatches -->
+  <text x="186" y="252" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">D</text>
+  <rect x="200" y="239" width="22" height="18" rx="4" fill="#111519" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="225" y="239" width="22" height="18" rx="4" fill="#1B2026" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="250" y="239" width="22" height="18" rx="4" fill="#F0F2F5" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="275" y="239" width="38" height="18" rx="4" fill="#70B5F9" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <rect x="342" y="190" width="290" height="82" rx="10" fill="#19191B" stroke="#EDEDED" stroke-opacity="0.1"/>
+  <text x="354" y="211" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12.5" font-weight="600">Tonal Workspace</text>
+  <text x="620" y="211" text-anchor="end" fill="#C15F3C" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10">LIGHT</text>
+  <text x="354" y="226" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5">tonal-workspace</text>
+  <!-- Light swatches -->
+  <text x="354" y="252" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">L</text>
+  <rect x="368" y="239" width="22" height="18" rx="4" fill="#F8FAFD" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="393" y="239" width="22" height="18" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="418" y="239" width="22" height="18" rx="4" fill="#1F1F1F" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="443" y="239" width="34" height="18" rx="4" fill="#0B57D0" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <!-- Dark swatches -->
+  <text x="492" y="252" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">D</text>
+  <rect x="506" y="239" width="22" height="18" rx="4" fill="#1B1C1E" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="531" y="239" width="22" height="18" rx="4" fill="#222326" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="556" y="239" width="22" height="18" rx="4" fill="#E3E3E3" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="581" y="239" width="38" height="18" rx="4" fill="#A8C7FA" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <text x="36" y="298" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="600">Professional (4)</text>
+  <text x="216" y="298" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11">professional</text>
+  <rect x="36" y="308" width="290" height="82" rx="10" fill="#19191B" stroke="#EDEDED" stroke-opacity="0.1"/>
+  <text x="48" y="329" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12.5" font-weight="600">Ledger Trust</text>
+  <text x="314" y="329" text-anchor="end" fill="#C15F3C" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10">LIGHT</text>
+  <text x="48" y="344" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5">ledger-trust</text>
+  <!-- Light swatches -->
+  <text x="48" y="370" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">L</text>
+  <rect x="62" y="357" width="22" height="18" rx="4" fill="#F6F9FC" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="87" y="357" width="22" height="18" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="112" y="357" width="22" height="18" rx="4" fill="#0A2540" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="137" y="357" width="34" height="18" rx="4" fill="#5145E5" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <!-- Dark swatches -->
+  <text x="186" y="370" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">D</text>
+  <rect x="200" y="357" width="22" height="18" rx="4" fill="#0B1726" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="225" y="357" width="22" height="18" rx="4" fill="#122338" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="250" y="357" width="22" height="18" rx="4" fill="#F1F5F9" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="275" y="357" width="38" height="18" rx="4" fill="#8C84FF" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <rect x="342" y="308" width="290" height="82" rx="10" fill="#19191B" stroke="#EDEDED" stroke-opacity="0.1"/>
+  <text x="354" y="329" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12.5" font-weight="600">Canvas Docs</text>
+  <text x="620" y="329" text-anchor="end" fill="#C15F3C" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10">LIGHT</text>
+  <text x="354" y="344" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5">canvas-docs</text>
+  <!-- Light swatches -->
+  <text x="354" y="370" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">L</text>
+  <rect x="368" y="357" width="22" height="18" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="393" y="357" width="22" height="18" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="418" y="357" width="22" height="18" rx="4" fill="#37352F" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="443" y="357" width="34" height="18" rx="4" fill="#1B6EC2" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <!-- Dark swatches -->
+  <text x="492" y="370" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">D</text>
+  <rect x="506" y="357" width="22" height="18" rx="4" fill="#191919" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="531" y="357" width="22" height="18" rx="4" fill="#222222" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="556" y="357" width="22" height="18" rx="4" fill="#EBEBEB" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="581" y="357" width="38" height="18" rx="4" fill="#6CB4EE" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <rect x="648" y="308" width="290" height="82" rx="10" fill="#19191B" stroke="#EDEDED" stroke-opacity="0.1"/>
+  <text x="660" y="329" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12.5" font-weight="600">Command Precision</text>
+  <text x="926" y="329" text-anchor="end" fill="#60A5FA" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10">DARK</text>
+  <text x="660" y="344" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5">command-precision</text>
+  <!-- Light swatches -->
+  <text x="660" y="370" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">L</text>
+  <rect x="674" y="357" width="22" height="18" rx="4" fill="#FCFCFD" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="699" y="357" width="22" height="18" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="724" y="357" width="22" height="18" rx="4" fill="#111217" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="749" y="357" width="34" height="18" rx="4" fill="#4752C4" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <!-- Dark swatches -->
+  <text x="798" y="370" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">D</text>
+  <rect x="812" y="357" width="22" height="18" rx="4" fill="#090A0C" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="837" y="357" width="22" height="18" rx="4" fill="#111215" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="862" y="357" width="22" height="18" rx="4" fill="#F5F6F8" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="887" y="357" width="38" height="18" rx="4" fill="#7D88F0" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <rect x="954" y="308" width="290" height="82" rx="10" fill="#19191B" stroke="#EDEDED" stroke-opacity="0.1"/>
+  <text x="966" y="329" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12.5" font-weight="600">Swiss Grid</text>
+  <text x="1232" y="329" text-anchor="end" fill="#C15F3C" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10">LIGHT</text>
+  <text x="966" y="344" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5">swiss-grid</text>
+  <!-- Light swatches -->
+  <text x="966" y="370" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">L</text>
+  <rect x="980" y="357" width="22" height="18" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="1005" y="357" width="22" height="18" rx="4" fill="#F7F7F7" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="1030" y="357" width="22" height="18" rx="4" fill="#111111" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="1055" y="357" width="34" height="18" rx="4" fill="#C82323" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <!-- Dark swatches -->
+  <text x="1104" y="370" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">D</text>
+  <rect x="1118" y="357" width="22" height="18" rx="4" fill="#111111" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="1143" y="357" width="22" height="18" rx="4" fill="#1A1A1A" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="1168" y="357" width="22" height="18" rx="4" fill="#F5F5F5" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="1193" y="357" width="38" height="18" rx="4" fill="#FF6B6B" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <text x="36" y="416" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="600">Modern (4)</text>
+  <text x="216" y="416" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11">modern</text>
+  <rect x="36" y="426" width="290" height="82" rx="10" fill="#19191B" stroke="#EDEDED" stroke-opacity="0.1"/>
+  <text x="48" y="447" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12.5" font-weight="600">Monochrome Edge</text>
+  <text x="314" y="447" text-anchor="end" fill="#60A5FA" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10">DARK</text>
+  <text x="48" y="462" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5">monochrome-edge</text>
+  <!-- Light swatches -->
+  <text x="48" y="488" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">L</text>
+  <rect x="62" y="475" width="22" height="18" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="87" y="475" width="22" height="18" rx="4" fill="#FAFAFA" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="112" y="475" width="22" height="18" rx="4" fill="#0A0A0A" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="137" y="475" width="34" height="18" rx="4" fill="#0A0A0A" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <!-- Dark swatches -->
+  <text x="186" y="488" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">D</text>
+  <rect x="200" y="475" width="22" height="18" rx="4" fill="#000000" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="225" y="475" width="22" height="18" rx="4" fill="#0D0D0D" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="250" y="475" width="22" height="18" rx="4" fill="#EDEDED" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="275" y="475" width="38" height="18" rx="4" fill="#EDEDED" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <rect x="342" y="426" width="290" height="82" rx="10" fill="#19191B" stroke="#EDEDED" stroke-opacity="0.1"/>
+  <text x="354" y="447" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12.5" font-weight="600">Warm Bazaar</text>
+  <text x="620" y="447" text-anchor="end" fill="#C15F3C" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10">LIGHT</text>
+  <text x="354" y="462" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5">warm-bazaar</text>
+  <!-- Light swatches -->
+  <text x="354" y="488" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">L</text>
+  <rect x="368" y="475" width="22" height="18" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="393" y="475" width="22" height="18" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="418" y="475" width="22" height="18" rx="4" fill="#222222" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="443" y="475" width="34" height="18" rx="4" fill="#D4143D" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <!-- Dark swatches -->
+  <text x="492" y="488" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">D</text>
+  <rect x="506" y="475" width="22" height="18" rx="4" fill="#141414" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="531" y="475" width="22" height="18" rx="4" fill="#1F1F1F" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="556" y="475" width="22" height="18" rx="4" fill="#F5F5F5" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="581" y="475" width="38" height="18" rx="4" fill="#FF6B86" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <rect x="648" y="426" width="290" height="82" rx="10" fill="#19191B" stroke="#EDEDED" stroke-opacity="0.1"/>
+  <text x="660" y="447" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12.5" font-weight="600">Pinboard Gallery</text>
+  <text x="926" y="447" text-anchor="end" fill="#C15F3C" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10">LIGHT</text>
+  <text x="660" y="462" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5">pinboard-gallery</text>
+  <!-- Light swatches -->
+  <text x="660" y="488" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">L</text>
+  <rect x="674" y="475" width="22" height="18" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="699" y="475" width="22" height="18" rx="4" fill="#FBFBF9" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="724" y="475" width="22" height="18" rx="4" fill="#1A1816" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="749" y="475" width="34" height="18" rx="4" fill="#C4001D" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <!-- Dark swatches -->
+  <text x="798" y="488" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">D</text>
+  <rect x="812" y="475" width="22" height="18" rx="4" fill="#151514" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="837" y="475" width="22" height="18" rx="4" fill="#1F1F1D" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="862" y="475" width="22" height="18" rx="4" fill="#F5F4F0" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="887" y="475" width="38" height="18" rx="4" fill="#FF5C6C" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <rect x="954" y="426" width="290" height="82" rx="10" fill="#19191B" stroke="#EDEDED" stroke-opacity="0.1"/>
+  <text x="966" y="447" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12.5" font-weight="600">Nordic Air</text>
+  <text x="1232" y="447" text-anchor="end" fill="#C15F3C" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10">LIGHT</text>
+  <text x="966" y="462" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5">nordic-air</text>
+  <!-- Light swatches -->
+  <text x="966" y="488" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">L</text>
+  <rect x="980" y="475" width="22" height="18" rx="4" fill="#F5F7F5" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="1005" y="475" width="22" height="18" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="1030" y="475" width="22" height="18" rx="4" fill="#151D19" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="1055" y="475" width="34" height="18" rx="4" fill="#235A42" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <!-- Dark swatches -->
+  <text x="1104" y="488" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">D</text>
+  <rect x="1118" y="475" width="22" height="18" rx="4" fill="#121714" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="1143" y="475" width="22" height="18" rx="4" fill="#1A211D" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="1168" y="475" width="22" height="18" rx="4" fill="#EDF2EE" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="1193" y="475" width="38" height="18" rx="4" fill="#63C79B" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <text x="36" y="534" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="600">Premium (4)</text>
+  <text x="216" y="534" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11">premium</text>
+  <rect x="36" y="544" width="290" height="82" rx="10" fill="#19191B" stroke="#EDEDED" stroke-opacity="0.1"/>
+  <text x="48" y="565" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12.5" font-weight="600">Obsidian Atelier</text>
+  <text x="314" y="565" text-anchor="end" fill="#60A5FA" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10">DARK</text>
+  <text x="48" y="580" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5">obsidian-atelier</text>
+  <!-- Light swatches -->
+  <text x="48" y="606" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">L</text>
+  <rect x="62" y="593" width="22" height="18" rx="4" fill="#F6F4EF" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="87" y="593" width="22" height="18" rx="4" fill="#FDFCF9" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="112" y="593" width="22" height="18" rx="4" fill="#171512" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="137" y="593" width="34" height="18" rx="4" fill="#755720" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <!-- Dark swatches -->
+  <text x="186" y="606" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">D</text>
+  <rect x="200" y="593" width="22" height="18" rx="4" fill="#0E0E0C" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="225" y="593" width="22" height="18" rx="4" fill="#161513" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="250" y="593" width="22" height="18" rx="4" fill="#F3EFE6" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="275" y="593" width="38" height="18" rx="4" fill="#CCA85E" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <rect x="342" y="544" width="290" height="82" rx="10" fill="#19191B" stroke="#EDEDED" stroke-opacity="0.1"/>
+  <text x="354" y="565" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12.5" font-weight="600">Alabaster Maison</text>
+  <text x="620" y="565" text-anchor="end" fill="#C15F3C" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10">LIGHT</text>
+  <text x="354" y="580" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5">alabaster-maison</text>
+  <!-- Light swatches -->
+  <text x="354" y="606" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">L</text>
+  <rect x="368" y="593" width="22" height="18" rx="4" fill="#FAF9F7" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="393" y="593" width="22" height="18" rx="4" fill="#F4F1EC" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="418" y="593" width="22" height="18" rx="4" fill="#211E1C" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="443" y="593" width="34" height="18" rx="4" fill="#262321" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <!-- Dark swatches -->
+  <text x="492" y="606" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">D</text>
+  <rect x="506" y="593" width="22" height="18" rx="4" fill="#151412" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="531" y="593" width="22" height="18" rx="4" fill="#1E1C1A" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="556" y="593" width="22" height="18" rx="4" fill="#F5F2EC" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="581" y="593" width="38" height="18" rx="4" fill="#E6DFD5" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <rect x="648" y="544" width="290" height="82" rx="10" fill="#19191B" stroke="#EDEDED" stroke-opacity="0.1"/>
+  <text x="660" y="565" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12.5" font-weight="600">Cupertino Anodized</text>
+  <text x="926" y="565" text-anchor="end" fill="#C15F3C" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10">LIGHT</text>
+  <text x="660" y="580" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5">cupertino-glass</text>
+  <!-- Light swatches -->
+  <text x="660" y="606" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">L</text>
+  <rect x="674" y="593" width="22" height="18" rx="4" fill="#F5F5F7" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="699" y="593" width="22" height="18" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="724" y="593" width="22" height="18" rx="4" fill="#1D1D1F" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="749" y="593" width="34" height="18" rx="4" fill="#0062C4" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <!-- Dark swatches -->
+  <text x="798" y="606" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">D</text>
+  <rect x="812" y="593" width="22" height="18" rx="4" fill="#0E0E0F" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="837" y="593" width="22" height="18" rx="4" fill="#1A1A1C" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="862" y="593" width="22" height="18" rx="4" fill="#F5F5F7" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="887" y="593" width="38" height="18" rx="4" fill="#52A8FF" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <rect x="954" y="544" width="290" height="82" rx="10" fill="#19191B" stroke="#EDEDED" stroke-opacity="0.1"/>
+  <text x="966" y="565" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12.5" font-weight="600">Veridian Private</text>
+  <text x="1232" y="565" text-anchor="end" fill="#C15F3C" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10">LIGHT</text>
+  <text x="966" y="580" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5">veridian-private</text>
+  <!-- Light swatches -->
+  <text x="966" y="606" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">L</text>
+  <rect x="980" y="593" width="22" height="18" rx="4" fill="#F7F6F1" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="1005" y="593" width="22" height="18" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="1030" y="593" width="22" height="18" rx="4" fill="#131C18" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="1055" y="593" width="34" height="18" rx="4" fill="#184A3B" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <!-- Dark swatches -->
+  <text x="1104" y="606" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">D</text>
+  <rect x="1118" y="593" width="22" height="18" rx="4" fill="#0D1713" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="1143" y="593" width="22" height="18" rx="4" fill="#14221C" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="1168" y="593" width="22" height="18" rx="4" fill="#F2F1EB" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="1193" y="593" width="38" height="18" rx="4" fill="#5AC29B" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <text x="36" y="652" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="600">Vintage (4)</text>
+  <text x="216" y="652" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11">vintage</text>
+  <rect x="36" y="662" width="290" height="82" rx="10" fill="#19191B" stroke="#EDEDED" stroke-opacity="0.1"/>
+  <text x="48" y="683" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12.5" font-weight="600">Broadsheet Press</text>
+  <text x="314" y="683" text-anchor="end" fill="#C15F3C" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10">LIGHT</text>
+  <text x="48" y="698" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5">broadsheet-press</text>
+  <!-- Light swatches -->
+  <text x="48" y="724" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">L</text>
+  <rect x="62" y="711" width="22" height="18" rx="4" fill="#F3EFE6" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="87" y="711" width="22" height="18" rx="4" fill="#EAE4D7" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="112" y="711" width="22" height="18" rx="4" fill="#1A1815" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="137" y="711" width="34" height="18" rx="4" fill="#992626" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <!-- Dark swatches -->
+  <text x="186" y="724" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">D</text>
+  <rect x="200" y="711" width="22" height="18" rx="4" fill="#181714" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="225" y="711" width="22" height="18" rx="4" fill="#22201C" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="250" y="711" width="22" height="18" rx="4" fill="#EFEAE0" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="275" y="711" width="38" height="18" rx="4" fill="#E87461" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <rect x="342" y="662" width="290" height="82" rx="10" fill="#19191B" stroke="#EDEDED" stroke-opacity="0.1"/>
+  <text x="354" y="683" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12.5" font-weight="600">Midcentury Studio</text>
+  <text x="620" y="683" text-anchor="end" fill="#C15F3C" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10">LIGHT</text>
+  <text x="354" y="698" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5">midcentury-studio</text>
+  <!-- Light swatches -->
+  <text x="354" y="724" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">L</text>
+  <rect x="368" y="711" width="22" height="18" rx="4" fill="#EFECE4" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="393" y="711" width="22" height="18" rx="4" fill="#F8F6F0" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="418" y="711" width="22" height="18" rx="4" fill="#1C1B19" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="443" y="711" width="34" height="18" rx="4" fill="#B84014" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <!-- Dark swatches -->
+  <text x="492" y="724" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">D</text>
+  <rect x="506" y="711" width="22" height="18" rx="4" fill="#1C1B19" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="531" y="711" width="22" height="18" rx="4" fill="#262522" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="556" y="711" width="22" height="18" rx="4" fill="#F2EFE8" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="581" y="711" width="38" height="18" rx="4" fill="#F07C4A" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <rect x="648" y="662" width="290" height="82" rx="10" fill="#19191B" stroke="#EDEDED" stroke-opacity="0.1"/>
+  <text x="660" y="683" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12.5" font-weight="600">Archival Vellum</text>
+  <text x="926" y="683" text-anchor="end" fill="#C15F3C" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10">LIGHT</text>
+  <text x="660" y="698" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5">archival-vellum</text>
+  <!-- Light swatches -->
+  <text x="660" y="724" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">L</text>
+  <rect x="674" y="711" width="22" height="18" rx="4" fill="#F5EFE2" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="699" y="711" width="22" height="18" rx="4" fill="#FAF6EC" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="724" y="711" width="22" height="18" rx="4" fill="#2B2219" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="749" y="711" width="34" height="18" rx="4" fill="#253F8A" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <!-- Dark swatches -->
+  <text x="798" y="724" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">D</text>
+  <rect x="812" y="711" width="22" height="18" rx="4" fill="#191512" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="837" y="711" width="22" height="18" rx="4" fill="#231D18" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="862" y="711" width="22" height="18" rx="4" fill="#F2EAD9" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="887" y="711" width="38" height="18" rx="4" fill="#88A6F2" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <rect x="954" y="662" width="290" height="82" rx="10" fill="#19191B" stroke="#EDEDED" stroke-opacity="0.1"/>
+  <text x="966" y="683" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12.5" font-weight="600">Amber Instrument</text>
+  <text x="1232" y="683" text-anchor="end" fill="#60A5FA" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10">DARK</text>
+  <text x="966" y="698" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5">amber-instrument</text>
+  <!-- Light swatches -->
+  <text x="966" y="724" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">L</text>
+  <rect x="980" y="711" width="22" height="18" rx="4" fill="#F2EFE9" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="1005" y="711" width="22" height="18" rx="4" fill="#FAF8F3" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="1030" y="711" width="22" height="18" rx="4" fill="#1B1916" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="1055" y="711" width="34" height="18" rx="4" fill="#944E0E" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <!-- Dark swatches -->
+  <text x="1104" y="724" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">D</text>
+  <rect x="1118" y="711" width="22" height="18" rx="4" fill="#141311" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="1143" y="711" width="22" height="18" rx="4" fill="#1C1B18" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="1168" y="711" width="22" height="18" rx="4" fill="#EFECE4" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="1193" y="711" width="38" height="18" rx="4" fill="#E59235" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <text x="36" y="770" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="600">Cool (2)</text>
+  <text x="216" y="770" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11">cool</text>
+  <rect x="36" y="780" width="290" height="82" rx="10" fill="#19191B" stroke="#EDEDED" stroke-opacity="0.1"/>
+  <text x="48" y="801" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12.5" font-weight="600">Phosphor Shell</text>
+  <text x="314" y="801" text-anchor="end" fill="#60A5FA" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10">DARK</text>
+  <text x="48" y="816" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5">phosphor-shell</text>
+  <!-- Light swatches -->
+  <text x="48" y="842" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">L</text>
+  <rect x="62" y="829" width="22" height="18" rx="4" fill="#F4F7F4" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="87" y="829" width="22" height="18" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="112" y="829" width="22" height="18" rx="4" fill="#111A14" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="137" y="829" width="34" height="18" rx="4" fill="#0E6B4F" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <!-- Dark swatches -->
+  <text x="186" y="842" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">D</text>
+  <rect x="200" y="829" width="22" height="18" rx="4" fill="#0E1210" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="225" y="829" width="22" height="18" rx="4" fill="#141A17" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="250" y="829" width="22" height="18" rx="4" fill="#ECF2EE" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="275" y="829" width="38" height="18" rx="4" fill="#3BD69A" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <rect x="342" y="780" width="290" height="82" rx="10" fill="#19191B" stroke="#EDEDED" stroke-opacity="0.1"/>
+  <text x="354" y="801" fill="#EDEDED" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12.5" font-weight="600">Cobalt Drafting</text>
+  <text x="620" y="801" text-anchor="end" fill="#C15F3C" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10">LIGHT</text>
+  <text x="354" y="816" fill="#8B8B92" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5">cobalt-drafting</text>
+  <!-- Light swatches -->
+  <text x="354" y="842" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">L</text>
+  <rect x="368" y="829" width="22" height="18" rx="4" fill="#F4F7FB" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="393" y="829" width="22" height="18" rx="4" fill="#FFFFFF" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="418" y="829" width="22" height="18" rx="4" fill="#0F172A" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="443" y="829" width="34" height="18" rx="4" fill="#1D4ED8" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <!-- Dark swatches -->
+  <text x="492" y="842" fill="#A1A1A6" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">D</text>
+  <rect x="506" y="829" width="22" height="18" rx="4" fill="#0B1220" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="531" y="829" width="22" height="18" rx="4" fill="#121D33" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="556" y="829" width="22" height="18" rx="4" fill="#EDF2FA" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="581" y="829" width="38" height="18" rx="4" fill="#6EA8FE" stroke="#FFFFFF" stroke-opacity="0.25"/>
+</svg>

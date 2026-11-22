@@ -1,0 +1,13 @@
+{
+  "name": "unvibe-local",
+  "owner": {
+    "name": "Unvibe"
+  },
+  "plugins": [
+    {
+      "name": "unvibe",
+      "source": "./",
+      "description": "Unvibe — Anti-AI-slop UI/UX skills, 24 theme DESIGN.md files, structured redline references, rules, and zero-dependency MCP server."
+    }
+  ]
+}
